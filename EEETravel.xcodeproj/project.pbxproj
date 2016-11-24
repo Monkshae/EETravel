@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		335787393A072C3D22EB0C86 /* Pods_EEETravel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A727B5B92DF6772F00889A16 /* Pods_EEETravel.framework */; };
+		D95316771DE2F671000DFDDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316761DE2F671000DFDDC /* AppDelegate.swift */; };
+		D95316791DE2F671000DFDDC /* EHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316781DE2F671000DFDDC /* EHomeController.swift */; };
+		D953167C1DE2F671000DFDDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D953167A1DE2F671000DFDDC /* Main.storyboard */; };
+		D953167E1DE2F671000DFDDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D953167D1DE2F671000DFDDC /* Assets.xcassets */; };
+		D95316811DE2F671000DFDDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D953167F1DE2F671000DFDDC /* LaunchScreen.storyboard */; };
+		D95316891DE2F6CC000DFDDC /* EMainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316881DE2F6CC000DFDDC /* EMainTabBarController.swift */; };
+		D95316931DE54524000DFDDC /* ELabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316921DE54524000DFDDC /* ELabel.swift */; };
+		D95316951DE5471A000DFDDC /* EView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316941DE5471A000DFDDC /* EView.swift */; };
+		D95316971DE5476A000DFDDC /* EImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316961DE5476A000DFDDC /* EImageView.swift */; };
+		D95316991DE54810000DFDDC /* ETextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316981DE54810000DFDDC /* ETextView.swift */; };
+		D953169B1DE5482A000DFDDC /* ETextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953169A1DE5482A000DFDDC /* ETextField.swift */; };
+		D9DD51F21DE6F29300565FAC /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD51F11DE6F29300565FAC /* Theme.swift */; };
+		D9DD51F41DE6F2BD00565FAC /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD51F31DE6F2BD00565FAC /* Constant.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		814CD2506F7E4262541D86C8 /* Pods-EEETravel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EEETravel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EEETravel/Pods-EEETravel.debug.xcconfig"; sourceTree = "<group>"; };
+		A474411F76B3AFCE35B5C90A /* Pods-EEETravel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EEETravel.release.xcconfig"; path = "Pods/Target Support Files/Pods-EEETravel/Pods-EEETravel.release.xcconfig"; sourceTree = "<group>"; };
+		A727B5B92DF6772F00889A16 /* Pods_EEETravel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EEETravel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D95316731DE2F671000DFDDC /* EEETravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EEETravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D95316761DE2F671000DFDDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D95316781DE2F671000DFDDC /* EHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EHomeController.swift; sourceTree = "<group>"; };
+		D953167B1DE2F671000DFDDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D953167D1DE2F671000DFDDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D95316801DE2F671000DFDDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D95316821DE2F671000DFDDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D95316881DE2F6CC000DFDDC /* EMainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMainTabBarController.swift; sourceTree = "<group>"; };
+		D95316921DE54524000DFDDC /* ELabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELabel.swift; sourceTree = "<group>"; };
+		D95316941DE5471A000DFDDC /* EView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EView.swift; sourceTree = "<group>"; };
+		D95316961DE5476A000DFDDC /* EImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EImageView.swift; sourceTree = "<group>"; };
+		D95316981DE54810000DFDDC /* ETextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETextView.swift; sourceTree = "<group>"; };
+		D953169A1DE5482A000DFDDC /* ETextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETextField.swift; sourceTree = "<group>"; };
+		D9DD51F11DE6F29300565FAC /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		D9DD51F31DE6F2BD00565FAC /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D95316701DE2F671000DFDDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335787393A072C3D22EB0C86 /* Pods_EEETravel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52632E6C53A6B497F366AE0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A727B5B92DF6772F00889A16 /* Pods_EEETravel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0B8CF015EA18716EA070339 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				814CD2506F7E4262541D86C8 /* Pods-EEETravel.debug.xcconfig */,
+				A474411F76B3AFCE35B5C90A /* Pods-EEETravel.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D953166A1DE2F671000DFDDC = {
+			isa = PBXGroup;
+			children = (
+				D95316751DE2F671000DFDDC /* EEETravel */,
+				D95316741DE2F671000DFDDC /* Products */,
+				C0B8CF015EA18716EA070339 /* Pods */,
+				52632E6C53A6B497F366AE0B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D95316741DE2F671000DFDDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D95316731DE2F671000DFDDC /* EEETravel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D95316751DE2F671000DFDDC /* EEETravel */ = {
+			isa = PBXGroup;
+			children = (
+				D95316761DE2F671000DFDDC /* AppDelegate.swift */,
+				D95316881DE2F6CC000DFDDC /* EMainTabBarController.swift */,
+				D95316781DE2F671000DFDDC /* EHomeController.swift */,
+				D9DD51F01DE6F28500565FAC /* Constant */,
+				D95316911DE54505000DFDDC /* EKit */,
+				D953167A1DE2F671000DFDDC /* Main.storyboard */,
+				D953168C1DE2FBF8000DFDDC /* Common */,
+				D953167D1DE2F671000DFDDC /* Assets.xcassets */,
+				D953167F1DE2F671000DFDDC /* LaunchScreen.storyboard */,
+				D95316821DE2F671000DFDDC /* Info.plist */,
+			);
+			path = EEETravel;
+			sourceTree = "<group>";
+		};
+		D953168C1DE2FBF8000DFDDC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D95316911DE54505000DFDDC /* EKit */ = {
+			isa = PBXGroup;
+			children = (
+				D95316921DE54524000DFDDC /* ELabel.swift */,
+				D95316941DE5471A000DFDDC /* EView.swift */,
+				D95316961DE5476A000DFDDC /* EImageView.swift */,
+				D95316981DE54810000DFDDC /* ETextView.swift */,
+				D953169A1DE5482A000DFDDC /* ETextField.swift */,
+			);
+			path = EKit;
+			sourceTree = "<group>";
+		};
+		D9DD51F01DE6F28500565FAC /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				D9DD51F11DE6F29300565FAC /* Theme.swift */,
+				D9DD51F31DE6F2BD00565FAC /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D95316721DE2F671000DFDDC /* EEETravel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D95316851DE2F671000DFDDC /* Build configuration list for PBXNativeTarget "EEETravel" */;
+			buildPhases = (
+				790570840E7446DFAA872E38 /* [CP] Check Pods Manifest.lock */,
+				D953166F1DE2F671000DFDDC /* Sources */,
+				D95316701DE2F671000DFDDC /* Frameworks */,
+				D95316711DE2F671000DFDDC /* Resources */,
+				0D5DDDDCC7C6AE53E3C0D1B4 /* [CP] Embed Pods Frameworks */,
+				F6E0BD246F7B2BDA21746FD4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EEETravel;
+			productName = EEETravel;
+			productReference = D95316731DE2F671000DFDDC /* EEETravel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D953166B1DE2F671000DFDDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Richard;
+				TargetAttributes = {
+					D95316721DE2F671000DFDDC = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = DGT9C327YY;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D953166E1DE2F671000DFDDC /* Build configuration list for PBXProject "EEETravel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D953166A1DE2F671000DFDDC;
+			productRefGroup = D95316741DE2F671000DFDDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D95316721DE2F671000DFDDC /* EEETravel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D95316711DE2F671000DFDDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D95316811DE2F671000DFDDC /* LaunchScreen.storyboard in Resources */,
+				D953167E1DE2F671000DFDDC /* Assets.xcassets in Resources */,
+				D953167C1DE2F671000DFDDC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D5DDDDCC7C6AE53E3C0D1B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EEETravel/Pods-EEETravel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		790570840E7446DFAA872E38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F6E0BD246F7B2BDA21746FD4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EEETravel/Pods-EEETravel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D953166F1DE2F671000DFDDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D95316791DE2F671000DFDDC /* EHomeController.swift in Sources */,
+				D95316931DE54524000DFDDC /* ELabel.swift in Sources */,
+				D953169B1DE5482A000DFDDC /* ETextField.swift in Sources */,
+				D95316951DE5471A000DFDDC /* EView.swift in Sources */,
+				D95316971DE5476A000DFDDC /* EImageView.swift in Sources */,
+				D95316891DE2F6CC000DFDDC /* EMainTabBarController.swift in Sources */,
+				D9DD51F21DE6F29300565FAC /* Theme.swift in Sources */,
+				D9DD51F41DE6F2BD00565FAC /* Constant.swift in Sources */,
+				D95316771DE2F671000DFDDC /* AppDelegate.swift in Sources */,
+				D95316991DE54810000DFDDC /* ETextView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D953167A1DE2F671000DFDDC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D953167B1DE2F671000DFDDC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D953167F1DE2F671000DFDDC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D95316801DE2F671000DFDDC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D95316831DE2F671000DFDDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D95316841DE2F671000DFDDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D95316861DE2F671000DFDDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 814CD2506F7E4262541D86C8 /* Pods-EEETravel.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DGT9C327YY;
+				INFOPLIST_FILE = EEETravel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eee.EEETravel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D95316871DE2F671000DFDDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A474411F76B3AFCE35B5C90A /* Pods-EEETravel.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DGT9C327YY;
+				INFOPLIST_FILE = EEETravel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eee.EEETravel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D953166E1DE2F671000DFDDC /* Build configuration list for PBXProject "EEETravel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D95316831DE2F671000DFDDC /* Debug */,
+				D95316841DE2F671000DFDDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D95316851DE2F671000DFDDC /* Build configuration list for PBXNativeTarget "EEETravel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D95316861DE2F671000DFDDC /* Debug */,
+				D95316871DE2F671000DFDDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D953166B1DE2F671000DFDDC /* Project object */;
+}

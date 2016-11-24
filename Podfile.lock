@@ -1,0 +1,37 @@
+PODS:
+  - Kingfisher (3.2.1)
+  - MOBFoundation (2.2.1)
+  - PullToMakeSoup (2.0):
+    - PullToRefresher (~> 2.0)
+  - PullToRefresher (2.0.2)
+  - ShareSDK3 (3.5.0):
+    - ShareSDK3/ShareSDK (= 3.5.0)
+  - ShareSDK3/ShareSDK (3.5.0)
+  - ShareSDK3/ShareSDKExtension (3.5.0)
+  - ShareSDK3/ShareSDKPlatforms/QQ (3.5.0)
+  - ShareSDK3/ShareSDKPlatforms/SinaWeibo (3.5.0)
+  - ShareSDK3/ShareSDKPlatforms/WeChat (3.5.0)
+  - SnapKit (3.0.2)
+
+DEPENDENCIES:
+  - Kingfisher (= 3.2.1)
+  - MOBFoundation (= 2.2.1)
+  - PullToMakeSoup (~> 2.0)
+  - ShareSDK3 (= 3.5.0)
+  - ShareSDK3/ShareSDKExtension
+  - ShareSDK3/ShareSDKPlatforms/QQ
+  - ShareSDK3/ShareSDKPlatforms/SinaWeibo
+  - ShareSDK3/ShareSDKPlatforms/WeChat
+  - SnapKit (~> 3.0.2)
+
+SPEC CHECKSUMS:
+  Kingfisher: 64ef28c6d3d6f344e3ae2d7f5c9da80439505d99
+  MOBFoundation: 8ceb44ce7840441f42f73fa6fbda5b0c19ba7d43
+  PullToMakeSoup: 384a57220e1c197220427494d5959dda73400435
+  PullToRefresher: 5e101a8c3523e67ee0291375ba932ef59e0853c2
+  ShareSDK3: 2bcdbba886604cf82a2df6c306c4ecff99aceacf
+  SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
+
+PODFILE CHECKSUM: 65af8239f61c279ea097592b933ddface5a5994a
+
+COCOAPODS: 1.1.1
