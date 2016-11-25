@@ -4,6 +4,7 @@ platform :ios, '10.0'
 
 #open source
 source 'https://github.com/CocoaPods/Specs.git'
+#swift_version = "3.0"
 
 target 'EEETravel' do
 
@@ -12,11 +13,20 @@ target 'EEETravel' do
 
 #    pod 'UMengAnalytics'                                        , '4.1.0'
 #    pod 'SwiftyJSON'                                            , '2.4.0'
-    pod 'SnapKit'                                               ,'~> 3.0.2'
-    pod 'PullToMakeSoup'                                        ,'~> 2.0'
-    pod 'Kingfisher'                                            ,‘3.2.1’
+    pod 'SnapKit'                                               , '3.0.2'
+    pod 'PullToMakeSoup'                                        , '2.0'
+    pod 'Kingfisher'                                            , '3.2.1'
+    pod 'Alamofire'                                             , '4.0.0'
+    pod 'AlamofireObjectMapper'                                 , '4.0.0'
+    pod 'PromiseKit'                                            , '4.0.5'
+    pod 'EZSwiftExtensions'                                     , '1.7'
+    pod 'CryptoSwift'                                           , '0.6.6'
+#    pod 'PeekPop'                                               , '0.1.5'
+    pod 'PermissionScope'                                       , '1.1.1'
+    pod 'RxAlamofire'                                           , '3.0.0'
+    pod 'Aspects'                                               , '1.4.1'
 
-    
+
     pod 'ShareSDK3'                                             , '3.5.0'
     pod 'MOBFoundation'                                         , '2.2.1'
     pod 'ShareSDK3/ShareSDKExtension'
