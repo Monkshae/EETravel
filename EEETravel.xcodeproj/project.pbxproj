@@ -9,18 +9,18 @@
 /* Begin PBXBuildFile section */
 		335787393A072C3D22EB0C86 /* Pods_EEETravel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A727B5B92DF6772F00889A16 /* Pods_EEETravel.framework */; };
 		D95316771DE2F671000DFDDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316761DE2F671000DFDDC /* AppDelegate.swift */; };
-		D95316791DE2F671000DFDDC /* EHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316781DE2F671000DFDDC /* EHomeController.swift */; };
+		D95316791DE2F671000DFDDC /* EEHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316781DE2F671000DFDDC /* EEHomeController.swift */; };
 		D953167C1DE2F671000DFDDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D953167A1DE2F671000DFDDC /* Main.storyboard */; };
 		D953167E1DE2F671000DFDDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D953167D1DE2F671000DFDDC /* Assets.xcassets */; };
 		D95316811DE2F671000DFDDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D953167F1DE2F671000DFDDC /* LaunchScreen.storyboard */; };
-		D95316891DE2F6CC000DFDDC /* EMainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316881DE2F6CC000DFDDC /* EMainTabBarController.swift */; };
+		D95316891DE2F6CC000DFDDC /* EEMainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316881DE2F6CC000DFDDC /* EEMainTabBarController.swift */; };
 		D95316931DE54524000DFDDC /* EELabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316921DE54524000DFDDC /* EELabel.swift */; };
 		D95316951DE5471A000DFDDC /* EEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316941DE5471A000DFDDC /* EEView.swift */; };
 		D95316971DE5476A000DFDDC /* EEImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316961DE5476A000DFDDC /* EEImageView.swift */; };
 		D95316991DE54810000DFDDC /* EETextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316981DE54810000DFDDC /* EETextView.swift */; };
 		D953169B1DE5482A000DFDDC /* EETextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953169A1DE5482A000DFDDC /* EETextField.swift */; };
-		D9DD51F21DE6F29300565FAC /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD51F11DE6F29300565FAC /* Theme.swift */; };
-		D9DD51F41DE6F2BD00565FAC /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD51F31DE6F2BD00565FAC /* Constant.swift */; };
+		D9DD51F21DE6F29300565FAC /* EETheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD51F11DE6F29300565FAC /* EETheme.swift */; };
+		D9DD51F41DE6F2BD00565FAC /* EEConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD51F31DE6F2BD00565FAC /* EEConstant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,19 +29,19 @@
 		A727B5B92DF6772F00889A16 /* Pods_EEETravel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EEETravel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95316731DE2F671000DFDDC /* EEETravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EEETravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95316761DE2F671000DFDDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D95316781DE2F671000DFDDC /* EHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EHomeController.swift; sourceTree = "<group>"; };
+		D95316781DE2F671000DFDDC /* EEHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EEHomeController.swift; sourceTree = "<group>"; };
 		D953167B1DE2F671000DFDDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D953167D1DE2F671000DFDDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D95316801DE2F671000DFDDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D95316821DE2F671000DFDDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D95316881DE2F6CC000DFDDC /* EMainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMainTabBarController.swift; sourceTree = "<group>"; };
+		D95316881DE2F6CC000DFDDC /* EEMainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEMainTabBarController.swift; sourceTree = "<group>"; };
 		D95316921DE54524000DFDDC /* EELabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EELabel.swift; sourceTree = "<group>"; };
 		D95316941DE5471A000DFDDC /* EEView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEView.swift; sourceTree = "<group>"; };
 		D95316961DE5476A000DFDDC /* EEImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEImageView.swift; sourceTree = "<group>"; };
 		D95316981DE54810000DFDDC /* EETextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EETextView.swift; sourceTree = "<group>"; };
 		D953169A1DE5482A000DFDDC /* EETextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EETextField.swift; sourceTree = "<group>"; };
-		D9DD51F11DE6F29300565FAC /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
-		D9DD51F31DE6F2BD00565FAC /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		D9DD51F11DE6F29300565FAC /* EETheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EETheme.swift; sourceTree = "<group>"; };
+		D9DD51F31DE6F2BD00565FAC /* EEConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEConstant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				D95316761DE2F671000DFDDC /* AppDelegate.swift */,
-				D95316881DE2F6CC000DFDDC /* EMainTabBarController.swift */,
-				D95316781DE2F671000DFDDC /* EHomeController.swift */,
+				D95316881DE2F6CC000DFDDC /* EEMainTabBarController.swift */,
+				D95316781DE2F671000DFDDC /* EEHomeController.swift */,
 				D9DD51F01DE6F28500565FAC /* Constant */,
 				D95316911DE54505000DFDDC /* EKit */,
 				D953167A1DE2F671000DFDDC /* Main.storyboard */,
@@ -130,8 +130,8 @@
 		D9DD51F01DE6F28500565FAC /* Constant */ = {
 			isa = PBXGroup;
 			children = (
-				D9DD51F11DE6F29300565FAC /* Theme.swift */,
-				D9DD51F31DE6F2BD00565FAC /* Constant.swift */,
+				D9DD51F11DE6F29300565FAC /* EETheme.swift */,
+				D9DD51F31DE6F2BD00565FAC /* EEConstant.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -260,14 +260,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D95316791DE2F671000DFDDC /* EHomeController.swift in Sources */,
+				D95316791DE2F671000DFDDC /* EEHomeController.swift in Sources */,
 				D95316931DE54524000DFDDC /* EELabel.swift in Sources */,
 				D953169B1DE5482A000DFDDC /* EETextField.swift in Sources */,
 				D95316951DE5471A000DFDDC /* EEView.swift in Sources */,
 				D95316971DE5476A000DFDDC /* EEImageView.swift in Sources */,
-				D95316891DE2F6CC000DFDDC /* EMainTabBarController.swift in Sources */,
-				D9DD51F21DE6F29300565FAC /* Theme.swift in Sources */,
-				D9DD51F41DE6F2BD00565FAC /* Constant.swift in Sources */,
+				D95316891DE2F6CC000DFDDC /* EEMainTabBarController.swift in Sources */,
+				D9DD51F21DE6F29300565FAC /* EETheme.swift in Sources */,
+				D9DD51F41DE6F2BD00565FAC /* EEConstant.swift in Sources */,
 				D95316771DE2F671000DFDDC /* AppDelegate.swift in Sources */,
 				D95316991DE54810000DFDDC /* EETextView.swift in Sources */,
 			);

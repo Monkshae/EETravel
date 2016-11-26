@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EHomeController: UIViewController {
+class EEHomeController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,7 @@ class EHomeController: UIViewController {
 }
 
 
-extension EHomeController: UITableViewDelegate, UITableViewDataSource {
+extension EEHomeController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10

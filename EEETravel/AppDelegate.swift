@@ -22,24 +22,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         
-        let controller = EHomeController()
+        let controller = EEHomeController()
         controller.title = "酒店"
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
         let tabBarController = EMainTabBarController()
         
-        let controller1 = EHomeController()
+        let controller1 = EEHomeController()
         controller1.tabBarItem.title = "航空"
         
-        let controller2 = EHomeController()
+        let controller2 = EEHomeController()
         controller2.tabBarItem.title = "信用卡"
         
         
-        let controller3 = EHomeController()
+        let controller3 = EEHomeController()
         controller3.tabBarItem.title = "综合"
         
         
-        let controller4 = EHomeController()
+        let controller4 = EEHomeController()
         controller4.tabBarItem.title = "MORE"
         
         
