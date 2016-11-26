@@ -12,16 +12,16 @@ import UIKit
   垂直方向顶部的对齐方式，分别为上部对齐、中间对齐、和下部对齐
 */
 
-enum ELabelVerticalAlignment {
+enum EELabelVerticalAlignment {
     case Top,Middle,Bottom
 }
 
-class ELabel: UILabel {
+class EELabel: UILabel {
 
     /**
      *  @brief  垂直方向对齐。默认是 GMLabelVerticalAlignmentMiddle。因为有这个属性，所以需要重写 drawTextInRect
      */
-    public var verticalAlignment: ELabelVerticalAlignment?
+    public var verticalAlignment: EELabelVerticalAlignment?
     /**
      *  @brief  文字与label边框的padding。因为有这个方法，所以重写了 intrinsicContentSize
      */
@@ -47,11 +47,11 @@ class ELabel: UILabel {
         verticalAlignment = .Middle
     }
     
-    static func label(_ textAlignment: NSTextAlignment, _ textColor: UIColor, _ fontSize: Int) -> ELabel {
-        let label = ELabel()
+    static func label(_ textAlignment: NSTextAlignment, _ textColor: UIColor, _ fontSize: Int) -> EELabel {
+        let label = EELabel()
         label.textAlignment = textAlignment
         label.textColor = textColor
-        label.font = GMFont(size: fontSize)
+        label.font = EEFont(size: fontSize)
         return label
     }
 

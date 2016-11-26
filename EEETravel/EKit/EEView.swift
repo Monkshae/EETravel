@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EView: UIView {
+class EEView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)

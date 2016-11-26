@@ -48,7 +48,7 @@ public struct Constant {
 }
 
 
-public func GMFont(size: Int) -> UIFont {
+public func EEFont(size: Int) -> UIFont {
     return UIFont.swiftFontWithSize(CGFloat(size))
 }
 
