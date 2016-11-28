@@ -17,37 +17,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.gray, NSFontAttributeName: UIFont.systemFont(ofSize: 11)], for:.normal)
-        
-        
-        
-        
-        
+
+
+
+
+
         let controller = EEHomeController()
         controller.title = "酒店"
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
         let tabBarController = EMainTabBarController()
-        
+
         let controller1 = EEHomeController()
         controller1.tabBarItem.title = "航空"
-        
+
         let controller2 = EEHomeController()
         controller2.tabBarItem.title = "信用卡"
-        
-        
+
+
         let controller3 = EEHomeController()
         controller3.tabBarItem.title = "综合"
-        
-        
+
+
         let controller4 = EEHomeController()
         controller4.tabBarItem.title = "MORE"
-        
-        
-        tabBarController.viewControllers = [controller,controller1,controller2,controller3,controller4]
+
+
+        tabBarController.viewControllers = [controller, controller1, controller2, controller3, controller4]
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
         return true
-        
+
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -74,4 +74,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-

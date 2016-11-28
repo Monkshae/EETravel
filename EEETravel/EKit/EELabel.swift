@@ -13,7 +13,7 @@ import UIKit
 */
 
 enum EELabelVerticalAlignment {
-    case Top,Middle,Bottom
+    case Top, Middle, Bottom
 }
 
 class EELabel: UILabel {
@@ -26,27 +26,27 @@ class EELabel: UILabel {
      *  @brief  文字与label边框的padding。因为有这个方法，所以重写了 intrinsicContentSize
      */
     public var paddingEdge =  UIEdgeInsets.zero
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         setup()
     }
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     open func setup() {
         verticalAlignment = .Middle
     }
-    
+
     static func label(_ textAlignment: NSTextAlignment, _ textColor: UIColor, _ fontSize: Int) -> EELabel {
         let label = EELabel()
         label.textAlignment = textAlignment
@@ -56,7 +56,7 @@ class EELabel: UILabel {
     }
 
     override func drawText(in rect: CGRect) {
-        
+
         // 先去除paddingEdge，剩下的rect就是用来放 string 的 rect。但注意：未必是正好能容纳下string的大小的rect
         let contentRect = UIEdgeInsetsInsetRect(rect, paddingEdge)
         // 在contentRect内，string所需要的text rect
@@ -77,7 +77,7 @@ class EELabel: UILabel {
             textRect.origin.y = (rect.height - textRect.height) / 2
             break
         }
-        
+
         switch textAlignment {
         case .right:
             textRect.origin.x = rect.width - textRect.width
@@ -92,8 +92,8 @@ class EELabel: UILabel {
         }
         super.drawText(in: textRect)
     }
-    
-    
+
+
     override var intrinsicContentSize: CGSize {
         let size = super.intrinsicContentSize
         let width = size.width + paddingEdge.left + paddingEdge.right
@@ -101,5 +101,5 @@ class EELabel: UILabel {
         let newSize = CGSize.init(width: CGFloat(ceilf(Float(width))), height: CGFloat(ceilf(Float(height))))
         return newSize
     }
-    
+
 }

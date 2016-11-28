@@ -19,7 +19,7 @@ protocol EmptyViewDelegate: class {
 
 /**
  空页面的类型枚举
- 
+
  - Empty:     空页面
  - Exception: 异常页面
  */
@@ -29,14 +29,14 @@ enum EmptyViewType {
 
 /// 列表数据为空或异常时显示的View类
 class EmptyView: GMView {
-    
+
     let tipIcon: GMImageView = GMImageView()
     let tipLabel: GMLabel = GMLabel()
     let tipButton: GMButton = GMButton()
-    
+
     var exceptionImage = "network_failed_icon"
     var exceptionText = "网络请求失败，请检查您的网络设置"
-    
+
     var type = EmptyViewType.Empty
     var emptyImage = "empty_icon"
     var emptyText = ""
@@ -63,7 +63,7 @@ class EmptyView: GMView {
 
         tipButton.addTarget(self, action: #selector(reloadBtnTap), forControlEvents: UIControlEvents.TouchUpInside)
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

@@ -11,58 +11,58 @@ import UIKit
 class EETextView: UITextView {
 
     public var placeholder: String? {
-        didSet{
+        didSet {
             setNeedsDisplay()
         }
     }
     public var placeholderColor: UIColor? {
-        didSet{
+        didSet {
             setNeedsDisplay()
         }
     }
 
     override var text: String! {
-        didSet{
+        didSet {
             setNeedsDisplay()
         }
     }
-    
+
     override var font: UIFont? {
-        didSet{
+        didSet {
             setNeedsDisplay()
         }
     }
-    
+
     override var attributedText: NSAttributedString! {
-        didSet{
+        didSet {
             setNeedsDisplay()
         }
     }
-    
+
     override init(frame: CGRect, textContainer: NSTextContainer?) {
         super.init(frame: frame, textContainer: textContainer)
         setup()
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     func setup() {
         font = EEFont(size: 15)
         placeholderColor = UIColor.gray
         NotificationCenter.default.addObserver(self, selector: #selector(EETextView.textDidChange), name: NSNotification.Name.UITextViewTextDidChange, object: nil)
     }
-    
+
     func textDidChange(noti: NSNotification) {
         //会重新调用drawRcet
         setNeedsDisplay()
     }
-    
+
     override func draw(_ rect: CGRect) {
-        
+
         guard placeholder != nil else {
             return
         }
@@ -79,11 +79,11 @@ class EETextView: UITextView {
         newRect.size.width -= 2 * rect.origin.x
         placeholder!.draw(in: newRect, withAttributes: attrs)
     }
-    
+
     override func layoutSubviews() {
         super.layoutSubviews()
         setNeedsDisplay()
     }
-    
-    
+
+
 }
