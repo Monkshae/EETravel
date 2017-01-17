@@ -8,17 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		335787393A072C3D22EB0C86 /* Pods_EEETravel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A727B5B92DF6772F00889A16 /* Pods_EEETravel.framework */; };
+		D901BAD41E1B57410022E45F /* EECreditCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D901BAD31E1B57410022E45F /* EECreditCardController.swift */; };
+		D901BAFB1E1B86A50022E45F /* WaveEmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D901BAFA1E1B86A50022E45F /* WaveEmitterView.swift */; };
+		D901BB021E1B8CE70022E45F /* hearts_pre.png in Resources */ = {isa = PBXBuildFile; fileRef = D901BB001E1B8CE70022E45F /* hearts_pre.png */; };
+		D901BB031E1B8CE70022E45F /* icon_like.png in Resources */ = {isa = PBXBuildFile; fileRef = D901BB011E1B8CE70022E45F /* icon_like.png */; };
+		D9365A8C1E1BAD2100DB6A14 /* 0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9365A8A1E1BAD2100DB6A14 /* 0@2x.png */; };
+		D9365A8D1E1BAD2100DB6A14 /* 0@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9365A8B1E1BAD2100DB6A14 /* 0@3x.png */; };
+		D9365A9B1E1CDD2A00DB6A14 /* aView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9365A9A1E1CDD2A00DB6A14 /* aView.m */; };
+		D9365A9E1E1CDD3500DB6A14 /* SYNavigationDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = D9365A9D1E1CDD3500DB6A14 /* SYNavigationDropdownMenu.m */; };
 		D95316771DE2F671000DFDDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316761DE2F671000DFDDC /* AppDelegate.swift */; };
 		D95316791DE2F671000DFDDC /* EEHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316781DE2F671000DFDDC /* EEHomeController.swift */; };
 		D953167C1DE2F671000DFDDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D953167A1DE2F671000DFDDC /* Main.storyboard */; };
 		D953167E1DE2F671000DFDDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D953167D1DE2F671000DFDDC /* Assets.xcassets */; };
 		D95316811DE2F671000DFDDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D953167F1DE2F671000DFDDC /* LaunchScreen.storyboard */; };
 		D95316891DE2F6CC000DFDDC /* EEMainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316881DE2F6CC000DFDDC /* EEMainTabBarController.swift */; };
-		D95316931DE54524000DFDDC /* EELabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316921DE54524000DFDDC /* EELabel.swift */; };
-		D95316951DE5471A000DFDDC /* EEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316941DE5471A000DFDDC /* EEView.swift */; };
-		D95316971DE5476A000DFDDC /* EEImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316961DE5476A000DFDDC /* EEImageView.swift */; };
-		D95316991DE54810000DFDDC /* EETextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316981DE54810000DFDDC /* EETextView.swift */; };
-		D953169B1DE5482A000DFDDC /* EETextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953169A1DE5482A000DFDDC /* EETextField.swift */; };
+		D99AD7891E0B7EC000F7DF2E /* EEImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99AD7841E0B7EC000F7DF2E /* EEImageView.swift */; };
+		D99AD78A1E0B7EC000F7DF2E /* EELabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99AD7851E0B7EC000F7DF2E /* EELabel.swift */; };
+		D99AD78B1E0B7EC000F7DF2E /* EETextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99AD7861E0B7EC000F7DF2E /* EETextField.swift */; };
+		D99AD78C1E0B7EC000F7DF2E /* EETextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99AD7871E0B7EC000F7DF2E /* EETextView.swift */; };
+		D99AD78D1E0B7EC000F7DF2E /* EEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99AD7881E0B7EC000F7DF2E /* EEView.swift */; };
+		D99AD78F1E0B7F0400F7DF2E /* EEAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99AD78E1E0B7F0400F7DF2E /* EEAPI.swift */; };
 		D9DD51F21DE6F29300565FAC /* EETheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD51F11DE6F29300565FAC /* EETheme.swift */; };
 		D9DD51F41DE6F2BD00565FAC /* EEConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD51F31DE6F2BD00565FAC /* EEConstant.swift */; };
 /* End PBXBuildFile section */
@@ -27,6 +36,17 @@
 		814CD2506F7E4262541D86C8 /* Pods-EEETravel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EEETravel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EEETravel/Pods-EEETravel.debug.xcconfig"; sourceTree = "<group>"; };
 		A474411F76B3AFCE35B5C90A /* Pods-EEETravel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EEETravel.release.xcconfig"; path = "Pods/Target Support Files/Pods-EEETravel/Pods-EEETravel.release.xcconfig"; sourceTree = "<group>"; };
 		A727B5B92DF6772F00889A16 /* Pods_EEETravel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EEETravel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D901BAD31E1B57410022E45F /* EECreditCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EECreditCardController.swift; sourceTree = "<group>"; };
+		D901BAFA1E1B86A50022E45F /* WaveEmitterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveEmitterView.swift; sourceTree = "<group>"; };
+		D901BB001E1B8CE70022E45F /* hearts_pre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts_pre.png; sourceTree = "<group>"; };
+		D901BB011E1B8CE70022E45F /* icon_like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_like.png; sourceTree = "<group>"; };
+		D9365A8A1E1BAD2100DB6A14 /* 0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0@2x.png"; sourceTree = "<group>"; };
+		D9365A8B1E1BAD2100DB6A14 /* 0@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0@3x.png"; sourceTree = "<group>"; };
+		D9365A981E1CDD2900DB6A14 /* EEETravel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EEETravel-Bridging-Header.h"; sourceTree = "<group>"; };
+		D9365A991E1CDD2A00DB6A14 /* aView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aView.h; sourceTree = "<group>"; };
+		D9365A9A1E1CDD2A00DB6A14 /* aView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = aView.m; sourceTree = "<group>"; };
+		D9365A9C1E1CDD3500DB6A14 /* SYNavigationDropdownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYNavigationDropdownMenu.h; sourceTree = "<group>"; };
+		D9365A9D1E1CDD3500DB6A14 /* SYNavigationDropdownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYNavigationDropdownMenu.m; sourceTree = "<group>"; };
 		D95316731DE2F671000DFDDC /* EEETravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EEETravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95316761DE2F671000DFDDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D95316781DE2F671000DFDDC /* EEHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EEHomeController.swift; sourceTree = "<group>"; };
@@ -35,11 +55,12 @@
 		D95316801DE2F671000DFDDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D95316821DE2F671000DFDDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D95316881DE2F6CC000DFDDC /* EEMainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEMainTabBarController.swift; sourceTree = "<group>"; };
-		D95316921DE54524000DFDDC /* EELabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EELabel.swift; sourceTree = "<group>"; };
-		D95316941DE5471A000DFDDC /* EEView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEView.swift; sourceTree = "<group>"; };
-		D95316961DE5476A000DFDDC /* EEImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEImageView.swift; sourceTree = "<group>"; };
-		D95316981DE54810000DFDDC /* EETextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EETextView.swift; sourceTree = "<group>"; };
-		D953169A1DE5482A000DFDDC /* EETextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EETextField.swift; sourceTree = "<group>"; };
+		D99AD7841E0B7EC000F7DF2E /* EEImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEImageView.swift; sourceTree = "<group>"; };
+		D99AD7851E0B7EC000F7DF2E /* EELabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EELabel.swift; sourceTree = "<group>"; };
+		D99AD7861E0B7EC000F7DF2E /* EETextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EETextField.swift; sourceTree = "<group>"; };
+		D99AD7871E0B7EC000F7DF2E /* EETextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EETextView.swift; sourceTree = "<group>"; };
+		D99AD7881E0B7EC000F7DF2E /* EEView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEView.swift; sourceTree = "<group>"; };
+		D99AD78E1E0B7F0400F7DF2E /* EEAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEAPI.swift; sourceTree = "<group>"; };
 		D9DD51F11DE6F29300565FAC /* EETheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EETheme.swift; sourceTree = "<group>"; };
 		D9DD51F31DE6F2BD00565FAC /* EEConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEConstant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +94,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D92AC76C1E014A4B0085EF62 /* EENetworking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EENetworking;
+			sourceTree = "<group>";
+		};
 		D953166A1DE2F671000DFDDC = {
 			isa = PBXGroup;
 			children = (
@@ -97,13 +125,20 @@
 				D95316761DE2F671000DFDDC /* AppDelegate.swift */,
 				D95316881DE2F6CC000DFDDC /* EEMainTabBarController.swift */,
 				D95316781DE2F671000DFDDC /* EEHomeController.swift */,
+				D901BAD31E1B57410022E45F /* EECreditCardController.swift */,
+				D9365A9C1E1CDD3500DB6A14 /* SYNavigationDropdownMenu.h */,
+				D9365A9D1E1CDD3500DB6A14 /* SYNavigationDropdownMenu.m */,
+				D9365A991E1CDD2A00DB6A14 /* aView.h */,
+				D9365A9A1E1CDD2A00DB6A14 /* aView.m */,
 				D9DD51F01DE6F28500565FAC /* Constant */,
-				D95316911DE54505000DFDDC /* EKit */,
+				D99AD7831E0B7EC000F7DF2E /* EEKit */,
 				D953167A1DE2F671000DFDDC /* Main.storyboard */,
 				D953168C1DE2FBF8000DFDDC /* Common */,
+				D92AC76C1E014A4B0085EF62 /* EENetworking */,
 				D953167D1DE2F671000DFDDC /* Assets.xcassets */,
 				D953167F1DE2F671000DFDDC /* LaunchScreen.storyboard */,
 				D95316821DE2F671000DFDDC /* Info.plist */,
+				D9365A981E1CDD2900DB6A14 /* EEETravel-Bridging-Header.h */,
 			);
 			path = EEETravel;
 			sourceTree = "<group>";
@@ -115,23 +150,29 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		D95316911DE54505000DFDDC /* EKit */ = {
+		D99AD7831E0B7EC000F7DF2E /* EEKit */ = {
 			isa = PBXGroup;
 			children = (
-				D95316921DE54524000DFDDC /* EELabel.swift */,
-				D95316941DE5471A000DFDDC /* EEView.swift */,
-				D95316961DE5476A000DFDDC /* EEImageView.swift */,
-				D95316981DE54810000DFDDC /* EETextView.swift */,
-				D953169A1DE5482A000DFDDC /* EETextField.swift */,
+				D99AD7841E0B7EC000F7DF2E /* EEImageView.swift */,
+				D99AD7851E0B7EC000F7DF2E /* EELabel.swift */,
+				D99AD7861E0B7EC000F7DF2E /* EETextField.swift */,
+				D99AD7871E0B7EC000F7DF2E /* EETextView.swift */,
+				D99AD7881E0B7EC000F7DF2E /* EEView.swift */,
 			);
-			path = EKit;
+			path = EEKit;
 			sourceTree = "<group>";
 		};
 		D9DD51F01DE6F28500565FAC /* Constant */ = {
 			isa = PBXGroup;
 			children = (
+				D901BAFA1E1B86A50022E45F /* WaveEmitterView.swift */,
 				D9DD51F11DE6F29300565FAC /* EETheme.swift */,
 				D9DD51F31DE6F2BD00565FAC /* EEConstant.swift */,
+				D99AD78E1E0B7F0400F7DF2E /* EEAPI.swift */,
+				D9365A8A1E1BAD2100DB6A14 /* 0@2x.png */,
+				D9365A8B1E1BAD2100DB6A14 /* 0@3x.png */,
+				D901BB001E1B8CE70022E45F /* hearts_pre.png */,
+				D901BB011E1B8CE70022E45F /* icon_like.png */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -173,6 +214,7 @@
 					D95316721DE2F671000DFDDC = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = DGT9C327YY;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -200,8 +242,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D901BB031E1B8CE70022E45F /* icon_like.png in Resources */,
 				D95316811DE2F671000DFDDC /* LaunchScreen.storyboard in Resources */,
+				D9365A8D1E1BAD2100DB6A14 /* 0@3x.png in Resources */,
 				D953167E1DE2F671000DFDDC /* Assets.xcassets in Resources */,
+				D9365A8C1E1BAD2100DB6A14 /* 0@2x.png in Resources */,
+				D901BB021E1B8CE70022E45F /* hearts_pre.png in Resources */,
 				D953167C1DE2F671000DFDDC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,15 +322,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				D95316791DE2F671000DFDDC /* EEHomeController.swift in Sources */,
-				D95316931DE54524000DFDDC /* EELabel.swift in Sources */,
-				D953169B1DE5482A000DFDDC /* EETextField.swift in Sources */,
-				D95316951DE5471A000DFDDC /* EEView.swift in Sources */,
-				D95316971DE5476A000DFDDC /* EEImageView.swift in Sources */,
+				D99AD78D1E0B7EC000F7DF2E /* EEView.swift in Sources */,
+				D99AD78B1E0B7EC000F7DF2E /* EETextField.swift in Sources */,
+				D9365A9E1E1CDD3500DB6A14 /* SYNavigationDropdownMenu.m in Sources */,
+				D99AD78A1E0B7EC000F7DF2E /* EELabel.swift in Sources */,
 				D95316891DE2F6CC000DFDDC /* EEMainTabBarController.swift in Sources */,
+				D99AD78F1E0B7F0400F7DF2E /* EEAPI.swift in Sources */,
 				D9DD51F21DE6F29300565FAC /* EETheme.swift in Sources */,
+				D901BAD41E1B57410022E45F /* EECreditCardController.swift in Sources */,
+				D9365A9B1E1CDD2A00DB6A14 /* aView.m in Sources */,
+				D99AD78C1E0B7EC000F7DF2E /* EETextView.swift in Sources */,
 				D9DD51F41DE6F2BD00565FAC /* EEConstant.swift in Sources */,
+				D901BAFB1E1B86A50022E45F /* WaveEmitterView.swift in Sources */,
 				D95316771DE2F671000DFDDC /* AppDelegate.swift in Sources */,
-				D95316991DE54810000DFDDC /* EETextView.swift in Sources */,
+				D99AD7891E0B7EC000F7DF2E /* EEImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,11 +459,14 @@
 			baseConfigurationReference = 814CD2506F7E4262541D86C8 /* Pods-EEETravel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = DGT9C327YY;
 				INFOPLIST_FILE = EEETravel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eee.EEETravel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EEETravel/EEETravel-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -422,11 +476,13 @@
 			baseConfigurationReference = A474411F76B3AFCE35B5C90A /* Pods-EEETravel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = DGT9C327YY;
 				INFOPLIST_FILE = EEETravel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eee.EEETravel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EEETravel/EEETravel-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
