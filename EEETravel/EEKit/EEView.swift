@@ -34,85 +34,85 @@ class EEView: UIView {
 
 public extension UIView {
     public var left: CGFloat {
-        set(newValue){
+        set(newValue) {
             var rect = frame
             rect.origin.x = newValue
             frame = rect
         }
-        get{
+        get {
             return frame.origin.x
         }
     }
     
     public var top: CGFloat {
-        set(newValue){
+        set(newValue) {
             var rect = frame
             rect.origin.y = newValue
             frame = rect
         }
-        get{
+        get {
             return frame.origin.y
         }
     }
     
     public var right: CGFloat {
-        set(newValue){
+        set(newValue) {
             var rect = frame
             rect.origin.x = newValue - frame.width
             frame = rect
         }
-        get{
+        get {
             return frame.origin.x + frame.width
         }
     }
     
     public var bottom: CGFloat {
-        set(newValue){
+        set(newValue) {
             var rect = frame
             rect.origin.y = newValue - frame.height
             frame = rect
         }
-        get{
+        get {
             return frame.origin.y + frame.height
         }
     }
     
     public var centerX: CGFloat {
-        set(newValue){
+        set(newValue) {
             center = CGPoint(x: newValue, y: center.y)
         }
-        get{
+        get {
             return center.x
         }
     }
     
     public var centerY: CGFloat {
-        set(newValue){
+        set(newValue) {
             center = CGPoint(x: center.x, y: newValue)
         }
-        get{
+        get {
             return center.y
         }
     }
     
     public var width: CGFloat {
-        set(newValue){
+        set(newValue) {
             var rect = frame
             rect.size.width = newValue
             frame = rect
         }
-        get{
+        get {
             return frame.width
         }
     }
     
     public var height: CGFloat {
-        set(newValue){
+        set(newValue) {
             var rect = frame
             rect.size.height = newValue
             frame = rect
         }
-        get{
+        get {
             return frame.height
         }
     }

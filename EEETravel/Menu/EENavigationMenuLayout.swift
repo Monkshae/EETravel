@@ -32,7 +32,7 @@ class EENavigationMenuLayout: UICollectionViewLayout {
         }
         let itemCount = collectionView?.numberOfItems(inSection: 0)
         let pages = Double(itemCount! / (horizontalItemCount * horizontalItemCount))
-        let size = CGSize(width: CGFloat(ceil(pages)) * (collectionView?.frame.width)! , height: (collectionView?.frame.height)!)
+        let size = CGSize(width: CGFloat(ceil(pages)) * (collectionView?.frame.width)!, height: (collectionView?.frame.height)!)
         return size
     }
     
@@ -56,11 +56,11 @@ class EENavigationMenuLayout: UICollectionViewLayout {
         }
         let row = indexPath.row
         let bounds = collectionView?.bounds
-        //第几行
+        // 第几行
         let columnPosition = row % horizontalItemCount
         // 第几列
         let rowPosition = row / horizontalItemCount % verticalItemCount
-       //第几页
+        // 第几页
         let itemPage = row / horizontalItemCount * verticalItemCount
         let x = sectionInset.left + CGFloat(columnPosition) * (itemSize.width + minimumInteritemSpacing) * CGFloat(itemPage) * (bounds?.width)!
         let y = sectionInset.top + CGFloat(rowPosition) * (itemSize.height + minimumLineSpcing)
