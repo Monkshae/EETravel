@@ -1,5 +1,5 @@
 //
-//  EImageView.swift
+//  EEImageView.swift
 //  EEETravel
 //
 //  Created by licong on 2016/11/23.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EImageView: UIImageView {
+class EEImageView: UIImageView {
 
     /*
     // Only override draw() if you perform custom drawing.

@@ -22,6 +22,9 @@
 		D953167E1DE2F671000DFDDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D953167D1DE2F671000DFDDC /* Assets.xcassets */; };
 		D95316811DE2F671000DFDDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D953167F1DE2F671000DFDDC /* LaunchScreen.storyboard */; };
 		D95316891DE2F6CC000DFDDC /* EEMainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316881DE2F6CC000DFDDC /* EEMainTabBarController.swift */; };
+		D9670DE01E457ABB00DE7F35 /* EENavigationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9670DDE1E457ABB00DE7F35 /* EENavigationMenu.swift */; };
+		D9670DE11E457ABB00DE7F35 /* EENavigationMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9670DDF1E457ABB00DE7F35 /* EENavigationMenuCell.swift */; };
+		D9670DE31E457C0E00DE7F35 /* EENavigationMenuLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9670DE21E457C0E00DE7F35 /* EENavigationMenuLayout.swift */; };
 		D99AD7891E0B7EC000F7DF2E /* EEImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99AD7841E0B7EC000F7DF2E /* EEImageView.swift */; };
 		D99AD78A1E0B7EC000F7DF2E /* EELabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99AD7851E0B7EC000F7DF2E /* EELabel.swift */; };
 		D99AD78B1E0B7EC000F7DF2E /* EETextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99AD7861E0B7EC000F7DF2E /* EETextField.swift */; };
@@ -55,6 +58,9 @@
 		D95316801DE2F671000DFDDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D95316821DE2F671000DFDDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D95316881DE2F6CC000DFDDC /* EEMainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEMainTabBarController.swift; sourceTree = "<group>"; };
+		D9670DDE1E457ABB00DE7F35 /* EENavigationMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EENavigationMenu.swift; sourceTree = "<group>"; };
+		D9670DDF1E457ABB00DE7F35 /* EENavigationMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EENavigationMenuCell.swift; sourceTree = "<group>"; };
+		D9670DE21E457C0E00DE7F35 /* EENavigationMenuLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EENavigationMenuLayout.swift; sourceTree = "<group>"; };
 		D99AD7841E0B7EC000F7DF2E /* EEImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEImageView.swift; sourceTree = "<group>"; };
 		D99AD7851E0B7EC000F7DF2E /* EELabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EELabel.swift; sourceTree = "<group>"; };
 		D99AD7861E0B7EC000F7DF2E /* EETextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EETextField.swift; sourceTree = "<group>"; };
@@ -130,6 +136,7 @@
 				D9365A9D1E1CDD3500DB6A14 /* SYNavigationDropdownMenu.m */,
 				D9365A991E1CDD2A00DB6A14 /* aView.h */,
 				D9365A9A1E1CDD2A00DB6A14 /* aView.m */,
+				D9670DDD1E457ABB00DE7F35 /* Menu */,
 				D9DD51F01DE6F28500565FAC /* Constant */,
 				D99AD7831E0B7EC000F7DF2E /* EEKit */,
 				D953167A1DE2F671000DFDDC /* Main.storyboard */,
@@ -148,6 +155,16 @@
 			children = (
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		D9670DDD1E457ABB00DE7F35 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				D9670DDE1E457ABB00DE7F35 /* EENavigationMenu.swift */,
+				D9670DDF1E457ABB00DE7F35 /* EENavigationMenuCell.swift */,
+				D9670DE21E457C0E00DE7F35 /* EENavigationMenuLayout.swift */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		D99AD7831E0B7EC000F7DF2E /* EEKit */ = {
@@ -323,6 +340,7 @@
 			files = (
 				D95316791DE2F671000DFDDC /* EEHomeController.swift in Sources */,
 				D99AD78D1E0B7EC000F7DF2E /* EEView.swift in Sources */,
+				D9670DE31E457C0E00DE7F35 /* EENavigationMenuLayout.swift in Sources */,
 				D99AD78B1E0B7EC000F7DF2E /* EETextField.swift in Sources */,
 				D9365A9E1E1CDD3500DB6A14 /* SYNavigationDropdownMenu.m in Sources */,
 				D99AD78A1E0B7EC000F7DF2E /* EELabel.swift in Sources */,
@@ -331,11 +349,13 @@
 				D9DD51F21DE6F29300565FAC /* EETheme.swift in Sources */,
 				D901BAD41E1B57410022E45F /* EECreditCardController.swift in Sources */,
 				D9365A9B1E1CDD2A00DB6A14 /* aView.m in Sources */,
+				D9670DE01E457ABB00DE7F35 /* EENavigationMenu.swift in Sources */,
 				D99AD78C1E0B7EC000F7DF2E /* EETextView.swift in Sources */,
 				D9DD51F41DE6F2BD00565FAC /* EEConstant.swift in Sources */,
 				D901BAFB1E1B86A50022E45F /* WaveEmitterView.swift in Sources */,
 				D95316771DE2F671000DFDDC /* AppDelegate.swift in Sources */,
 				D99AD7891E0B7EC000F7DF2E /* EEImageView.swift in Sources */,
+				D9670DE11E457ABB00DE7F35 /* EENavigationMenuCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

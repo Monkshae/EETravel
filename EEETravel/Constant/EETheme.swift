@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct Theme {
+fileprivate struct Theme {
 
     //颜色规范
     static let mainVisualColor                  = 0x3ADBD2 //主视觉颜色
