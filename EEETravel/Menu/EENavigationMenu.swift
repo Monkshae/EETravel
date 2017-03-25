@@ -8,7 +8,7 @@
 
 import UIKit
 
-fileprivate class EENavigationMenuPageControl: UIPageControl {
+class EENavigationMenuPageControl: UIPageControl {
     override init(frame: CGRect) {
         super.init(frame: frame)
         pageIndicatorTintColor =  UIColor.separatorLineColor()
@@ -22,14 +22,34 @@ fileprivate class EENavigationMenuPageControl: UIPageControl {
 }
 
 
-class EENavigationMenu: UICollectionView {
+class EENavigationMenu: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    var pageControl: EENavigationMenuPageControl!
+    var collectionView: UICollectionView!
+    
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setup()
     }
-    */
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setup()
+    }
+    
+    func setup() {
+        backgroundColor = UIColor.backgroundColor()
+        
+        let layout = EENavigationMenuLayout()
+        collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
+        collectionView.scrollsToTop = false
+        collectionView.register(EENavigationMenuCell.classForCoder(), forCellWithReuseIdentifier: String(describing: EENavigationMenuCell.self))
+        
+        
+        pageControl = EENavigationMenuPageControl(frame: frame)
+
+    }
+    
 
 }

@@ -117,5 +117,19 @@ public extension UIView {
         }
     }
     
+    //找到指定的view到根view的路径代码
+    static func superView(view: UIView?) -> [UIView]? {
+        //注意这里是copy了一份新的view只不过用了同一个变量名覆盖了
+        var view = view
+        guard view != nil else {
+            return nil
+        }
+        var result = [UIView]()
+        while view != nil {
+            result.append(view!)
+            view = view?.superview
+        }
+        return result
+    }
     
 }

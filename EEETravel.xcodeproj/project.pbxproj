@@ -12,10 +12,11 @@
 		D901BAFB1E1B86A50022E45F /* WaveEmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D901BAFA1E1B86A50022E45F /* WaveEmitterView.swift */; };
 		D901BB021E1B8CE70022E45F /* hearts_pre.png in Resources */ = {isa = PBXBuildFile; fileRef = D901BB001E1B8CE70022E45F /* hearts_pre.png */; };
 		D901BB031E1B8CE70022E45F /* icon_like.png in Resources */ = {isa = PBXBuildFile; fileRef = D901BB011E1B8CE70022E45F /* icon_like.png */; };
+		D92968AB1E865AD8001D1BC5 /* EETravelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92968AA1E865AD8001D1BC5 /* EETravelController.swift */; };
+		D92968AD1E865B28001D1BC5 /* EEFrequentFlyerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92968AC1E865B28001D1BC5 /* EEFrequentFlyerController.swift */; };
+		D92968AF1E865B8B001D1BC5 /* EEDiscountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92968AE1E865B8B001D1BC5 /* EEDiscountController.swift */; };
 		D9365A8C1E1BAD2100DB6A14 /* 0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9365A8A1E1BAD2100DB6A14 /* 0@2x.png */; };
 		D9365A8D1E1BAD2100DB6A14 /* 0@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9365A8B1E1BAD2100DB6A14 /* 0@3x.png */; };
-		D9365A9B1E1CDD2A00DB6A14 /* aView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9365A9A1E1CDD2A00DB6A14 /* aView.m */; };
-		D9365A9E1E1CDD3500DB6A14 /* SYNavigationDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = D9365A9D1E1CDD3500DB6A14 /* SYNavigationDropdownMenu.m */; };
 		D95316771DE2F671000DFDDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316761DE2F671000DFDDC /* AppDelegate.swift */; };
 		D95316791DE2F671000DFDDC /* EEHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316781DE2F671000DFDDC /* EEHomeController.swift */; };
 		D953167C1DE2F671000DFDDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D953167A1DE2F671000DFDDC /* Main.storyboard */; };
@@ -43,13 +44,12 @@
 		D901BAFA1E1B86A50022E45F /* WaveEmitterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveEmitterView.swift; sourceTree = "<group>"; };
 		D901BB001E1B8CE70022E45F /* hearts_pre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts_pre.png; sourceTree = "<group>"; };
 		D901BB011E1B8CE70022E45F /* icon_like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_like.png; sourceTree = "<group>"; };
+		D92968AA1E865AD8001D1BC5 /* EETravelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EETravelController.swift; sourceTree = "<group>"; };
+		D92968AC1E865B28001D1BC5 /* EEFrequentFlyerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEFrequentFlyerController.swift; sourceTree = "<group>"; };
+		D92968AE1E865B8B001D1BC5 /* EEDiscountController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEDiscountController.swift; sourceTree = "<group>"; };
 		D9365A8A1E1BAD2100DB6A14 /* 0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0@2x.png"; sourceTree = "<group>"; };
 		D9365A8B1E1BAD2100DB6A14 /* 0@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0@3x.png"; sourceTree = "<group>"; };
 		D9365A981E1CDD2900DB6A14 /* EEETravel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EEETravel-Bridging-Header.h"; sourceTree = "<group>"; };
-		D9365A991E1CDD2A00DB6A14 /* aView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aView.h; sourceTree = "<group>"; };
-		D9365A9A1E1CDD2A00DB6A14 /* aView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = aView.m; sourceTree = "<group>"; };
-		D9365A9C1E1CDD3500DB6A14 /* SYNavigationDropdownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYNavigationDropdownMenu.h; sourceTree = "<group>"; };
-		D9365A9D1E1CDD3500DB6A14 /* SYNavigationDropdownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYNavigationDropdownMenu.m; sourceTree = "<group>"; };
 		D95316731DE2F671000DFDDC /* EEETravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EEETravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95316761DE2F671000DFDDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D95316781DE2F671000DFDDC /* EEHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EEHomeController.swift; sourceTree = "<group>"; };
@@ -132,10 +132,9 @@
 				D95316881DE2F6CC000DFDDC /* EEMainTabBarController.swift */,
 				D95316781DE2F671000DFDDC /* EEHomeController.swift */,
 				D901BAD31E1B57410022E45F /* EECreditCardController.swift */,
-				D9365A9C1E1CDD3500DB6A14 /* SYNavigationDropdownMenu.h */,
-				D9365A9D1E1CDD3500DB6A14 /* SYNavigationDropdownMenu.m */,
-				D9365A991E1CDD2A00DB6A14 /* aView.h */,
-				D9365A9A1E1CDD2A00DB6A14 /* aView.m */,
+				D92968AA1E865AD8001D1BC5 /* EETravelController.swift */,
+				D92968AC1E865B28001D1BC5 /* EEFrequentFlyerController.swift */,
+				D92968AE1E865B8B001D1BC5 /* EEDiscountController.swift */,
 				D9670DDD1E457ABB00DE7F35 /* Menu */,
 				D9DD51F01DE6F28500565FAC /* Constant */,
 				D99AD7831E0B7EC000F7DF2E /* EEKit */,
@@ -342,20 +341,21 @@
 				D99AD78D1E0B7EC000F7DF2E /* EEView.swift in Sources */,
 				D9670DE31E457C0E00DE7F35 /* EENavigationMenuLayout.swift in Sources */,
 				D99AD78B1E0B7EC000F7DF2E /* EETextField.swift in Sources */,
-				D9365A9E1E1CDD3500DB6A14 /* SYNavigationDropdownMenu.m in Sources */,
 				D99AD78A1E0B7EC000F7DF2E /* EELabel.swift in Sources */,
+				D92968AB1E865AD8001D1BC5 /* EETravelController.swift in Sources */,
 				D95316891DE2F6CC000DFDDC /* EEMainTabBarController.swift in Sources */,
 				D99AD78F1E0B7F0400F7DF2E /* EEAPI.swift in Sources */,
 				D9DD51F21DE6F29300565FAC /* EETheme.swift in Sources */,
 				D901BAD41E1B57410022E45F /* EECreditCardController.swift in Sources */,
-				D9365A9B1E1CDD2A00DB6A14 /* aView.m in Sources */,
 				D9670DE01E457ABB00DE7F35 /* EENavigationMenu.swift in Sources */,
 				D99AD78C1E0B7EC000F7DF2E /* EETextView.swift in Sources */,
 				D9DD51F41DE6F2BD00565FAC /* EEConstant.swift in Sources */,
 				D901BAFB1E1B86A50022E45F /* WaveEmitterView.swift in Sources */,
 				D95316771DE2F671000DFDDC /* AppDelegate.swift in Sources */,
+				D92968AD1E865B28001D1BC5 /* EEFrequentFlyerController.swift in Sources */,
 				D99AD7891E0B7EC000F7DF2E /* EEImageView.swift in Sources */,
 				D9670DE11E457ABB00DE7F35 /* EENavigationMenuCell.swift in Sources */,
+				D92968AF1E865B8B001D1BC5 /* EEDiscountController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
