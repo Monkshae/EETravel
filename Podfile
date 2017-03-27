@@ -24,8 +24,8 @@ target 'EEETravel' do
     pod 'RxSwift'                                               ,'~> 3.0'
     pod 'Moya'                                                  ,'8.0.0-beta.6'
     pod 'Moya/RxSwift'
-    pod 'BTNavigationDropdownMenu', :git => 'https://github.com/PhamBaTho/BTNavigationDropdownMenu.git', :branch => 'swift-3.0'
-
+#    pod 'BTNavigationDropdownMenu', :git => 'https://github.com/PhamBaTho/BTNavigationDropdownMenu.git', :branch => 'swift-3.0'
+    pod 'Observable-Swift' , :git => 'git@github.com:Vaseltior/Observable-Swift.git'
 #    pod 'PeekPop'                                               , '0.1.5'
     pod 'PermissionScope'                                       , '1.1.1'
 #    pod 'RxAlamofire'                                           , '3.0.0'

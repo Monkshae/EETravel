@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0820"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3C892CE444932C78D94768FD0949BD00"
+               BlueprintIdentifier = "7B95094A7AA775F2DED2E1FD2FDEB66F"
                BuildableName = "Pods_EEETravel.framework"
                BlueprintName = "Pods-EEETravel"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3C892CE444932C78D94768FD0949BD00"
+            BlueprintIdentifier = "7B95094A7AA775F2DED2E1FD2FDEB66F"
             BuildableName = "Pods_EEETravel.framework"
             BlueprintName = "Pods-EEETravel"
             ReferencedContainer = "container:Pods.xcodeproj">

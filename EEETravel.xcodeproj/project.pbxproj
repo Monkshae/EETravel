@@ -17,6 +17,7 @@
 		D92E2B4B1E890F820099E8F6 /* EETravelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92E2B471E890F820099E8F6 /* EETravelController.swift */; };
 		D92E2B4D1E890FDB0099E8F6 /* EEMainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92E2B4C1E890FDB0099E8F6 /* EEMainTabBarController.swift */; };
 		D92E2B4F1E890FFD0099E8F6 /* EECreditCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92E2B4E1E890FFD0099E8F6 /* EECreditCardController.swift */; };
+		D92E2B521E8916420099E8F6 /* FetchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92E2B511E8916420099E8F6 /* FetchViewModel.swift */; };
 		D9365A8C1E1BAD2100DB6A14 /* 0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9365A8A1E1BAD2100DB6A14 /* 0@2x.png */; };
 		D9365A8D1E1BAD2100DB6A14 /* 0@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9365A8B1E1BAD2100DB6A14 /* 0@3x.png */; };
 		D95316771DE2F671000DFDDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316761DE2F671000DFDDC /* AppDelegate.swift */; };
@@ -49,6 +50,7 @@
 		D92E2B471E890F820099E8F6 /* EETravelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EETravelController.swift; sourceTree = "<group>"; };
 		D92E2B4C1E890FDB0099E8F6 /* EEMainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEMainTabBarController.swift; sourceTree = "<group>"; };
 		D92E2B4E1E890FFD0099E8F6 /* EECreditCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EECreditCardController.swift; sourceTree = "<group>"; };
+		D92E2B511E8916420099E8F6 /* FetchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchViewModel.swift; sourceTree = "<group>"; };
 		D9365A8A1E1BAD2100DB6A14 /* 0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0@2x.png"; sourceTree = "<group>"; };
 		D9365A8B1E1BAD2100DB6A14 /* 0@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0@3x.png"; sourceTree = "<group>"; };
 		D9365A981E1CDD2900DB6A14 /* EEETravel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EEETravel-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			children = (
 				D92E2B4C1E890FDB0099E8F6 /* EEMainTabBarController.swift */,
 				D92E2B451E890F820099E8F6 /* EEHomeController.swift */,
+				D92E2B501E8915720099E8F6 /* ViewModel */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -150,6 +153,13 @@
 				D92E2B471E890F820099E8F6 /* EETravelController.swift */,
 			);
 			path = Travel;
+			sourceTree = "<group>";
+		};
+		D92E2B501E8915720099E8F6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		D953166A1DE2F671000DFDDC = {
@@ -192,6 +202,7 @@
 		D953168C1DE2FBF8000DFDDC /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				D92E2B511E8916420099E8F6 /* FetchViewModel.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -386,6 +397,7 @@
 				D9DD51F21DE6F29300565FAC /* EETheme.swift in Sources */,
 				D9670DE01E457ABB00DE7F35 /* EENavigationMenu.swift in Sources */,
 				D99AD78C1E0B7EC000F7DF2E /* EETextView.swift in Sources */,
+				D92E2B521E8916420099E8F6 /* FetchViewModel.swift in Sources */,
 				D9DD51F41DE6F2BD00565FAC /* EEConstant.swift in Sources */,
 				D92E2B491E890F820099E8F6 /* EEFrequentFlyerController.swift in Sources */,
 				D92E2B4D1E890FDB0099E8F6 /* EEMainTabBarController.swift in Sources */,
