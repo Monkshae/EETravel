@@ -8,21 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		335787393A072C3D22EB0C86 /* Pods_EEETravel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A727B5B92DF6772F00889A16 /* Pods_EEETravel.framework */; };
-		D901BAD41E1B57410022E45F /* EECreditCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D901BAD31E1B57410022E45F /* EECreditCardController.swift */; };
 		D901BAFB1E1B86A50022E45F /* WaveEmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D901BAFA1E1B86A50022E45F /* WaveEmitterView.swift */; };
 		D901BB021E1B8CE70022E45F /* hearts_pre.png in Resources */ = {isa = PBXBuildFile; fileRef = D901BB001E1B8CE70022E45F /* hearts_pre.png */; };
 		D901BB031E1B8CE70022E45F /* icon_like.png in Resources */ = {isa = PBXBuildFile; fileRef = D901BB011E1B8CE70022E45F /* icon_like.png */; };
-		D92968AB1E865AD8001D1BC5 /* EETravelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92968AA1E865AD8001D1BC5 /* EETravelController.swift */; };
-		D92968AD1E865B28001D1BC5 /* EEFrequentFlyerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92968AC1E865B28001D1BC5 /* EEFrequentFlyerController.swift */; };
-		D92968AF1E865B8B001D1BC5 /* EEDiscountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92968AE1E865B8B001D1BC5 /* EEDiscountController.swift */; };
+		D92E2B481E890F820099E8F6 /* EEDiscountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92E2B411E890F820099E8F6 /* EEDiscountController.swift */; };
+		D92E2B491E890F820099E8F6 /* EEFrequentFlyerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92E2B431E890F820099E8F6 /* EEFrequentFlyerController.swift */; };
+		D92E2B4A1E890F820099E8F6 /* EEHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92E2B451E890F820099E8F6 /* EEHomeController.swift */; };
+		D92E2B4B1E890F820099E8F6 /* EETravelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92E2B471E890F820099E8F6 /* EETravelController.swift */; };
+		D92E2B4D1E890FDB0099E8F6 /* EEMainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92E2B4C1E890FDB0099E8F6 /* EEMainTabBarController.swift */; };
+		D92E2B4F1E890FFD0099E8F6 /* EECreditCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92E2B4E1E890FFD0099E8F6 /* EECreditCardController.swift */; };
 		D9365A8C1E1BAD2100DB6A14 /* 0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9365A8A1E1BAD2100DB6A14 /* 0@2x.png */; };
 		D9365A8D1E1BAD2100DB6A14 /* 0@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9365A8B1E1BAD2100DB6A14 /* 0@3x.png */; };
 		D95316771DE2F671000DFDDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316761DE2F671000DFDDC /* AppDelegate.swift */; };
-		D95316791DE2F671000DFDDC /* EEHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316781DE2F671000DFDDC /* EEHomeController.swift */; };
 		D953167C1DE2F671000DFDDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D953167A1DE2F671000DFDDC /* Main.storyboard */; };
 		D953167E1DE2F671000DFDDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D953167D1DE2F671000DFDDC /* Assets.xcassets */; };
 		D95316811DE2F671000DFDDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D953167F1DE2F671000DFDDC /* LaunchScreen.storyboard */; };
-		D95316891DE2F6CC000DFDDC /* EEMainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316881DE2F6CC000DFDDC /* EEMainTabBarController.swift */; };
 		D9670DE01E457ABB00DE7F35 /* EENavigationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9670DDE1E457ABB00DE7F35 /* EENavigationMenu.swift */; };
 		D9670DE11E457ABB00DE7F35 /* EENavigationMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9670DDF1E457ABB00DE7F35 /* EENavigationMenuCell.swift */; };
 		D9670DE31E457C0E00DE7F35 /* EENavigationMenuLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9670DE21E457C0E00DE7F35 /* EENavigationMenuLayout.swift */; };
@@ -40,24 +40,24 @@
 		814CD2506F7E4262541D86C8 /* Pods-EEETravel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EEETravel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EEETravel/Pods-EEETravel.debug.xcconfig"; sourceTree = "<group>"; };
 		A474411F76B3AFCE35B5C90A /* Pods-EEETravel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EEETravel.release.xcconfig"; path = "Pods/Target Support Files/Pods-EEETravel/Pods-EEETravel.release.xcconfig"; sourceTree = "<group>"; };
 		A727B5B92DF6772F00889A16 /* Pods_EEETravel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EEETravel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D901BAD31E1B57410022E45F /* EECreditCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EECreditCardController.swift; sourceTree = "<group>"; };
 		D901BAFA1E1B86A50022E45F /* WaveEmitterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveEmitterView.swift; sourceTree = "<group>"; };
 		D901BB001E1B8CE70022E45F /* hearts_pre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts_pre.png; sourceTree = "<group>"; };
 		D901BB011E1B8CE70022E45F /* icon_like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_like.png; sourceTree = "<group>"; };
-		D92968AA1E865AD8001D1BC5 /* EETravelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EETravelController.swift; sourceTree = "<group>"; };
-		D92968AC1E865B28001D1BC5 /* EEFrequentFlyerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEFrequentFlyerController.swift; sourceTree = "<group>"; };
-		D92968AE1E865B8B001D1BC5 /* EEDiscountController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEDiscountController.swift; sourceTree = "<group>"; };
+		D92E2B411E890F820099E8F6 /* EEDiscountController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEDiscountController.swift; sourceTree = "<group>"; };
+		D92E2B431E890F820099E8F6 /* EEFrequentFlyerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEFrequentFlyerController.swift; sourceTree = "<group>"; };
+		D92E2B451E890F820099E8F6 /* EEHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEHomeController.swift; sourceTree = "<group>"; };
+		D92E2B471E890F820099E8F6 /* EETravelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EETravelController.swift; sourceTree = "<group>"; };
+		D92E2B4C1E890FDB0099E8F6 /* EEMainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEMainTabBarController.swift; sourceTree = "<group>"; };
+		D92E2B4E1E890FFD0099E8F6 /* EECreditCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EECreditCardController.swift; sourceTree = "<group>"; };
 		D9365A8A1E1BAD2100DB6A14 /* 0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0@2x.png"; sourceTree = "<group>"; };
 		D9365A8B1E1BAD2100DB6A14 /* 0@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0@3x.png"; sourceTree = "<group>"; };
 		D9365A981E1CDD2900DB6A14 /* EEETravel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EEETravel-Bridging-Header.h"; sourceTree = "<group>"; };
 		D95316731DE2F671000DFDDC /* EEETravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EEETravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95316761DE2F671000DFDDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D95316781DE2F671000DFDDC /* EEHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EEHomeController.swift; sourceTree = "<group>"; };
 		D953167B1DE2F671000DFDDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D953167D1DE2F671000DFDDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D95316801DE2F671000DFDDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D95316821DE2F671000DFDDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D95316881DE2F6CC000DFDDC /* EEMainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEMainTabBarController.swift; sourceTree = "<group>"; };
 		D9670DDE1E457ABB00DE7F35 /* EENavigationMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EENavigationMenu.swift; sourceTree = "<group>"; };
 		D9670DDF1E457ABB00DE7F35 /* EENavigationMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EENavigationMenuCell.swift; sourceTree = "<group>"; };
 		D9670DE21E457C0E00DE7F35 /* EENavigationMenuLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EENavigationMenuLayout.swift; sourceTree = "<group>"; };
@@ -107,6 +107,51 @@
 			path = EENetworking;
 			sourceTree = "<group>";
 		};
+		D92E2B2B1E890EC50099E8F6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D92E2B4E1E890FFD0099E8F6 /* EECreditCardController.swift */,
+				D92E2B441E890F820099E8F6 /* Home */,
+				D92E2B401E890F820099E8F6 /* Discount */,
+				D92E2B421E890F820099E8F6 /* FrequentFlyer */,
+				D92E2B461E890F820099E8F6 /* Travel */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D92E2B401E890F820099E8F6 /* Discount */ = {
+			isa = PBXGroup;
+			children = (
+				D92E2B411E890F820099E8F6 /* EEDiscountController.swift */,
+			);
+			path = Discount;
+			sourceTree = "<group>";
+		};
+		D92E2B421E890F820099E8F6 /* FrequentFlyer */ = {
+			isa = PBXGroup;
+			children = (
+				D92E2B431E890F820099E8F6 /* EEFrequentFlyerController.swift */,
+			);
+			path = FrequentFlyer;
+			sourceTree = "<group>";
+		};
+		D92E2B441E890F820099E8F6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D92E2B4C1E890FDB0099E8F6 /* EEMainTabBarController.swift */,
+				D92E2B451E890F820099E8F6 /* EEHomeController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D92E2B461E890F820099E8F6 /* Travel */ = {
+			isa = PBXGroup;
+			children = (
+				D92E2B471E890F820099E8F6 /* EETravelController.swift */,
+			);
+			path = Travel;
+			sourceTree = "<group>";
+		};
 		D953166A1DE2F671000DFDDC = {
 			isa = PBXGroup;
 			children = (
@@ -129,12 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				D95316761DE2F671000DFDDC /* AppDelegate.swift */,
-				D95316881DE2F6CC000DFDDC /* EEMainTabBarController.swift */,
-				D95316781DE2F671000DFDDC /* EEHomeController.swift */,
-				D901BAD31E1B57410022E45F /* EECreditCardController.swift */,
-				D92968AA1E865AD8001D1BC5 /* EETravelController.swift */,
-				D92968AC1E865B28001D1BC5 /* EEFrequentFlyerController.swift */,
-				D92968AE1E865B8B001D1BC5 /* EEDiscountController.swift */,
+				D92E2B2B1E890EC50099E8F6 /* ViewController */,
 				D9670DDD1E457ABB00DE7F35 /* Menu */,
 				D9DD51F01DE6F28500565FAC /* Constant */,
 				D99AD7831E0B7EC000F7DF2E /* EEKit */,
@@ -337,25 +377,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D95316791DE2F671000DFDDC /* EEHomeController.swift in Sources */,
 				D99AD78D1E0B7EC000F7DF2E /* EEView.swift in Sources */,
 				D9670DE31E457C0E00DE7F35 /* EENavigationMenuLayout.swift in Sources */,
 				D99AD78B1E0B7EC000F7DF2E /* EETextField.swift in Sources */,
+				D92E2B4F1E890FFD0099E8F6 /* EECreditCardController.swift in Sources */,
 				D99AD78A1E0B7EC000F7DF2E /* EELabel.swift in Sources */,
-				D92968AB1E865AD8001D1BC5 /* EETravelController.swift in Sources */,
-				D95316891DE2F6CC000DFDDC /* EEMainTabBarController.swift in Sources */,
 				D99AD78F1E0B7F0400F7DF2E /* EEAPI.swift in Sources */,
 				D9DD51F21DE6F29300565FAC /* EETheme.swift in Sources */,
-				D901BAD41E1B57410022E45F /* EECreditCardController.swift in Sources */,
 				D9670DE01E457ABB00DE7F35 /* EENavigationMenu.swift in Sources */,
 				D99AD78C1E0B7EC000F7DF2E /* EETextView.swift in Sources */,
 				D9DD51F41DE6F2BD00565FAC /* EEConstant.swift in Sources */,
+				D92E2B491E890F820099E8F6 /* EEFrequentFlyerController.swift in Sources */,
+				D92E2B4D1E890FDB0099E8F6 /* EEMainTabBarController.swift in Sources */,
 				D901BAFB1E1B86A50022E45F /* WaveEmitterView.swift in Sources */,
+				D92E2B481E890F820099E8F6 /* EEDiscountController.swift in Sources */,
+				D92E2B4A1E890F820099E8F6 /* EEHomeController.swift in Sources */,
 				D95316771DE2F671000DFDDC /* AppDelegate.swift in Sources */,
-				D92968AD1E865B28001D1BC5 /* EEFrequentFlyerController.swift in Sources */,
+				D92E2B4B1E890F820099E8F6 /* EETravelController.swift in Sources */,
 				D99AD7891E0B7EC000F7DF2E /* EEImageView.swift in Sources */,
 				D9670DE11E457ABB00DE7F35 /* EENavigationMenuCell.swift in Sources */,
-				D92968AF1E865B8B001D1BC5 /* EEDiscountController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
