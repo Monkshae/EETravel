@@ -21,10 +21,11 @@ class EECreditCardController: UIViewController {
     }
     
     func downloadServiceFilter() {
-        EEProvider.request(.ServiceFilter) { result in
+        EEProvider.request(.serviceFilter) { result in
                 var message = "Couldn't access API"
                 if case let .success(response) = result {
                     let jsonString = try? response.mapString()
+                    let statusCode = response.statusCode
                     message = jsonString ?? message
                 }
                 self.showAlert("Zen", message: message)

@@ -9,10 +9,26 @@
 import UIKit
 import Observable
 
-class FetchViewModel: NSObject {
+enum FetchDataResult: Int {
+//    case Normal = -1
+    case Success = 0
+    case Empty = 1
+    case Failed = 2
+    
+    init(rawValue: Int) {
 
+        switch rawValue {
+        case 0:
+            self = .Success
+        case 1:
+            self = .Empty
+        case 2:
+            self = .Failed
+        default:
+            self = .Failed
+        }
+    }
 }
-
 
 protocol ViewModelProtocol {
     
@@ -30,4 +46,8 @@ protocol ViewModelProtocol {
     func fetchRemoteData()
     func willRefresh()
     func willLoadMore()
+}
+
+class FetchViewModel: NSObject {
+
 }

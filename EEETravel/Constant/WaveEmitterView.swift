@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 open class WaveEmitterView: UIView {
     
     open var amplitudeRange = 3
@@ -52,7 +51,7 @@ open class WaveEmitterView: UIView {
             } else {
                 path.addLine(to: CGPoint(x:CGFloat(x) + centerX - delta, y: y))
             }
-            y = y - 1
+            y -= 1
         }
         return path
     }
@@ -61,7 +60,7 @@ open class WaveEmitterView: UIView {
         guard currentCount < maximumCount else {
             return
         }
-        currentCount = currentCount + 1
+        currentCount += 1
         
         let height = bounds.height
         let percent = Double(arc4random() % 100) / 100.0
@@ -83,7 +82,7 @@ open class WaveEmitterView: UIView {
         CATransaction.setCompletionBlock {
             layer.removeFromSuperlayer()
             self.unusedLayers.append(layer)
-            self.currentCount = self.currentCount - 1
+            self.currentCount -= 1
         }
         
         let position = CAKeyframeAnimation(keyPath: "position")

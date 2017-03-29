@@ -29,20 +29,25 @@ private extension String {
 }
 
 public enum EEAPI {
-    case ServiceFilter
-    case UserProfile(String)
-    case UserRepositories(String)
+    case serviceFilter
+    case userProfile(String)
+    case userRepositories(String)
 }
 
 extension EEAPI: TargetType {
+    /// The method used for parameter encoding.
+    public var parameterEncoding: ParameterEncoding {
+        return URLEncoding.default
+    }
+
     public var baseURL: URL { return URL(string: "https://backend.gmei.com")! }
     public var path: String {
         switch self {
-        case .ServiceFilter:
+        case .serviceFilter:
             return "/api/cache/data/service_filter/"
-        case .UserProfile(let name):
+        case .userProfile(let name):
             return "/users/\(name.urlEscaped)"
-        case .UserRepositories(let name):
+        case .userRepositories(let name):
             return "/users/\(name.urlEscaped)/repos"
         }
     }
@@ -53,7 +58,7 @@ extension EEAPI: TargetType {
     
     public var parameters: [String: Any]? {
         switch self {
-        case .UserRepositories(_):
+        case .userRepositories(_):
             return ["sort": "pushed"]
         default:
             return nil
@@ -66,7 +71,7 @@ extension EEAPI: TargetType {
     
     public var validate: Bool {
         switch self {
-        case .ServiceFilter:
+        case .serviceFilter:
             return true
         default:
             return false
@@ -76,11 +81,11 @@ extension EEAPI: TargetType {
     //用于单元测试
     public var sampleData: Data {
         switch self {
-        case .ServiceFilter:
+        case .serviceFilter:
             return "Half measures are as bad as nothing at all.".data(using: String.Encoding.utf8)!
-        case .UserProfile(let name):
+        case .userProfile(let name):
             return "{\"login\": \"\(name)\", \"id\": 100}".data(using: String.Encoding.utf8)!
-        case .UserRepositories(_):
+        case .userRepositories(_):
             return "[{\"name\": \"Repo Name\"}]".data(using: String.Encoding.utf8)!
         }
     }
