@@ -33,6 +33,7 @@
 		D99AD78C1E0B7EC000F7DF2E /* EETextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99AD7871E0B7EC000F7DF2E /* EETextView.swift */; };
 		D99AD78D1E0B7EC000F7DF2E /* EEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99AD7881E0B7EC000F7DF2E /* EEView.swift */; };
 		D99AD78F1E0B7F0400F7DF2E /* EEAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99AD78E1E0B7F0400F7DF2E /* EEAPI.swift */; };
+		D9B389111E8BCF6200C5FC1D /* EEMainTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B389101E8BCF6200C5FC1D /* EEMainTabBarViewModel.swift */; };
 		D9DD51F21DE6F29300565FAC /* EETheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD51F11DE6F29300565FAC /* EETheme.swift */; };
 		D9DD51F41DE6F2BD00565FAC /* EEConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD51F31DE6F2BD00565FAC /* EEConstant.swift */; };
 /* End PBXBuildFile section */
@@ -69,6 +70,7 @@
 		D99AD7871E0B7EC000F7DF2E /* EETextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EETextView.swift; sourceTree = "<group>"; };
 		D99AD7881E0B7EC000F7DF2E /* EEView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEView.swift; sourceTree = "<group>"; };
 		D99AD78E1E0B7F0400F7DF2E /* EEAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEAPI.swift; sourceTree = "<group>"; };
+		D9B389101E8BCF6200C5FC1D /* EEMainTabBarViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEMainTabBarViewModel.swift; sourceTree = "<group>"; };
 		D9DD51F11DE6F29300565FAC /* EETheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EETheme.swift; sourceTree = "<group>"; };
 		D9DD51F31DE6F2BD00565FAC /* EEConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEConstant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,6 +160,7 @@
 		D92E2B501E8915720099E8F6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D9B389101E8BCF6200C5FC1D /* EEMainTabBarViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				D901BAFB1E1B86A50022E45F /* WaveEmitterView.swift in Sources */,
 				D92E2B481E890F820099E8F6 /* EEDiscountController.swift in Sources */,
 				D92E2B4A1E890F820099E8F6 /* EEHomeController.swift in Sources */,
+				D9B389111E8BCF6200C5FC1D /* EEMainTabBarViewModel.swift in Sources */,
 				D95316771DE2F671000DFDDC /* AppDelegate.swift in Sources */,
 				D92E2B4B1E890F820099E8F6 /* EETravelController.swift in Sources */,
 				D99AD7891E0B7EC000F7DF2E /* EEImageView.swift in Sources */,

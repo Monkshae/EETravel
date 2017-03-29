@@ -25,7 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let controller1 = EEHomeController()
         controller1.title = "航空"
         let nav1 = UINavigationController(rootViewController: controller1)
-
 //        let controller2 = EEHomeController()
 //        controller2.tabBarItem.title = "信用卡"
 //        let nav2 = UINavigationController(rootViewController: controller2)

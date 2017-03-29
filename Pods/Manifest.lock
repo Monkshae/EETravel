@@ -39,6 +39,7 @@ PODS:
   - ShareSDK3/ShareSDKPlatforms/WeChat (3.5.0)
   - SnapKit (3.0.2)
   - SwiftLint (0.17.0)
+  - Then (2.1.0)
 
 DEPENDENCIES:
   - CryptoSwift (= 0.6.6)
@@ -59,6 +60,7 @@ DEPENDENCIES:
   - ShareSDK3/ShareSDKPlatforms/WeChat
   - SnapKit (= 3.0.2)
   - SwiftLint (= 0.17.0)
+  - Then (= 2.1.0)
 
 EXTERNAL SOURCES:
   Observable-Swift:
@@ -87,7 +89,8 @@ SPEC CHECKSUMS:
   ShareSDK3: 2bcdbba886604cf82a2df6c306c4ecff99aceacf
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
   SwiftLint: 9fb1dd71d5952d130f8c2fb60ae2e1475cf5d575
+  Then: 8496793c8fcac95482b943909b440724c7d8d82c
 
-PODFILE CHECKSUM: ffbecbc5a3f85dc776aa5f3c744f090955e016eb
+PODFILE CHECKSUM: 8a44a6ee5470ab32df1c959b1cc55576f01fba13
 
 COCOAPODS: 1.2.0

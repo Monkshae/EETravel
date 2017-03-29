@@ -24,6 +24,7 @@ target 'EEETravel' do
     pod 'EVReflection'                                           , '4.5.1'
 #    pod 'RxSwift'                                               ,'~> 3.0'
     pod 'Moya'                                                   ,'8.0.3'
+    pod 'Then'                                                   ,‘2.1.0‘
 #    pod 'Moya/RxSwift'
 #    pod 'BTNavigationDropdownMenu', :git => 'https://github.com/PhamBaTho/BTNavigationDropdownMenu.git', :branch => 'swift-3.0'
     pod 'Observable-Swift' , :git => 'git@github.com:Vaseltior/Observable-Swift.git'
