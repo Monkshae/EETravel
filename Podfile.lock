@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (4.4.0)
   - CryptoSwift (0.6.6)
+  - DGElasticPullToRefresh (1.1)
   - EVReflection (4.5.1):
     - EVReflection/Core (= 4.5.1)
   - EVReflection/Core (4.5.1)
@@ -42,6 +43,7 @@ PODS:
 
 DEPENDENCIES:
   - CryptoSwift (= 0.6.6)
+  - DGElasticPullToRefresh (= 1.1)
   - EVReflection (= 4.5.1)
   - EZSwiftExtensions (= 1.7)
   - Kingfisher (= 3.2.1)
@@ -72,6 +74,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   CryptoSwift: 88592381b73f36e192124539390a7c9bacda76af
+  DGElasticPullToRefresh: 28f11a6026302a90f8ffebbc6e24748e584dddd3
   EVReflection: 4bdb12ccd49fae59500f5f7415eb3014df601284
   EZSwiftExtensions: 4afef248066a036903d8496bf07bc355b22ce766
   Kingfisher: 64ef28c6d3d6f344e3ae2d7f5c9da80439505d99
@@ -88,6 +91,6 @@ SPEC CHECKSUMS:
   SwiftLint: 9fb1dd71d5952d130f8c2fb60ae2e1475cf5d575
   Then: 8496793c8fcac95482b943909b440724c7d8d82c
 
-PODFILE CHECKSUM: a52b4b7147616b055d8a9c8175ac0731b5a60a4e
+PODFILE CHECKSUM: 66cca51b6af9e0a162356c9082cc68b24c907fca
 
 COCOAPODS: 1.2.0

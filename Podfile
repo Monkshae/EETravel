@@ -30,6 +30,7 @@ target 'EEETravel' do
     pod 'Observable-Swift' , :git => 'git@github.com:Vaseltior/Observable-Swift.git'
 #    pod 'PeekPop'                                               , '0.1.5'
     pod 'PermissionScope'                                       , '1.1.1'
+    pod 'DGElasticPullToRefresh'                                , '1.1'
 #    pod 'RxAlamofire'                                           , '3.0.0'
 #    pod 'Aspects'                                               , '1.4.1'
 #    pod 'EVReflection'                                          , '3.4.1'

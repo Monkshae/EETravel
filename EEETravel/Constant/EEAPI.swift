@@ -29,6 +29,8 @@ private extension String {
 }
 
 public enum EEAPI {
+     //默认api,值为空
+    case defaultApi
     case serviceFilter
     case userProfile(String)
     case userRepositories(String)
@@ -43,6 +45,8 @@ extension EEAPI: TargetType {
     public var baseURL: URL { return URL(string: "https://backend.gmei.com")! }
     public var path: String {
         switch self {
+        case .defaultApi:
+            return ""
         case .serviceFilter:
             return "/api/cache/data/service_filter/"
         case .userProfile(let name):
@@ -81,12 +85,8 @@ extension EEAPI: TargetType {
     //用于单元测试
     public var sampleData: Data {
         switch self {
-        case .serviceFilter:
-            return "Half measures are as bad as nothing at all.".data(using: String.Encoding.utf8)!
-        case .userProfile(let name):
-            return "{\"login\": \"\(name)\", \"id\": 100}".data(using: String.Encoding.utf8)!
-        case .userRepositories(_):
-            return "[{\"name\": \"Repo Name\"}]".data(using: String.Encoding.utf8)!
+        default:
+            return "default".data(using: String.Encoding.utf8)!
         }
     }
 }
