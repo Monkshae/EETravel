@@ -22,7 +22,6 @@ fileprivate struct Theme {
     static let blackColor                       = 0x000000 //纯黑颜色
     static let whiteColor                       = 0xFFFFFF //纯白颜色
 
-
     //文字颜色
     static let headlineTextColor                = 0x333333 //一级标题字、主要内容
     static let bodyTextColor                    = 0x666666 //正文、普通文字内容
@@ -34,15 +33,7 @@ fileprivate struct Theme {
     static let buttonNomarlRedColor             = 0xFF7690
     static let buttonHighlightRedColor          = 0xE75873
     static let buttonDisableColor               = 0xD5D5D5
-
-
-
-
 }
-
-
-
-
 
 public extension UIColor {
     //用于色值是数字
@@ -59,9 +50,6 @@ public extension UIColor {
         let b = CGFloat((hex & 0x0000FF) >> 0) / 255.0
         self.init(red: r, green: g, blue: b, alpha: CGFloat(alpha))
     }
-
-
-
     //用于色值是字符串
     convenience init?(hexString: String) {
         var hex: UInt32 = 0
@@ -85,7 +73,6 @@ public extension UIColor {
             return nil
         }
     }
-
 
     /// 0x3ADBD2 主视觉颜色
     static func mainVisualColor() -> UIColor {
@@ -132,18 +119,15 @@ public extension UIColor {
         return UIColor(hex: Theme.headlineTextColor)
     }
 
-
     /// 0x666666 正文、普通文字内容
     static func bodyTextColor() -> UIColor {
         return UIColor(hex: Theme.bodyTextColor)
     }
 
-
     /// 0x999999 辅助文字色
     static func secondaryTextColor() -> UIColor {
         return UIColor(hex: Theme.secondaryTextColor)
     }
-
 
     /// 0x3ADBD2
     static func buttonNomarlGreenColor() -> UIColor {
@@ -169,6 +153,4 @@ public extension UIColor {
     static func buttonDisableColor() -> UIColor {
         return UIColor(hex: Theme.buttonDisableColor)
     }
-
-
 }

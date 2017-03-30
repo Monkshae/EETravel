@@ -9,8 +9,6 @@
 import UIKit
 import Moya
 class EECreditCardController: UIViewController {
-
-    var emitterView = WaveEmitterView()
     
     override func viewDidLoad() {
         super.viewDidLoad()

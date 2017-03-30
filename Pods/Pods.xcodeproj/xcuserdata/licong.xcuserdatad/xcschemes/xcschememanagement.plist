@@ -34,11 +34,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ObjectMapper.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Observable-Swift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -92,12 +87,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>171530F665D9E8F0E29E54A8949ED0C3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>385498F807D5FAA95A3508A627A62EE7</key>
+		<key>37D78ED8EC02FF77A7DF0C92DD258F4C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -112,17 +102,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6AE55762CA6B482B906F6E6172130952</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>6BB1C1403B2419F911818DA8413FDA07</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7CE8C6485A46CE0CA5B8AB8F01F48535</key>
+		<key>777A8B76257DE00542A79F0E014E8A8C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7DFD212B490B9F9EE08279596F02652A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>822C99CA9874CA29F1FAF142FE5F11F0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84D94952B67E12EC7264A699385D491A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -132,17 +132,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9FABC073E7B2B4C3B6C486EE9CF98F54</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>ACA66C5B5C77AB322C58C113C8CD03A4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B43918AB915242B851ABEFB5D70BE0AD</key>
+		<key>8A3368BDE4906B08B6F04807D7277B08</key>
 		<dict>
 			<key>primary</key>
 			<true/>

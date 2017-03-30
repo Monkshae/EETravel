@@ -21,13 +21,10 @@ class EENavigationMenuPageControl: UIPageControl {
     }
 }
 
-
 class EENavigationMenu: UIView {
 
     var pageControl: EENavigationMenuPageControl!
     var collectionView: UICollectionView!
-    
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
@@ -45,11 +42,6 @@ class EENavigationMenu: UIView {
         collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         collectionView.scrollsToTop = false
         collectionView.register(EENavigationMenuCell.classForCoder(), forCellWithReuseIdentifier: String(describing: EENavigationMenuCell.self))
-        
-        
         pageControl = EENavigationMenuPageControl(frame: frame)
-
     }
-    
-
 }

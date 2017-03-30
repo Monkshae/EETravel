@@ -8,16 +8,32 @@
 
 import UIKit
 import Alamofire
-import ObjectMapper
+import EVReflection
 
 class EEHomeController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        downloadServiceFilter()
         
     }
 
+    func downloadServiceFilter() {
+        EEProvider.request(.serviceFilter) { result in
+            var message = "Couldn't access API"
+            if case let .success(response) = result {
+                let jsonString = try? response.mapString()
+                _ = response.statusCode
+                message = jsonString ?? message
+            }
+            self.showAlert("Zen", message: message)
+        }
+    }
     
-    
+    fileprivate func showAlert(_ title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let ok = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(ok)
+        present(alertController, animated: true, completion: nil)
+    }
 }
 

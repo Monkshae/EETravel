@@ -12,7 +12,6 @@ PODS:
   - Moya/Core (8.0.3):
     - Alamofire (~> 4.1)
     - Result (~> 3.0)
-  - ObjectMapper (2.2.2)
   - Observable-Swift (0.6.0)
   - PermissionScope (1.1.1)
   - PromiseKit (4.0.5):
@@ -48,7 +47,6 @@ DEPENDENCIES:
   - Kingfisher (= 3.2.1)
   - MOBFoundation (= 2.2.1)
   - Moya (= 8.0.3)
-  - ObjectMapper
   - Observable-Swift (from `git@github.com:Vaseltior/Observable-Swift.git`)
   - PermissionScope (= 1.1.1)
   - PromiseKit (= 4.0.5)
@@ -79,7 +77,6 @@ SPEC CHECKSUMS:
   Kingfisher: 64ef28c6d3d6f344e3ae2d7f5c9da80439505d99
   MOBFoundation: 8ceb44ce7840441f42f73fa6fbda5b0c19ba7d43
   Moya: d3721622e3cc0cc2f038d69a258686f0b66e7252
-  ObjectMapper: 9e385c2295bcc4e16eabbcfc85db801442bba545
   Observable-Swift: c63b9fc990703b135450cb5bd3541022384867ae
   PermissionScope: a30c16e015779ba27c97c124e7539e27b5829de2
   PromiseKit: 593b5e24ded6cbb1ebc708bc2c3428a8a5632d91
@@ -91,6 +88,6 @@ SPEC CHECKSUMS:
   SwiftLint: 9fb1dd71d5952d130f8c2fb60ae2e1475cf5d575
   Then: 8496793c8fcac95482b943909b440724c7d8d82c
 
-PODFILE CHECKSUM: 8a44a6ee5470ab32df1c959b1cc55576f01fba13
+PODFILE CHECKSUM: a52b4b7147616b055d8a9c8175ac0731b5a60a4e
 
 COCOAPODS: 1.2.0

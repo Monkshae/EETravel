@@ -63,9 +63,7 @@ class EETextView: UITextView {
 
     override func draw(_ rect: CGRect) {
 
-        guard placeholder != nil else {
-            return
-        }
+        guard placeholder != nil else { return }
         //如果有文字，就直接返回，不需要画占位文字
         if hasText { return }
         //属性
@@ -84,6 +82,4 @@ class EETextView: UITextView {
         super.layoutSubviews()
         setNeedsDisplay()
     }
-
-
 }

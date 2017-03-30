@@ -17,7 +17,7 @@ target 'EEETravel' do
     pod 'PullToMakeSoup'                                        , '2.0'
     pod 'Kingfisher'                                            , '3.2.1'
 #    pod 'Alamofire'                                             , '4.0.0'
-    pod 'ObjectMapper'
+#    pod 'ObjectMapper'
     pod 'PromiseKit'                                            , '4.0.5'
     pod 'EZSwiftExtensions'                                     , '1.7'
     pod 'CryptoSwift'                                           , '0.6.6'

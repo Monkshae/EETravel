@@ -48,6 +48,4 @@ class EEMainTabBarController: UITabBarController {
         }
         setViewControllers(controllers, animated: false)
     }
-    
-    
 }

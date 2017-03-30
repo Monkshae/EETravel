@@ -63,9 +63,7 @@ class EELabel: UILabel {
         var textRect = self.textRect(forBounds: contentRect, limitedToNumberOfLines: numberOfLines)
         textRect.origin.x = 0
         textRect.origin.y = 0
-        guard let _ = verticalAlignment else {
-            return
-        }
+        guard verticalAlignment != nil else { return }
         switch verticalAlignment! {
         case .Top:
             textRect.origin.y = 0
@@ -92,7 +90,6 @@ class EELabel: UILabel {
         }
         super.drawText(in: textRect)
     }
-
 
     override var intrinsicContentSize: CGSize {
         let size = super.intrinsicContentSize

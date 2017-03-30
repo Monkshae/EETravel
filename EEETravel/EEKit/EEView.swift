@@ -31,7 +31,6 @@ class EEView: UIView {
 
 }
 
-
 public extension UIView {
     public var left: CGFloat {
         set(newValue) {

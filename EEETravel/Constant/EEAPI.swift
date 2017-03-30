@@ -91,7 +91,6 @@ extension EEAPI: TargetType {
     }
 }
 
-
 public func url(_ route: TargetType) -> String {
     return route.baseURL.appendingPathComponent(route.path).absoluteString
 }

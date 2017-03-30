@@ -47,7 +47,6 @@ public struct Constant {
     public static let pageCount                = 10                             //分页每一页的数据数量
 }
 
-
 public func EEFont(size: Int) -> UIFont {
     return UIFont.swiftFontWithSize(CGFloat(size))
 }

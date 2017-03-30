@@ -16,7 +16,6 @@ class EENavigationMenuLayout: UICollectionViewLayout {
     open var itemSize = CGSize.zero    //item大小
     open var sectionInset = UIEdgeInsets.zero
     
-    
     override func prepare() {
         super.prepare()
         let innerHorizontalCount = horizontalItemCount - 1 // 行间距的个数
