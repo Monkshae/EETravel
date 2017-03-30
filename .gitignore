@@ -7,8 +7,8 @@ ld/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
+*.xcuserdatad
 *.xcuserdata
-*.xcuserstate
 *.xccheckout
 *.moved-aside
 DerivedData
