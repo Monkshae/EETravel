@@ -18,13 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
 
-        let controller = EECreditCardController()
-        controller.title = "酒店"
-        let nav = UINavigationController(rootViewController: controller)
-
-        let controller1 = EEHomeController()
-        controller1.title = "航空"
-        let nav1 = UINavigationController(rootViewController: controller1)
+//        let controller = EECreditCardController()
+//        controller.title = "酒店"
+//        let nav = UINavigationController(rootViewController: controller)
+//
+//        let controller1 = EEHomeController()
+//        controller1.title = "航空"
+//        let nav1 = UINavigationController(rootViewController: controller1)
 //        let controller2 = EEHomeController()
 //        controller2.tabBarItem.title = "信用卡"
 //        let nav2 = UINavigationController(rootViewController: controller2)
@@ -36,8 +36,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 
-        let tabBarController = EMainTabBarController()
-        tabBarController.viewControllers = [nav, nav1]
+        let tabBarController = EEMainTabBarController()
+//        tabBarController.viewControllers = [nav, nav1]
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
         return true

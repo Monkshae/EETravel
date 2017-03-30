@@ -8,13 +8,16 @@
 
 import UIKit
 
-class EMainTabBarController: UITabBarController {
+class EEMainTabBarController: UITabBarController {
 
+    var viewModel = EEMainTabBarViewModel()
+    var controllers: [UIViewController] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         customTabBar()
+        setupViewControllers()
     }
-    
     
     func customTabBar() {
         tabBar.backgroundColor = UIColor(patternImage: UIImage(named: "tab_background")!)
@@ -31,6 +34,20 @@ class EMainTabBarController: UITabBarController {
 
     }
     
+    func setupViewControllers() {
+        for i in 0 ..< viewModel.tabClassArray.count {
+            let item = UITabBarItem(title: viewModel.tabName(at: i), image: viewModel.tabNormalIcon(at: i), selectedImage: nil)
+            item.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.black, NSFontAttributeName: EEFont(size: 11)], for: .normal)
+            item.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.green, NSFontAttributeName: EEFont(size: 11)], for: .selected)
+            let controllerClass = viewModel.tabClassArray[i]
+            let controller  = controllerClass.init()
+            controller.title = viewModel.tabName(at: i)
+            controller.tabBarItem = item
+            let navigationController = UINavigationController(rootViewController: controller)
+            controllers.append(navigationController)
+        }
+        setViewControllers(controllers, animated: false)
+    }
     
     
 }

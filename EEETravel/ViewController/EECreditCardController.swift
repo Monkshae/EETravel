@@ -8,8 +8,6 @@
 
 import UIKit
 import Moya
-
-
 class EECreditCardController: UIViewController {
 
     var emitterView = WaveEmitterView()
@@ -25,7 +23,7 @@ class EECreditCardController: UIViewController {
                 var message = "Couldn't access API"
                 if case let .success(response) = result {
                     let jsonString = try? response.mapString()
-                    let statusCode = response.statusCode
+                    _ = response.statusCode
                     message = jsonString ?? message
                 }
                 self.showAlert("Zen", message: message)
