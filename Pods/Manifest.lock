@@ -30,6 +30,11 @@ PODS:
     - PullToRefresher (~> 2.0)
   - PullToRefresher (2.0.2)
   - Result (3.2.1)
+  - Reusable (4.0.0):
+    - Reusable/Storyboard (= 4.0.0)
+    - Reusable/View (= 4.0.0)
+  - Reusable/Storyboard (4.0.0)
+  - Reusable/View (4.0.0)
   - ShareSDK3 (3.5.0):
     - ShareSDK3/ShareSDK (= 3.5.0)
   - ShareSDK3/ShareSDK (3.5.0)
@@ -53,6 +58,7 @@ DEPENDENCIES:
   - PermissionScope (= 1.1.1)
   - PromiseKit (= 4.0.5)
   - PullToMakeSoup (= 2.0)
+  - Reusable (= 4.0.0)
   - ShareSDK3 (= 3.5.0)
   - ShareSDK3/ShareSDKExtension
   - ShareSDK3/ShareSDKPlatforms/QQ
@@ -86,11 +92,12 @@ SPEC CHECKSUMS:
   PullToMakeSoup: 384a57220e1c197220427494d5959dda73400435
   PullToRefresher: 5e101a8c3523e67ee0291375ba932ef59e0853c2
   Result: 2453a22e5c5b11c0c3a478736e82cd02f763b781
+  Reusable: 98e5fff1e0e2e00872199699b276dde08ee56c07
   ShareSDK3: 2bcdbba886604cf82a2df6c306c4ecff99aceacf
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
   SwiftLint: 9fb1dd71d5952d130f8c2fb60ae2e1475cf5d575
   Then: 8496793c8fcac95482b943909b440724c7d8d82c
 
-PODFILE CHECKSUM: 66cca51b6af9e0a162356c9082cc68b24c907fca
+PODFILE CHECKSUM: 38577011d3c60a03858b39a505855822b56202ed
 
 COCOAPODS: 1.2.0
