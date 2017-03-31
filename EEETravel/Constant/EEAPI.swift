@@ -31,6 +31,7 @@ private extension String {
 public enum EEAPI {
      //默认api,值为空
     case defaultApi
+    case home
     case serviceFilter
     case userProfile(String)
     case userRepositories(String)
@@ -41,12 +42,15 @@ extension EEAPI: TargetType {
     public var parameterEncoding: ParameterEncoding {
         return URLEncoding.default
     }
+    public var baseURL: URL { return URL(string: "https://www.eee.com/")! }
 
-    public var baseURL: URL { return URL(string: "https://backend.gmei.com")! }
+//    public var baseURL: URL { return URL(string: "https://backend.gmei.com")! }
     public var path: String {
         switch self {
         case .defaultApi:
             return ""
+        case .home:
+            return "api/app/all-v1.php"
         case .serviceFilter:
             return "/api/cache/data/service_filter/"
         case .userProfile(let name):

@@ -19,6 +19,10 @@
 		D92E2B521E8916420099E8F6 /* FetchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92E2B511E8916420099E8F6 /* FetchViewModel.swift */; };
 		D9365A8C1E1BAD2100DB6A14 /* 0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9365A8A1E1BAD2100DB6A14 /* 0@2x.png */; };
 		D9365A8D1E1BAD2100DB6A14 /* 0@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9365A8B1E1BAD2100DB6A14 /* 0@3x.png */; };
+		D939F3D01E8E2ECE00CD4121 /* EEBaseListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939F3CF1E8E2ECE00CD4121 /* EEBaseListController.swift */; };
+		D939F3D41E8E2F9000CD4121 /* EEBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939F3D31E8E2F9000CD4121 /* EEBaseController.swift */; };
+		D939F3D61E8E2FF700CD4121 /* EENavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939F3D51E8E2FF700CD4121 /* EENavigationBar.swift */; };
+		D939F3D81E8E347A00CD4121 /* EEButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939F3D71E8E347A00CD4121 /* EEButton.swift */; };
 		D95316771DE2F671000DFDDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95316761DE2F671000DFDDC /* AppDelegate.swift */; };
 		D953167C1DE2F671000DFDDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D953167A1DE2F671000DFDDC /* Main.storyboard */; };
 		D953167E1DE2F671000DFDDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D953167D1DE2F671000DFDDC /* Assets.xcassets */; };
@@ -53,6 +57,10 @@
 		D9365A8A1E1BAD2100DB6A14 /* 0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0@2x.png"; sourceTree = "<group>"; };
 		D9365A8B1E1BAD2100DB6A14 /* 0@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0@3x.png"; sourceTree = "<group>"; };
 		D9365A981E1CDD2900DB6A14 /* EEETravel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EEETravel-Bridging-Header.h"; sourceTree = "<group>"; };
+		D939F3CF1E8E2ECE00CD4121 /* EEBaseListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEBaseListController.swift; sourceTree = "<group>"; };
+		D939F3D31E8E2F9000CD4121 /* EEBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEBaseController.swift; sourceTree = "<group>"; };
+		D939F3D51E8E2FF700CD4121 /* EENavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EENavigationBar.swift; sourceTree = "<group>"; };
+		D939F3D71E8E347A00CD4121 /* EEButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEButton.swift; sourceTree = "<group>"; };
 		D95316731DE2F671000DFDDC /* EEETravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EEETravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95316761DE2F671000DFDDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D953167B1DE2F671000DFDDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -204,6 +212,9 @@
 			isa = PBXGroup;
 			children = (
 				D92E2B511E8916420099E8F6 /* FetchViewModel.swift */,
+				D939F3CF1E8E2ECE00CD4121 /* EEBaseListController.swift */,
+				D939F3D31E8E2F9000CD4121 /* EEBaseController.swift */,
+				D939F3D51E8E2FF700CD4121 /* EENavigationBar.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -226,6 +237,7 @@
 				D99AD7861E0B7EC000F7DF2E /* EETextField.swift */,
 				D99AD7871E0B7EC000F7DF2E /* EETextView.swift */,
 				D99AD7881E0B7EC000F7DF2E /* EEView.swift */,
+				D939F3D71E8E347A00CD4121 /* EEButton.swift */,
 			);
 			path = EEKit;
 			sourceTree = "<group>";
@@ -257,7 +269,8 @@
 				D95316711DE2F671000DFDDC /* Resources */,
 				0D5DDDDCC7C6AE53E3C0D1B4 /* [CP] Embed Pods Frameworks */,
 				F6E0BD246F7B2BDA21746FD4 /* [CP] Copy Pods Resources */,
-				D92E2B531E8B58760099E8F6 /* ShellScript */,
+				D92E2B531E8B58760099E8F6 /* Swiftlint */,
+				D939F3D91E8E3B8400CD4121 /* TODO */,
 			);
 			buildRules = (
 			);
@@ -352,18 +365,33 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		D92E2B531E8B58760099E8F6 /* ShellScript */ = {
+		D92E2B531E8B58760099E8F6 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = Swiftlint;
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint";
+		};
+		D939F3D91E8E3B8400CD4121 /* TODO */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = TODO;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "TAGS=\"TODO:|FIXME:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
 		};
 		F6E0BD246F7B2BDA21746FD4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -395,9 +423,12 @@
 				D99AD78F1E0B7F0400F7DF2E /* EEAPI.swift in Sources */,
 				D9DD51F21DE6F29300565FAC /* EETheme.swift in Sources */,
 				D9670DE01E457ABB00DE7F35 /* EENavigationMenu.swift in Sources */,
+				D939F3D61E8E2FF700CD4121 /* EENavigationBar.swift in Sources */,
 				D99AD78C1E0B7EC000F7DF2E /* EETextView.swift in Sources */,
+				D939F3D01E8E2ECE00CD4121 /* EEBaseListController.swift in Sources */,
 				D92E2B521E8916420099E8F6 /* FetchViewModel.swift in Sources */,
 				D9DD51F41DE6F2BD00565FAC /* EEConstant.swift in Sources */,
+				D939F3D41E8E2F9000CD4121 /* EEBaseController.swift in Sources */,
 				D92E2B491E890F820099E8F6 /* EEFrequentFlyerController.swift in Sources */,
 				D92E2B4D1E890FDB0099E8F6 /* EEMainTabBarController.swift in Sources */,
 				D92E2B481E890F820099E8F6 /* EEDiscountController.swift in Sources */,
@@ -407,6 +438,7 @@
 				D92E2B4B1E890F820099E8F6 /* EETravelController.swift in Sources */,
 				D99AD7891E0B7EC000F7DF2E /* EEImageView.swift in Sources */,
 				D9670DE11E457ABB00DE7F35 /* EENavigationMenuCell.swift in Sources */,
+				D939F3D81E8E347A00CD4121 /* EEButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

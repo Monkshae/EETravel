@@ -28,7 +28,6 @@ class EEView: UIView {
     func setup() {
 
     }
-
 }
 
 public extension UIView {
@@ -132,3 +131,31 @@ public extension UIView {
     }
     
 }
+
+
+// MARK -- LineWithAutoLayout
+
+public class OnePixelLine: UIView {}
+
+public extension UIView {
+    
+    public func createLine() -> OnePixelLine {
+        let line = OnePixelLine()
+        line.backgroundColor = UIColor.separatorLineColor()
+        addSubview(line)
+        return line
+    }
+    
+    public func addtopLine() {
+        let line = createLine()
+        line.snp.makeConstraints { (make) in
+            make.top.equalTo(0)
+            make.left.equalTo(0)
+            make.right.equalTo(0)
+            make.height.equalTo(Constant.onePixel)
+        }
+    }
+    
+}
+
+

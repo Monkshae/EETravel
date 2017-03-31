@@ -79,9 +79,4 @@ class FetchViewModel: ViewModelProtocol {
     func willLoadMore() {
         
     }
-    
-    
-    
-
-    
 }

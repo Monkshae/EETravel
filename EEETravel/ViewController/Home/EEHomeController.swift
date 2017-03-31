@@ -18,7 +18,7 @@ class EEHomeController: UIViewController {
     }
 
     func downloadServiceFilter() {
-        EEProvider.request(.serviceFilter) { result in
+        EEProvider.request(.home) { result in
             var message = "Couldn't access API"
             if case let .success(response) = result {
                 let jsonString = try? response.mapString()
