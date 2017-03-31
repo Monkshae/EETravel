@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FB6FB93F085249B061EA960F7F0784C1A9B9E6E1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3E5FA3DE4107583A769A90B37ECF454FC7649CFD" : 9223372036854775807,
+    "FB6FB93F085249B061EA960F7F0784C1A9B9E6E1" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "60748539-EBDC-49DD-A8EB-8F66F099FD69",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3E5FA3DE4107583A769A90B37ECF454FC7649CFD" : "Client\/gengmeiiOS\/gengmeiios\/",
+    "FB6FB93F085249B061EA960F7F0784C1A9B9E6E1" : "EEETravel\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "EEETravel",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "EEETravel.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.gengmei.cc:gengmeiios\/gengmeiios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3E5FA3DE4107583A769A90B37ECF454FC7649CFD"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Monkshae\/EETravel.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FB6FB93F085249B061EA960F7F0784C1A9B9E6E1"
+    }
+  ]
+}
