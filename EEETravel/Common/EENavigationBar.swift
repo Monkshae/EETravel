@@ -3,7 +3,7 @@
 //  Gengmei
 //
 //  Created by licong on 16/5/23.
-//  Copyright © 2016年 更美互动信息科技有限公司. All rights reserved.
+//  Copyright © 2017年 Richard. All rights reserved.
 //
 
 import UIKit
@@ -38,7 +38,7 @@ enum GMBarButtonImageType: String {
     }
 }
 
-class GMNavigationBar: EEView {
+class EENavigationBar: EEView {
 
     let itemView = EEView(frame: CGRect(x: 0, y: 20, width: Constant.screenWidth, height: 44))
     let titleLabel = EELabel.label(.center, UIColor.black, 16)
@@ -115,7 +115,7 @@ class GMNavigationBar: EEView {
         }
     }
 
-    weak var delegate: EENavigationBarDelegate?
+    weak var delegate: EENavigationBarProtocol?
     private var shadowView: UIView?
     override func setup() {
         super.setup()
@@ -170,8 +170,7 @@ class GMNavigationBar: EEView {
 
     func showShadow(shadow: Bool) {
         if shadow && shadowView == nil {
-            //TODO:
-//            shadowView = self.addBottomLine()
+            shadowView = addHorizontalLineWith(bottom: 0)
         } else if !shadow && shadowView != nil {
             shadowView?.removeFromSuperview()
             shadowView = nil
@@ -206,42 +205,8 @@ class GMNavigationBar: EEView {
 
 class EENavigationButton: EEButton { }
 
-protocol EENavigationBarDelegate: class {
+protocol EENavigationBarProtocol: class {
     func backButtonClicked(button: EENavigationButton)
     func rightButtonClicked(button: EENavigationButton)
     func nearRightButtonClicked(button: EENavigationButton)
-}
-
-private var navigationBarAssociationKey: UInt8 = 0
-
-// 导航栏的事
-extension EEBaseController: EENavigationBarDelegate {
-    
-    func backButtonClicked(button: EENavigationButton) {}
-    func rightButtonClicked(button: EENavigationButton) {}
-    func nearRightButtonClicked(button: EENavigationButton) {}
-
-    var navigationBar: GMNavigationBar {
-        get {
-            return objc_getAssociatedObject(self, &navigationBarAssociationKey) as! GMNavigationBar
-        }
-        set(newValue) {
-            objc_setAssociatedObject(self, &navigationBarAssociationKey, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
-        }
-    }
-
-    func customNavigationBar() {
-        navigationBar = GMNavigationBar(frame: CGRect(x: 0, y: 0, width: Constant.screenWidth, height: 64))
-    }
-
-    func addNavigationBar() {
-        navigationBar.delegate = self
-        view.addSubview(navigationBar)
-    }
-
-    func hideLeftButtonForRootController() {
-        if navigationController != nil && navigationController!.viewControllers.count == 1 {
-            navigationBar.leftButton.isHidden = true
-        }
-    }
 }

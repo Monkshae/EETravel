@@ -3,7 +3,7 @@
 //  Gengmei
 //
 //  Created by wangyang on 16/3/21.
-//  Copyright © 2016年 更美互动信息科技有限公司. All rights reserved.
+//  Copyright © 2017年 Richard. All rights reserved.
 //
 
 import UIKit
@@ -89,9 +89,39 @@ class EEBaseController: UIViewController {
     }
 }
 
-// MARK: - 导航相关
-extension EEBaseController {
+private var navigationBarAssociationKey: UInt8 = 0
 
+// MARK: - 导航相关
+extension EEBaseController: EENavigationBarProtocol {
+    
+    func backButtonClicked(button: EENavigationButton) {}
+    func rightButtonClicked(button: EENavigationButton) {}
+    func nearRightButtonClicked(button: EENavigationButton) {}
+    
+    var navigationBar: EENavigationBar {
+        get {
+            return objc_getAssociatedObject(self, &navigationBarAssociationKey) as! EENavigationBar
+        }
+        set(newValue) {
+            objc_setAssociatedObject(self, &navigationBarAssociationKey, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
+        }
+    }
+    
+    func customNavigationBar() {
+        navigationBar = EENavigationBar(frame: CGRect(x: 0, y: 0, width: Constant.screenWidth, height: 64))
+    }
+    
+    func addNavigationBar() {
+        navigationBar.delegate = self
+        view.addSubview(navigationBar)
+    }
+    
+    func hideLeftButtonForRootController() {
+        if navigationController != nil && navigationController!.viewControllers.count == 1 {
+            navigationBar.leftButton.isHidden = true
+        }
+    }
+    
     /// 对于没有导航栏，但是有backButton的controller，可以使用这个方法创建backButton。坐标需要指定
     func createBackButton(type: GMBarButtonImageType) -> EEButton {
         let button = EEButton(type: .custom)
@@ -102,11 +132,11 @@ extension EEBaseController {
         button.addTarget(self, action: #selector(EEBaseController.backAction(button:)), for: .touchUpInside)
         return button
     }
-
+    
     func pushViewController(controller: UIViewController) {
         navigationController?.pushViewController(controller, animated: true)
     }
-
+    
     func backAction(button: EENavigationButton) {
         // parentViewController 是 UINavigationController 说明是极有可能是 push 进来的，需要进一步判断
         if let navigation = parent as? UINavigationController {
@@ -121,3 +151,4 @@ extension EEBaseController {
         }
     }
 }
+

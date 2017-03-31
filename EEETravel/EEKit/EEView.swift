@@ -132,30 +132,79 @@ public extension UIView {
     
 }
 
-
 // MARK -- LineWithAutoLayout
-
-public class OnePixelLine: UIView {}
-
 public extension UIView {
     
-    public func createLine() -> OnePixelLine {
-        let line = OnePixelLine()
+    public func createLine() -> UIView {
+        let line = UIView()
         line.backgroundColor = UIColor.separatorLineColor()
         addSubview(line)
         return line
     }
     
-    public func addtopLine() {
+    public func addHorizontalLine(top: CGFloat, left: CGFloat = 0, right: CGFloat = 0) -> UIView {
         let line = createLine()
         line.snp.makeConstraints { (make) in
-            make.top.equalTo(0)
-            make.left.equalTo(0)
-            make.right.equalTo(0)
+            make.top.equalTo(top)
+            make.left.equalTo(left)
+            make.right.equalTo(right)
             make.height.equalTo(Constant.onePixel)
         }
+        return line
     }
     
+    public func addHorizontalLineWith(bottom: CGFloat, left: CGFloat = 0, right: CGFloat = 0) -> UIView {
+        let line = createLine()
+        line.snp.makeConstraints { (make) in
+            make.bottom.equalTo(bottom)
+            make.left.equalTo(left)
+            make.right.equalTo(right)
+            make.height.equalTo(Constant.onePixel)
+        }
+        return line
+    }
+    
+    public func addVerticalLineWith(left: CGFloat, top: CGFloat = 0, bottom: CGFloat = 0) -> UIView {
+        let line = createLine()
+        line.snp.makeConstraints { (make) in
+            make.top.equalTo(top)
+            make.left.equalTo(left)
+            make.bottom.equalTo(bottom)
+            make.width.equalTo(Constant.onePixel)
+        }
+        return line
+    }
+    
+    public func addVerticalLine(right: CGFloat, top: CGFloat = 0, bottom: CGFloat = 0) -> UIView {
+        let line = createLine()
+        line.snp.makeConstraints { (make) in
+            make.top.equalTo(top)
+            make.right.equalTo(right)
+            make.bottom.equalTo(bottom)
+            make.width.equalTo(Constant.onePixel)
+        }
+        return line
+    }
+    
+    public func addHorizontalCenterLineWith(left: CGFloat, right: CGFloat = 0) -> UIView {
+        let line = createLine()
+        line.snp.makeConstraints { (make) in
+            make.centerY.equalTo(centerY)
+            make.left.equalTo(left)
+            make.right.equalTo(right)
+            make.height.equalTo(Constant.onePixel)
+        }
+        return line
+    }
+    
+    public func addVerticalCenterLineWith(top: CGFloat, bottom: CGFloat = 0) -> UIView {
+        let line = createLine()
+        line.snp.makeConstraints { (make) in
+            make.centerX.equalTo(centerX)
+            make.top.equalTo(left)
+            make.bottom.equalTo(right)
+            make.width.equalTo(Constant.onePixel)
+        }
+        return line
+    }
 }
-
-
