@@ -10,7 +10,15 @@ import UIKit
 import Alamofire
 import EVReflection
 
-class EEHomeController: UIViewController {
+class EEHomeController: EEBaseController, ListProtocol {
+    
+    var viewModel = EEHomeViewModel()
+    
+    override func initController() {
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         downloadServiceFilter()

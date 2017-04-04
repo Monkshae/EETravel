@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Observable
+
 typealias JsonType = [String: Any]
 enum FetchDataResult: Int {
     case Success = 0
@@ -33,7 +35,7 @@ protocol ViewModelProtocol {
     var api: EEAPI { get set }
     var startNum: Int { get set }
     var message: String { get set }
-    var fetchDataResult: FetchDataResult { get set }
+    var fetchDataResult: Observable<Int> { get set }
     
     /**
      协议中的构造器要求，必须实现init方法
@@ -50,7 +52,7 @@ class FetchViewModel: ViewModelProtocol {
     var api = EEAPI.defaultApi
     var startNum = 0
     var message = ""
-    var fetchDataResult = FetchDataResult.Failed
+    var fetchDataResult: Observable<Int> = Observable(FetchDataResult.Failed.rawValue)
     var parameters = JsonType()
 
     required init() {
@@ -64,14 +66,28 @@ class FetchViewModel: ViewModelProtocol {
     func fetchRemoteData() {
         EEProvider.request(api) { result in
             var message = "Couldn't access API"
-            if case let .success(response) = result {
+            
+            switch result {
+            case let .success(response):
+//                let data = response.data
+//                let statusCode = moyaResponse.statusCode
                 let jsonString = try? response.mapString()
                 _ = response.statusCode
                 message = jsonString ?? message
+                self.buildData(data: message)
+                self.fetchDataResult.value = FetchDataResult.Success.rawValue
+            case let .failure(error):
+                // this means there was a network failure - either the request
+                // wasn't sent (connectivity), or no response was received (server
+                // timed out).  If the server responds with a 4xx or 5xx error, that
+                // will be sent as a ".success"-ful response.
+                self.message = error.errorDescription ?? "网络请求失败，请检查您的网络设置"
+                self.fetchDataResult.value = FetchDataResult.Failed.rawValue
             }
         }
     }
-    
+    func buildData(data: String) {}
+
     func willRefresh() {
         
     }
