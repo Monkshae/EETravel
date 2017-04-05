@@ -43,6 +43,13 @@ class EELabel: UILabel {
         fatalError("init(coder:) has not been implemented")
     }
 
+    convenience init(_ textAlignment: NSTextAlignment, _ textColor: UIColor, _ fontSize: Int) {
+        self.init()
+        self.textAlignment = textAlignment
+        self.textColor = textColor
+        self.font = EEFont(size: fontSize)
+    }
+    
     open func setup() {
         verticalAlignment = .Middle
     }

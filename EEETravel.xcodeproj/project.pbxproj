@@ -14,7 +14,8 @@
 		D9238E2C1E93B41800BC1A12 /* ListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9238E2B1E93B41800BC1A12 /* ListProtocol.swift */; };
 		D92AF81A1E94CEEF0026B926 /* EEHomeObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92AF8191E94CEEF0026B926 /* EEHomeObject.swift */; };
 		D92AF81E1E94CF8E0026B926 /* BaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92AF81D1E94CF8E0026B926 /* BaseObject.swift */; };
-		D92AF8231E94DDF70026B926 /* EETableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92AF8221E94DDF70026B926 /* EETableViewCell.swift */; };
+		D92AF8251E94EADB0026B926 /* EETableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92AF8241E94EADB0026B926 /* EETableViewCell.swift */; };
+		D92AF8271E94EB580026B926 /* EEHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92AF8261E94EB580026B926 /* EEHomeCell.swift */; };
 		D92E2B481E890F820099E8F6 /* EEDiscountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92E2B411E890F820099E8F6 /* EEDiscountController.swift */; };
 		D92E2B491E890F820099E8F6 /* EEFrequentFlyerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92E2B431E890F820099E8F6 /* EEFrequentFlyerController.swift */; };
 		D92E2B4A1E890F820099E8F6 /* EEHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92E2B451E890F820099E8F6 /* EEHomeController.swift */; };
@@ -57,7 +58,8 @@
 		D9238E2B1E93B41800BC1A12 /* ListProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListProtocol.swift; sourceTree = "<group>"; };
 		D92AF8191E94CEEF0026B926 /* EEHomeObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEHomeObject.swift; sourceTree = "<group>"; };
 		D92AF81D1E94CF8E0026B926 /* BaseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseObject.swift; sourceTree = "<group>"; };
-		D92AF8221E94DDF70026B926 /* EETableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EETableViewCell.swift; sourceTree = "<group>"; };
+		D92AF8241E94EADB0026B926 /* EETableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EETableViewCell.swift; sourceTree = "<group>"; };
+		D92AF8261E94EB580026B926 /* EEHomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEHomeCell.swift; sourceTree = "<group>"; };
 		D92E2B411E890F820099E8F6 /* EEDiscountController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEDiscountController.swift; sourceTree = "<group>"; };
 		D92E2B431E890F820099E8F6 /* EEFrequentFlyerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEFrequentFlyerController.swift; sourceTree = "<group>"; };
 		D92E2B451E890F820099E8F6 /* EEHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEHomeController.swift; sourceTree = "<group>"; };
@@ -156,7 +158,7 @@
 		D92AF8211E94DB6A0026B926 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D92AF8221E94DDF70026B926 /* EETableViewCell.swift */,
+				D92AF8261E94EB580026B926 /* EEHomeCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -261,6 +263,7 @@
 		D953168C1DE2FBF8000DFDDC /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				D92AF8241E94EADB0026B926 /* EETableViewCell.swift */,
 				D9238E2B1E93B41800BC1A12 /* ListProtocol.swift */,
 				D92E2B511E8916420099E8F6 /* FetchViewModel.swift */,
 				D939F3CF1E8E2ECE00CD4121 /* EEBaseListController.swift */,
@@ -485,6 +488,7 @@
 				D9670DE01E457ABB00DE7F35 /* EENavigationMenu.swift in Sources */,
 				D9238E2C1E93B41800BC1A12 /* ListProtocol.swift in Sources */,
 				D92AF81E1E94CF8E0026B926 /* BaseObject.swift in Sources */,
+				D92AF8271E94EB580026B926 /* EEHomeCell.swift in Sources */,
 				D939F3D61E8E2FF700CD4121 /* EENavigationBar.swift in Sources */,
 				D99AD78C1E0B7EC000F7DF2E /* EETextView.swift in Sources */,
 				D9161F951E93AD15007DB4F9 /* EEHomeViewModel.swift in Sources */,
@@ -497,7 +501,7 @@
 				D92AF81A1E94CEEF0026B926 /* EEHomeObject.swift in Sources */,
 				D92E2B481E890F820099E8F6 /* EEDiscountController.swift in Sources */,
 				D92E2B4A1E890F820099E8F6 /* EEHomeController.swift in Sources */,
-				D92AF8231E94DDF70026B926 /* EETableViewCell.swift in Sources */,
+				D92AF8251E94EADB0026B926 /* EETableViewCell.swift in Sources */,
 				D9B389111E8BCF6200C5FC1D /* EEMainTabBarViewModel.swift in Sources */,
 				D95316771DE2F671000DFDDC /* AppDelegate.swift in Sources */,
 				D92E2B4B1E890F820099E8F6 /* EETravelController.swift in Sources */,

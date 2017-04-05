@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class EETableViewCell: UITableViewCell {
 
@@ -54,7 +55,7 @@ class EETableViewCell: UITableViewCell {
         selectionStyle = .none
         accessoryType = .none
         
-        bottomLine = contentView.addHorizontalLineWith(bottom: 0)
+        bottomLine = addHorizontalLineWith(bottom: 0)
         bottomLine.backgroundColor = UIColor.backgroundColor()
         
         detailDisclosure = UIImageView(image: UIImage(named: "arrow"))

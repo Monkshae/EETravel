@@ -20,7 +20,7 @@ class EEHomeController: EEBaseController, ListProtocol {
         addTableView(style: .plain, fetchNow: true)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(cellType: EEHomeCell.self)
 //        tableView.reloadData()
     }
 
@@ -54,9 +54,9 @@ extension EEHomeController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
-        cell?.textLabel?.text = "哈哈哈"
-        return cell!
+        let cell = tableView.dequeueReusableCell(for: indexPath) as EEHomeCell
+        cell.textLabel?.text = "哈哈哈"
+        return cell
     }
     
 }
