@@ -355,9 +355,9 @@
 				TargetAttributes = {
 					D95316721DE2F671000DFDDC = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = DGT9C327YY;
+						DevelopmentTeam = 98BPAMG7YA;
 						LastSwiftMigration = 0820;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -636,12 +636,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = DGT9C327YY;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Cong Li (9DKW5BMB89)";
+				DEVELOPMENT_TEAM = 98BPAMG7YA;
 				INFOPLIST_FILE = EEETravel/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.eee.EEETravel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eee.travel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c3a31bbf-6e2f-4046-97f5-0e786b1e1497";
+				PROVISIONING_PROFILE_SPECIFIER = eee_dev;
 				SWIFT_OBJC_BRIDGING_HEADER = "EEETravel/EEETravel-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -657,12 +660,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = DGT9C327YY;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Cong Li (9DKW5BMB89)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Cong Li (98BPAMG7YA)";
+				DEVELOPMENT_TEAM = 98BPAMG7YA;
 				INFOPLIST_FILE = EEETravel/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.eee.EEETravel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eee.travel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "032b99b5-b6a4-48ca-b428-79404f248d7d";
+				PROVISIONING_PROFILE_SPECIFIER = eee_adhoc;
 				SWIFT_OBJC_BRIDGING_HEADER = "EEETravel/EEETravel-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
