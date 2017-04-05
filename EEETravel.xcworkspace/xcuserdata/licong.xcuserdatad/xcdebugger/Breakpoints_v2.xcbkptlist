@@ -18,15 +18,23 @@
          <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EEETravel/ViewController/Home/ViewModel/EEHomeViewModel.swift"
-            timestampString = "513068393.182017"
+            continueAfterRunningActions = "Yes"
+            filePath = "EEETravel/AppDelegate.swift"
+            timestampString = "513070403.446534"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "buildData(data:)"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
             landmarkType = "7">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent
+                     consoleCommand = "reveal_load_sim_swift">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -36,12 +44,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EEETravel/Common/ListProtocol.swift"
-            timestampString = "513068605.602307"
+            timestampString = "513070777.549427"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
-            landmarkName = "addKVO()"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "reloadList()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

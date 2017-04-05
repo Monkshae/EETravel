@@ -13,6 +13,8 @@
 		D9161F951E93AD15007DB4F9 /* EEHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9161F941E93AD15007DB4F9 /* EEHomeViewModel.swift */; };
 		D9238E2C1E93B41800BC1A12 /* ListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9238E2B1E93B41800BC1A12 /* ListProtocol.swift */; };
 		D92AF81A1E94CEEF0026B926 /* EEHomeObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92AF8191E94CEEF0026B926 /* EEHomeObject.swift */; };
+		D92AF81E1E94CF8E0026B926 /* BaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92AF81D1E94CF8E0026B926 /* BaseObject.swift */; };
+		D92AF8231E94DDF70026B926 /* EETableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92AF8221E94DDF70026B926 /* EETableViewCell.swift */; };
 		D92E2B481E890F820099E8F6 /* EEDiscountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92E2B411E890F820099E8F6 /* EEDiscountController.swift */; };
 		D92E2B491E890F820099E8F6 /* EEFrequentFlyerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92E2B431E890F820099E8F6 /* EEFrequentFlyerController.swift */; };
 		D92E2B4A1E890F820099E8F6 /* EEHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92E2B451E890F820099E8F6 /* EEHomeController.swift */; };
@@ -54,6 +56,8 @@
 		D9161F941E93AD15007DB4F9 /* EEHomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEHomeViewModel.swift; sourceTree = "<group>"; };
 		D9238E2B1E93B41800BC1A12 /* ListProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListProtocol.swift; sourceTree = "<group>"; };
 		D92AF8191E94CEEF0026B926 /* EEHomeObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEHomeObject.swift; sourceTree = "<group>"; };
+		D92AF81D1E94CF8E0026B926 /* BaseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseObject.swift; sourceTree = "<group>"; };
+		D92AF8221E94DDF70026B926 /* EETableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EETableViewCell.swift; sourceTree = "<group>"; };
 		D92E2B411E890F820099E8F6 /* EEDiscountController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEDiscountController.swift; sourceTree = "<group>"; };
 		D92E2B431E890F820099E8F6 /* EEFrequentFlyerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEFrequentFlyerController.swift; sourceTree = "<group>"; };
 		D92E2B451E890F820099E8F6 /* EEHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEHomeController.swift; sourceTree = "<group>"; };
@@ -129,9 +133,32 @@
 			isa = PBXGroup;
 			children = (
 				D92AF8191E94CEEF0026B926 /* EEHomeObject.swift */,
+				D92AF81D1E94CF8E0026B926 /* BaseObject.swift */,
 			);
 			name = Model;
 			path = EEETravel/Model;
+			sourceTree = "<group>";
+		};
+		D92AF81F1E94D3420026B926 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D92AF8201E94DA870026B926 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D92AF8211E94DB6A0026B926 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D92AF8221E94DDF70026B926 /* EETableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D92E2B2B1E890EC50099E8F6 /* ViewController */ = {
@@ -165,8 +192,10 @@
 		D92E2B441E890F820099E8F6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				D92AF8201E94DA870026B926 /* View */,
 				D92E2B4C1E890FDB0099E8F6 /* EEMainTabBarController.swift */,
 				D92E2B451E890F820099E8F6 /* EEHomeController.swift */,
+				D92AF8211E94DB6A0026B926 /* View */,
 				D92E2B501E8915720099E8F6 /* ViewModel */,
 			);
 			path = Home;
@@ -212,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				D95316761DE2F671000DFDDC /* AppDelegate.swift */,
+				D92AF81F1E94D3420026B926 /* View */,
 				D92E2B2B1E890EC50099E8F6 /* ViewController */,
 				D9670DDD1E457ABB00DE7F35 /* Menu */,
 				D9DD51F01DE6F28500565FAC /* Constant */,
@@ -454,6 +484,7 @@
 				D9DD51F21DE6F29300565FAC /* EETheme.swift in Sources */,
 				D9670DE01E457ABB00DE7F35 /* EENavigationMenu.swift in Sources */,
 				D9238E2C1E93B41800BC1A12 /* ListProtocol.swift in Sources */,
+				D92AF81E1E94CF8E0026B926 /* BaseObject.swift in Sources */,
 				D939F3D61E8E2FF700CD4121 /* EENavigationBar.swift in Sources */,
 				D99AD78C1E0B7EC000F7DF2E /* EETextView.swift in Sources */,
 				D9161F951E93AD15007DB4F9 /* EEHomeViewModel.swift in Sources */,
@@ -466,6 +497,7 @@
 				D92AF81A1E94CEEF0026B926 /* EEHomeObject.swift in Sources */,
 				D92E2B481E890F820099E8F6 /* EEDiscountController.swift in Sources */,
 				D92E2B4A1E890F820099E8F6 /* EEHomeController.swift in Sources */,
+				D92AF8231E94DDF70026B926 /* EETableViewCell.swift in Sources */,
 				D9B389111E8BCF6200C5FC1D /* EEMainTabBarViewModel.swift in Sources */,
 				D95316771DE2F671000DFDDC /* AppDelegate.swift in Sources */,
 				D92E2B4B1E890F820099E8F6 /* EETravelController.swift in Sources */,
