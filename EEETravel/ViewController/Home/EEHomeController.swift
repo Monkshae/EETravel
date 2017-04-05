@@ -13,15 +13,11 @@ import EVReflection
 class EEHomeController: EEBaseController, ListProtocol {
     
     var viewModel = EEHomeViewModel()
-    
-    override func initController() {
-        
-    }
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        downloadServiceFilter()
+//        downloadServiceFilter()
+//        fetchData()
+        addTableView(style: .plain, fetchNow: true)
         
     }
 

@@ -10,11 +10,11 @@ import UIKit
 
 class EEHomeViewModel: FetchViewModel {
 
-    
     required init() {
         super.init()
         api = .home
     }
+   
     override func buildData(data: String) {
        
     }

@@ -12,6 +12,7 @@
 		D901BB031E1B8CE70022E45F /* icon_like.png in Resources */ = {isa = PBXBuildFile; fileRef = D901BB011E1B8CE70022E45F /* icon_like.png */; };
 		D9161F951E93AD15007DB4F9 /* EEHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9161F941E93AD15007DB4F9 /* EEHomeViewModel.swift */; };
 		D9238E2C1E93B41800BC1A12 /* ListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9238E2B1E93B41800BC1A12 /* ListProtocol.swift */; };
+		D92AF81A1E94CEEF0026B926 /* EEHomeObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92AF8191E94CEEF0026B926 /* EEHomeObject.swift */; };
 		D92E2B481E890F820099E8F6 /* EEDiscountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92E2B411E890F820099E8F6 /* EEDiscountController.swift */; };
 		D92E2B491E890F820099E8F6 /* EEFrequentFlyerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92E2B431E890F820099E8F6 /* EEFrequentFlyerController.swift */; };
 		D92E2B4A1E890F820099E8F6 /* EEHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92E2B451E890F820099E8F6 /* EEHomeController.swift */; };
@@ -52,6 +53,7 @@
 		D901BB011E1B8CE70022E45F /* icon_like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_like.png; sourceTree = "<group>"; };
 		D9161F941E93AD15007DB4F9 /* EEHomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEHomeViewModel.swift; sourceTree = "<group>"; };
 		D9238E2B1E93B41800BC1A12 /* ListProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListProtocol.swift; sourceTree = "<group>"; };
+		D92AF8191E94CEEF0026B926 /* EEHomeObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEHomeObject.swift; sourceTree = "<group>"; };
 		D92E2B411E890F820099E8F6 /* EEDiscountController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEDiscountController.swift; sourceTree = "<group>"; };
 		D92E2B431E890F820099E8F6 /* EEFrequentFlyerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEFrequentFlyerController.swift; sourceTree = "<group>"; };
 		D92E2B451E890F820099E8F6 /* EEHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEHomeController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,15 @@
 			path = EENetworking;
 			sourceTree = "<group>";
 		};
+		D92AF8181E94CECA0026B926 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D92AF8191E94CEEF0026B926 /* EEHomeObject.swift */,
+			);
+			name = Model;
+			path = EEETravel/Model;
+			sourceTree = "<group>";
+		};
 		D92E2B2B1E890EC50099E8F6 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				D95316751DE2F671000DFDDC /* EEETravel */,
+				D92AF8181E94CECA0026B926 /* Model */,
 				D95316741DE2F671000DFDDC /* Products */,
 				C0B8CF015EA18716EA070339 /* Pods */,
 				52632E6C53A6B497F366AE0B /* Frameworks */,
@@ -451,6 +463,7 @@
 				D939F3D41E8E2F9000CD4121 /* EEBaseController.swift in Sources */,
 				D92E2B491E890F820099E8F6 /* EEFrequentFlyerController.swift in Sources */,
 				D92E2B4D1E890FDB0099E8F6 /* EEMainTabBarController.swift in Sources */,
+				D92AF81A1E94CEEF0026B926 /* EEHomeObject.swift in Sources */,
 				D92E2B481E890F820099E8F6 /* EEDiscountController.swift in Sources */,
 				D92E2B4A1E890F820099E8F6 /* EEHomeController.swift in Sources */,
 				D9B389111E8BCF6200C5FC1D /* EEMainTabBarViewModel.swift in Sources */,
