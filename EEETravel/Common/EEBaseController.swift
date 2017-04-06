@@ -92,7 +92,7 @@ class EEBaseController: UIViewController {
 private var navigationBarAssociationKey: UInt8 = 0
 
 // MARK: - 导航相关
-extension EEBaseController: EENavigationBarProtocol {
+extension UIViewController: EENavigationBarProtocol {
     
     func backButtonClicked(button: EENavigationButton) {}
     func rightButtonClicked(button: EENavigationButton) {}

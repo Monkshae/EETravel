@@ -44,6 +44,11 @@
 		D99AD78D1E0B7EC000F7DF2E /* EEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99AD7881E0B7EC000F7DF2E /* EEView.swift */; };
 		D99AD78F1E0B7F0400F7DF2E /* EEAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99AD78E1E0B7F0400F7DF2E /* EEAPI.swift */; };
 		D9B389111E8BCF6200C5FC1D /* EEMainTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B389101E8BCF6200C5FC1D /* EEMainTabBarViewModel.swift */; };
+		D9BD28C61E96274300B9189C /* EEClientH5Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD28C51E96274300B9189C /* EEClientH5Object.swift */; };
+		D9BD28CB1E962B5B00B9189C /* EEServerDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD28CA1E962B5B00B9189C /* EEServerDomain.swift */; };
+		D9BD28CE1E962B8B00B9189C /* EEWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD28CC1E962B8B00B9189C /* EEWebViewController.swift */; };
+		D9BD28CF1E962B8B00B9189C /* EEWebEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD28CD1E962B8B00B9189C /* EEWebEngine.swift */; };
+		D9BD28D11E962C1C00B9189C /* GMShareComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD28D01E962C1C00B9189C /* GMShareComponent.swift */; };
 		D9DD51F21DE6F29300565FAC /* EETheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD51F11DE6F29300565FAC /* EETheme.swift */; };
 		D9DD51F41DE6F2BD00565FAC /* EEConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD51F31DE6F2BD00565FAC /* EEConstant.swift */; };
 /* End PBXBuildFile section */
@@ -91,6 +96,11 @@
 		D99AD7881E0B7EC000F7DF2E /* EEView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEView.swift; sourceTree = "<group>"; };
 		D99AD78E1E0B7F0400F7DF2E /* EEAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEAPI.swift; sourceTree = "<group>"; };
 		D9B389101E8BCF6200C5FC1D /* EEMainTabBarViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEMainTabBarViewModel.swift; sourceTree = "<group>"; };
+		D9BD28C51E96274300B9189C /* EEClientH5Object.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEClientH5Object.swift; sourceTree = "<group>"; };
+		D9BD28CA1E962B5B00B9189C /* EEServerDomain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEServerDomain.swift; sourceTree = "<group>"; };
+		D9BD28CC1E962B8B00B9189C /* EEWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEWebViewController.swift; sourceTree = "<group>"; };
+		D9BD28CD1E962B8B00B9189C /* EEWebEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEWebEngine.swift; sourceTree = "<group>"; };
+		D9BD28D01E962C1C00B9189C /* GMShareComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMShareComponent.swift; sourceTree = "<group>"; };
 		D9DD51F11DE6F29300565FAC /* EETheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EETheme.swift; sourceTree = "<group>"; };
 		D9DD51F31DE6F2BD00565FAC /* EEConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEConstant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -248,6 +258,7 @@
 				D9670DDD1E457ABB00DE7F35 /* Menu */,
 				D9DD51F01DE6F28500565FAC /* Constant */,
 				D99AD7831E0B7EC000F7DF2E /* EEKit */,
+				D9BD28C71E962AD200B9189C /* Utils */,
 				D953168C1DE2FBF8000DFDDC /* Common */,
 				D92AC76C1E014A4B0085EF62 /* EENetworking */,
 				D9711B461E8E7610002AEC0A /* SafeBox */,
@@ -263,6 +274,7 @@
 		D953168C1DE2FBF8000DFDDC /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				D9BD28C01E9626C100B9189C /* WebView */,
 				D92AF8241E94EADB0026B926 /* EETableViewCell.swift */,
 				D9238E2B1E93B41800BC1A12 /* ListProtocol.swift */,
 				D92E2B511E8916420099E8F6 /* FetchViewModel.swift */,
@@ -302,6 +314,26 @@
 				D939F3D71E8E347A00CD4121 /* EEButton.swift */,
 			);
 			path = EEKit;
+			sourceTree = "<group>";
+		};
+		D9BD28C01E9626C100B9189C /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				D9BD28D01E962C1C00B9189C /* GMShareComponent.swift */,
+				D9BD28CC1E962B8B00B9189C /* EEWebViewController.swift */,
+				D9BD28CD1E962B8B00B9189C /* EEWebEngine.swift */,
+				D9BD28C51E96274300B9189C /* EEClientH5Object.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		D9BD28C71E962AD200B9189C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D9BD28CA1E962B5B00B9189C /* EEServerDomain.swift */,
+			);
+			name = Utils;
+			path = ViewController/Utils;
 			sourceTree = "<group>";
 		};
 		D9DD51F01DE6F28500565FAC /* Constant */ = {
@@ -477,6 +509,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9BD28CE1E962B8B00B9189C /* EEWebViewController.swift in Sources */,
 				D99AD78D1E0B7EC000F7DF2E /* EEView.swift in Sources */,
 				D9670DE31E457C0E00DE7F35 /* EENavigationMenuLayout.swift in Sources */,
 				D99AD78B1E0B7EC000F7DF2E /* EETextField.swift in Sources */,
@@ -486,12 +519,15 @@
 				D99AD78F1E0B7F0400F7DF2E /* EEAPI.swift in Sources */,
 				D9DD51F21DE6F29300565FAC /* EETheme.swift in Sources */,
 				D9670DE01E457ABB00DE7F35 /* EENavigationMenu.swift in Sources */,
+				D9BD28CB1E962B5B00B9189C /* EEServerDomain.swift in Sources */,
 				D9238E2C1E93B41800BC1A12 /* ListProtocol.swift in Sources */,
 				D92AF81E1E94CF8E0026B926 /* BaseObject.swift in Sources */,
 				D92AF8271E94EB580026B926 /* EEHomeCell.swift in Sources */,
 				D939F3D61E8E2FF700CD4121 /* EENavigationBar.swift in Sources */,
+				D9BD28D11E962C1C00B9189C /* GMShareComponent.swift in Sources */,
 				D99AD78C1E0B7EC000F7DF2E /* EETextView.swift in Sources */,
 				D9161F951E93AD15007DB4F9 /* EEHomeViewModel.swift in Sources */,
+				D9BD28C61E96274300B9189C /* EEClientH5Object.swift in Sources */,
 				D939F3D01E8E2ECE00CD4121 /* EEBaseListController.swift in Sources */,
 				D92E2B521E8916420099E8F6 /* FetchViewModel.swift in Sources */,
 				D9DD51F41DE6F2BD00565FAC /* EEConstant.swift in Sources */,
@@ -503,6 +539,7 @@
 				D92E2B4A1E890F820099E8F6 /* EEHomeController.swift in Sources */,
 				D92AF8251E94EADB0026B926 /* EETableViewCell.swift in Sources */,
 				D9B389111E8BCF6200C5FC1D /* EEMainTabBarViewModel.swift in Sources */,
+				D9BD28CF1E962B8B00B9189C /* EEWebEngine.swift in Sources */,
 				D95316771DE2F671000DFDDC /* AppDelegate.swift in Sources */,
 				D92E2B4B1E890F820099E8F6 /* EETravelController.swift in Sources */,
 				D99AD7891E0B7EC000F7DF2E /* EEImageView.swift in Sources */,
