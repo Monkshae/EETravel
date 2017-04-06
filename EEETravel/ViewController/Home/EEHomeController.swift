@@ -53,10 +53,18 @@ extension EEHomeController: UITableViewDelegate, UITableViewDataSource {
         return 10
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 68
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath) as EEHomeCell
-        cell.textLabel?.text = "哈哈哈"
+//        cell.textLabel?.text = "哈哈哈"
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
     }
     
 }
