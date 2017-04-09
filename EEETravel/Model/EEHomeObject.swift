@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EEHomeObject: BaseObject {
+class EEHomeBaseObject: BaseObject {
     var icon = ""
     var title = ""
     var pageView = ""
@@ -17,4 +17,10 @@ class EEHomeObject: BaseObject {
     var content = ""
     var commentCount = ""
     var interval = ""
+}
+
+class EEHomeObject: BaseObject {
+    var data: EEHomeBaseObject?
+    var message = ""
+    var error = 0
 }

@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import Kingfisher
 
 class EETableViewCell: UITableViewCell {
 
@@ -66,6 +67,7 @@ class EETableViewCell: UITableViewCell {
             make.centerY.equalTo(contentView.centerY)
             make.size.equalTo(CGSize(width: 7, height: 11))
         }
+        fd_usingFrameLayout = false
     }
     
     /*

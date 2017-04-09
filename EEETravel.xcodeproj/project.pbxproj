@@ -51,6 +51,8 @@
 		D9BD28D11E962C1C00B9189C /* GMShareComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD28D01E962C1C00B9189C /* GMShareComponent.swift */; };
 		D9DD51F21DE6F29300565FAC /* EETheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD51F11DE6F29300565FAC /* EETheme.swift */; };
 		D9DD51F41DE6F2BD00565FAC /* EEConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD51F31DE6F2BD00565FAC /* EEConstant.swift */; };
+		D9E44F461E9A3E5A00193038 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E44F451E9A3E5A00193038 /* String+Extension.swift */; };
+		D9E44F481E9A42C500193038 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E44F471E9A42C500193038 /* UIImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +105,8 @@
 		D9BD28D01E962C1C00B9189C /* GMShareComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMShareComponent.swift; sourceTree = "<group>"; };
 		D9DD51F11DE6F29300565FAC /* EETheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EETheme.swift; sourceTree = "<group>"; };
 		D9DD51F31DE6F2BD00565FAC /* EEConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEConstant.swift; sourceTree = "<group>"; };
+		D9E44F451E9A3E5A00193038 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		D9E44F471E9A42C500193038 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +285,8 @@
 				D939F3CF1E8E2ECE00CD4121 /* EEBaseListController.swift */,
 				D939F3D31E8E2F9000CD4121 /* EEBaseController.swift */,
 				D939F3D51E8E2FF700CD4121 /* EENavigationBar.swift */,
+				D9E44F451E9A3E5A00193038 /* String+Extension.swift */,
+				D9E44F471E9A42C500193038 /* UIImageView+Extension.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -516,11 +522,13 @@
 				D9711B481E8E761E002AEC0A /* EEAssociateObject.swift in Sources */,
 				D92E2B4F1E890FFD0099E8F6 /* EECreditCardController.swift in Sources */,
 				D99AD78A1E0B7EC000F7DF2E /* EELabel.swift in Sources */,
+				D9E44F461E9A3E5A00193038 /* String+Extension.swift in Sources */,
 				D99AD78F1E0B7F0400F7DF2E /* EEAPI.swift in Sources */,
 				D9DD51F21DE6F29300565FAC /* EETheme.swift in Sources */,
 				D9670DE01E457ABB00DE7F35 /* EENavigationMenu.swift in Sources */,
 				D9BD28CB1E962B5B00B9189C /* EEServerDomain.swift in Sources */,
 				D9238E2C1E93B41800BC1A12 /* ListProtocol.swift in Sources */,
+				D9E44F481E9A42C500193038 /* UIImageView+Extension.swift in Sources */,
 				D92AF81E1E94CF8E0026B926 /* BaseObject.swift in Sources */,
 				D92AF8271E94EB580026B926 /* EEHomeCell.swift in Sources */,
 				D939F3D61E8E2FF700CD4121 /* EENavigationBar.swift in Sources */,

@@ -12,7 +12,7 @@ import Reusable
 final class EEHomeCell: EETableViewCell, Reusable {
 
     var icon = EEImageView()
-    var title = EELabel(.left, UIColor.black, 16)
+    var titleLabel = EELabel(.left, UIColor.black, 16)
     var timeLabel = EELabel(.right, UIColor.black, 12)
     var nameLabel = EELabel(.left, UIColor.black, 12)
     
@@ -23,12 +23,12 @@ final class EEHomeCell: EETableViewCell, Reusable {
         icon.snp.makeConstraints { (make) in
             make.left.equalTo(15)
             make.top.equalTo(8)
-//            make.bottom.equalTo(-8)
+            make.bottom.equalTo(-8)
             make.size.equalTo(CGSize(width: 50, height: 50))
         }
-        contentView.addSubview(title)
-        title.text = "招商银行 暖春四月 花样好礼（账单分期达标享乐上包/净水壶/骑行箱）"
-        title.snp.makeConstraints { (make) in
+        contentView.addSubview(titleLabel)
+        titleLabel.text = "招商银行 暖春四月 花样好礼（账单分期达标享乐上包/净水壶/骑行箱）"
+        titleLabel.snp.makeConstraints { (make) in
             make.left.equalTo(icon.snp.right).offset(8)
             make.top.equalTo(icon.snp.top).offset(5)
             make.right.equalTo(-15)
@@ -45,7 +45,7 @@ final class EEHomeCell: EETableViewCell, Reusable {
         nameLabel.text = "selina"
         nameLabel.snp.makeConstraints { (make) in
             make.left.equalTo(icon.snp.right).offset(8)
-            make.bottom.equalTo(icon.snp.bottom).offset(-5)
+            make.bottom.equalTo(contentView.snp.bottom).offset(-5)
         }
         
     }

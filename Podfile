@@ -35,13 +35,17 @@ target 'EEETravel' do
 #    pod 'RxAlamofire'                                           , '3.0.0'
 #    pod 'Aspects'                                               , '1.4.1'
 #    pod 'EVReflection'                                          , '3.4.1'
+#    pod 'Sourcery', '~> 0.5.9'
+
     pod 'SwiftLint'                                             , '0.17.0'
-    pod 'ShareSDK3'                                             , '3.5.0'
-    pod 'MOBFoundation'                                         , '2.2.1'
-    pod 'ShareSDK3/ShareSDKExtension'
-    pod 'ShareSDK3/ShareSDKPlatforms/QQ'
-    pod 'ShareSDK3/ShareSDKPlatforms/SinaWeibo'
-    pod 'ShareSDK3/ShareSDKPlatforms/WeChat'
+    pod 'MonkeyKing'                                            , '1.2.3'
+    pod 'FDTemplateLayoutCell'                                  , '0.9.2'
+#    pod 'ShareSDK3'                                             , '3.5.0'
+#    pod 'MOBFoundation'                                         , '2.2.1'
+#    pod 'ShareSDK3/ShareSDKExtension'
+#    pod 'ShareSDK3/ShareSDKPlatforms/QQ'
+#    pod 'ShareSDK3/ShareSDKPlatforms/SinaWeibo'
+#    pod 'ShareSDK3/ShareSDKPlatforms/WeChat'
 
 end
 
