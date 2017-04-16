@@ -27,8 +27,6 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (4.0.5):
     - PromiseKit/CorePromise
-  - PullToMakeSoup (2.0):
-    - PullToRefresher (~> 2.0)
   - PullToRefresher (2.0.2)
   - Result (3.2.1)
   - Reusable (4.0.0):
@@ -52,7 +50,7 @@ DEPENDENCIES:
   - Observable-Swift (from `git@github.com:Vaseltior/Observable-Swift.git`)
   - PermissionScope (= 1.1.1)
   - PromiseKit (= 4.0.5)
-  - PullToMakeSoup (= 2.0)
+  - PullToRefresher (= 2.0.2)
   - Reusable (= 4.0.0)
   - SnapKit (= 3.0.2)
   - SwiftLint (= 0.17.0)
@@ -80,7 +78,6 @@ SPEC CHECKSUMS:
   Observable-Swift: c63b9fc990703b135450cb5bd3541022384867ae
   PermissionScope: a30c16e015779ba27c97c124e7539e27b5829de2
   PromiseKit: 593b5e24ded6cbb1ebc708bc2c3428a8a5632d91
-  PullToMakeSoup: 384a57220e1c197220427494d5959dda73400435
   PullToRefresher: 5e101a8c3523e67ee0291375ba932ef59e0853c2
   Result: 2453a22e5c5b11c0c3a478736e82cd02f763b781
   Reusable: 98e5fff1e0e2e00872199699b276dde08ee56c07
@@ -88,6 +85,6 @@ SPEC CHECKSUMS:
   SwiftLint: 9fb1dd71d5952d130f8c2fb60ae2e1475cf5d575
   Then: 8496793c8fcac95482b943909b440724c7d8d82c
 
-PODFILE CHECKSUM: 8f89cd6fd47686586e3237ecf4c4c2148494f383
+PODFILE CHECKSUM: 7a1deeea229df640e90e3f40b7467e9fea5bdcca
 
 COCOAPODS: 1.2.0

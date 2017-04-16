@@ -14,7 +14,7 @@ target 'EEETravel' do
 #    pod 'UMengAnalytics'                                        , '4.1.0'
 #    pod 'SwiftyJSON'                                            , '2.4.0'
     pod 'SnapKit'                                               , '3.0.2'
-    pod 'PullToMakeSoup'                                        , '2.0'
+#    pod 'PullToMakeSoup'                                        , '2.0'
     pod 'Kingfisher'                                            , '3.2.1'
 #    pod 'Alamofire'                                             , '4.0.0'
 #    pod 'ObjectMapper'
@@ -26,6 +26,7 @@ target 'EEETravel' do
     pod 'Moya'                                                   ,'8.0.3'
     pod 'Then'                                                   ,‘2.1.0‘
     pod 'Reusable'                                               ,'4.0.0'
+    pod 'PullToRefresher'                                        ,'2.0.2'
 #    pod 'Moya/RxSwift'
 #    pod 'BTNavigationDropdownMenu', :git => 'https://github.com/PhamBaTho/BTNavigationDropdownMenu.git', :branch => 'swift-3.0'
     pod 'Observable-Swift' , :git => 'git@github.com:Vaseltior/Observable-Swift.git'

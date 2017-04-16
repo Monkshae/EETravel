@@ -33,7 +33,7 @@ protocol ViewModelProtocol {
     
     var dataArray: [AnyObject] { get set }
     var api: EEAPI { get set }
-    var startNum: Int { get set }
+    var page: Int { get set }
     var message: String { get set }
     var fetchDataResult: Observable<Int> { get set }
     
@@ -50,17 +50,17 @@ protocol ViewModelProtocol {
 class FetchViewModel: ViewModelProtocol {
     var dataArray = [AnyObject]()
     var api = EEAPI.defaultApi
-    var startNum = 0
+    var page = 0
     var message = ""
     var fetchDataResult: Observable<Int> = Observable(FetchDataResult.Failed.rawValue)
     var parameters = JsonType()
 
     required init() {
-        parameters = ["start_num": startNum, "count": 10]
+        parameters = ["page": page]
     }
     
     func buildParameters() {
-        parameters["start_num"] = startNum
+        parameters["page"] = page
     }
     
     func fetchRemoteData() {

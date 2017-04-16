@@ -9,6 +9,7 @@
 import UIKit
 import Observable
 import SnapKit
+import PullToRefresh
 //import GMRefresh
 
 /// 任何业务controller都可以挂上这个协议以实现list controller的功能
@@ -180,21 +181,25 @@ extension ListProtocol where Self: EEBaseController {
 //            showEmptyView(EmptyViewType.Exception)
         }
 
-        // 因为数据源的改变，所以应该先reloadData完UI再endRefreshing
-//        if !self.listView.mj_header.hidden {
-//            self.listView.mj_header.endRefreshing()
-//        }
-//        if !self.listView.mj_footer.hidden {
-//            self.listView.mj_footer.endRefreshing()
-//        }
+        listView.addPullToRefresh(PullToRefresh(position: .top)) { [weak self] in
+            self?.viewModel.page = 0
+            self?.viewModel.dataArray.removeAll()
+            self?.listView.reloadList()
+            self?.fetchData()
+        }
+    
+        listView.addPullToRefresh(PullToRefresh(position: .bottom)) { [weak self] in
+            self?.viewModel.page += 1
+            self?.fetchData()
+        }
     }
 
-//    func refreshList() {
-//        viewModel.startNum = 0
-//        viewModel.dataArray.removeAll()
-//        listView.reloadList()
-//        fetchData()
-//    }
+    func refreshList() {
+        self?.viewModel.page = 0
+        viewModel.dataArray.removeAll()
+        listView.reloadList()
+        fetchData()
+    }
     
     func updateOtherUIData() {
         print("Default updateOtherUIData function")
@@ -217,38 +222,6 @@ extension ListProtocol where Self: EEBaseController {
 //        emptyView.hidden = true
     }
     
-    func setNeedHeaderRefresh(need: Bool) {
-//        if need {
-//            let header = GMRefreshHeader()
-//            header.refreshingBlock = { [weak self] in
-//                guard let strongSelf = self else { return }
-//                strongSelf.viewModel.willRefresh()
-//                strongSelf.fetchData()
-//            }
-//            listView.mj_header = header
-//        } else {
-//            listView.mj_header.hidden = true
-//        }
-    }
-    
-    func setNeedFooterRefresh(need: Bool) {
-//        if need {
-//            let footer = GMRefreshFooter()
-//            footer.stateLabel.hidden = true
-//            footer.refreshingTitleHidden = true
-//            footer.refreshingBlock = { [weak self] in
-//                // TODO + _deleteCount
-//                guard let strongSelf = self else { return }
-//                strongSelf.viewModel.willLoadMore()
-//                strongSelf.fetchData()
-//            }
-//            listView.mj_footer = footer
-//        } else {
-//            listView.mj_footer.hidden = true
-//        }
-        
-    }
-
     // MARK: - EmptyViewDelegate
     func emptyViewDidClickReload() {
 //        refreshList()
