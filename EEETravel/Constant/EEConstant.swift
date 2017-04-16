@@ -66,3 +66,23 @@ extension UIFont {
     }
 
 }
+
+
+
+public struct Share {
+
+    public static let weixinAppId = "wx403cd28c142c7d87"
+    
+    public static let weixinSecret = "035af39ad74bbc01b7517a291c836827"
+
+    
+    
+    public static let qqAppId = "1101126509"
+    
+    public static let qqSecret = "yD4Eu3WZX6egmrMU"
+    
+    public static let sinaAppId = "2387882244"
+    
+    public static let sinaSecret = "8480ee24118f0dec4f71e0ca1ba8638e"
+
+}
