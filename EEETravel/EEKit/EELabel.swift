@@ -53,7 +53,7 @@ class EELabel: UILabel {
     open func setup() {
         verticalAlignment = .Middle
     }
-
+    
     static func label(_ textAlignment: NSTextAlignment, _ textColor: UIColor, _ fontSize: Int) -> EELabel {
         let label = EELabel()
         label.textAlignment = textAlignment
