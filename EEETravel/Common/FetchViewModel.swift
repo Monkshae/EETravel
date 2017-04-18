@@ -71,6 +71,18 @@ class FetchViewModel: ViewModelProtocol {
             case let .success(response):
 //                let data = response.data
 //                let statusCode = moyaResponse.statusCode
+                
+                
+//                let statusCode = moyaResponse.statusCode
+//                let  jsonString = try? response.mapJSON()
+//                
+//                let a = NSDictionary(dictionary: (jsonString as? JsonType)!)
+//                if let b = a as? NSDictionary {
+//                    
+//                    print(b)
+//                    
+//                }
+                
                 let jsonString = try? response.mapString()
                 _ = response.statusCode
                 message = jsonString ?? message

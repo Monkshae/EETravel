@@ -8,7 +8,6 @@
 import Foundation
 import Moya
 
-
 let EEURLScheme = "gmdoctor"
 let EEURLSchemePrefix = "gmdoctor://"
 
@@ -53,9 +52,6 @@ struct Hybrid {
     static let QuestionDetail           = "/api/client/hybrid/question/%@/detail"   // 问答：问题详情
 }
 
-
-
-
 // MARK: - Provider setup
 
 private func JSONResponseDataFormatter(_ data: Data) -> Data {
@@ -98,7 +94,7 @@ extension EEAPI: TargetType {
         case .defaultApi:
             return ""
         case .home:
-            return "api/app/all-v1.php"
+            return "api/app/app.php"
         case .serviceFilter:
             return "/api/cache/data/service_filter/"
         case .userProfile(let name):

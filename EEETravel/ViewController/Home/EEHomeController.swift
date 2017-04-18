@@ -27,7 +27,6 @@ class EEHomeController: EEBaseController, ListProtocol {
         tableView.register(cellType: EEHomeCell.self)
 //        tableView.reloadData()
     }
-
     
     
 //    func downloadServiceFilter() {

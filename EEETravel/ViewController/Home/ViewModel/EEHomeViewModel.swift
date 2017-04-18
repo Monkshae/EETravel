@@ -14,8 +14,6 @@ class EEHomeViewModel: FetchViewModel {
         super.init()
         api = .home
     }
-   
-//    var array = [EEHomeObject]()
     
     override func buildData(data: String) {
         dataArray = [EEHomeObject](json:data)
@@ -31,7 +29,6 @@ class EEHomeViewModel: FetchViewModel {
         return object.data?.name ?? ""
     }
     
-    
     func title(at indexPath: IndexPath) -> String {
         let object = dataArray[indexPath.row] as! EEHomeObject
         return object.data?.title ?? ""
@@ -43,8 +40,5 @@ class EEHomeViewModel: FetchViewModel {
         let string = interval.getTimeString()
         return string
     }
-    
-    
-    
     
 }
