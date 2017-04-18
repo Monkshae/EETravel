@@ -195,10 +195,10 @@ extension ListProtocol where Self: EEBaseController {
     }
 
     func refreshList() {
-        self?.viewModel.page = 0
-        viewModel.dataArray.removeAll()
-        listView.reloadList()
-        fetchData()
+        self.viewModel.page = 0
+        self.viewModel.dataArray.removeAll()
+        self.listView.reloadList()
+        self.fetchData()
     }
     
     func updateOtherUIData() {

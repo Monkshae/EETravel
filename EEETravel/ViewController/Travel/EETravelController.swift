@@ -7,28 +7,35 @@
 //
 
 import UIKit
+import MonkeyKing
 
 class EETravelController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let shareButton = EEButton(type: .custom)
+        view.addSubview(shareButton)
+        shareButton.addTarget(self, action: #selector(shareButtonClicked(button: )), for: .touchUpInside)
+        shareButton.snp.makeConstraints { (make) in
+            make.center.equalToSuperview()
+            make.size.equalTo(CGSize(width: 100, height: 35))
+        }
+        shareButton.setTitle("分享", for: .normal)
+        shareButton.backgroundColor = UIColor.red
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @objc func shareButtonClicked(button: EEButton) {
+     
+        let message = MonkeyKing.Message.weChat(.session(info: (
+            title: "Session",
+            description: "Hello Session",
+            thumbnail: UIImage(named: "rabbit"),
+            media: .url(URL(string: "http://www.apple.com/cn")!)
+        )))
+        
+        MonkeyKing.deliver(message) { success in
+            print("shareURLToWeChatSession success: \(success)")
+        }
+        
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

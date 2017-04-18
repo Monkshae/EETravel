@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SnapKit
+//import SnapKit
 
 class EENavigationMenuCell: UICollectionViewCell {
     open var imageView: EEImageView!

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SnapKit
+//import SnapKit
 import Kingfisher
 
 class EETableViewCell: UITableViewCell {

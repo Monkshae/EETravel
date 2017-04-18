@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import MonkeyKing
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -21,6 +21,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         return true
 
+    }
+
+    func setupMonkeying() {
+        MonkeyKing.registerAccount(.weChat(appID: Share.weChatAppId, appKey: Share.weChatAppkey))
+        MonkeyKing.registerAccount(.qq(appID: Share.qqAppId))
+        MonkeyKing.registerAccount(.weibo(appID: Share.weiboAppId, appKey: Share.weChatAppkey, redirectURL: "http://www.wanmeizhensuo.com/api/user/weibo/auth/"))
+    }
+
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        
+        if MonkeyKing.handleOpenURL(url) {
+            return true
+        }
+        return false
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

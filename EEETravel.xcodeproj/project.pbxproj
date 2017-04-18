@@ -182,9 +182,9 @@
 			children = (
 				D92E2B4E1E890FFD0099E8F6 /* EECreditCardController.swift */,
 				D92E2B441E890F820099E8F6 /* Home */,
+				D92E2B461E890F820099E8F6 /* Travel */,
 				D92E2B401E890F820099E8F6 /* Discount */,
 				D92E2B421E890F820099E8F6 /* FrequentFlyer */,
-				D92E2B461E890F820099E8F6 /* Travel */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
