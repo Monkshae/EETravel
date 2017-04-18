@@ -29,7 +29,7 @@ class EETravelController: UIViewController {
         let message = MonkeyKing.Message.weChat(.session(info: (
             title: "Session",
             description: "Hello Session",
-            thumbnail: UIImage(named: "rabbit"),
+            thumbnail: nil/*UIImage(named: "rabbit")*/,
             media: .url(URL(string: "http://www.apple.com/cn")!)
         )))
         

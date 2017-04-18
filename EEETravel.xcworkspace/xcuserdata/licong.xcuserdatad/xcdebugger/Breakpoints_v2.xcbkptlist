@@ -108,13 +108,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EEETravel/ViewController/Travel/EETravelController.swift"
-            timestampString = "514048488.322208"
+            timestampString = "514183135.057958"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "shareButtonClicked(button:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EEETravel.EETravelController.shareButtonClicked (button : EEETravel.EEButton) -&gt; ()"
+                  moduleName = "EEETravel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/licong/Code/EEETravel/EEETravel/ViewController/Travel/EETravelController.swift"
+                  timestampString = "514183724.346969"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "352">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EEETravel.EETravelController.(shareButtonClicked (button : EEETravel.EEButton) -&gt; ()).(closure #1)"
+                  moduleName = "EEETravel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/licong/Code/EEETravel/EEETravel/ViewController/Travel/EETravelController.swift"
+                  timestampString = "514183724.348545"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -123,13 +155,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "EEETravel/ViewController/Home/ViewModel/EEHomeViewModel.swift"
-            timestampString = "514177888.09169"
+            filePath = "Pods/MonkeyKing/Sources/MonkeyKing.swift"
+            timestampString = "514183629.935407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "buildData(data:)"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
+            landmarkName = "registerAccount(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

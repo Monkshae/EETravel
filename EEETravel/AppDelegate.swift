@@ -19,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tabBarController = EEMainTabBarController()
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
+        
+        setupMonkeying()
+        
         return true
 
     }

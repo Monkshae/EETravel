@@ -684,7 +684,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Cong Li (9DKW5BMB89)";
 				DEVELOPMENT_TEAM = 98BPAMG7YA;
 				INFOPLIST_FILE = EEETravel/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eee.travel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -709,7 +709,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Cong Li (98BPAMG7YA)";
 				DEVELOPMENT_TEAM = 98BPAMG7YA;
 				INFOPLIST_FILE = EEETravel/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eee.travel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
