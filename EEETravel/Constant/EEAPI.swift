@@ -94,7 +94,7 @@ extension EEAPI: TargetType {
         case .defaultApi:
             return ""
         case .home:
-            return "api/app/ap.php"
+            return "api/app/app.php"
         case .serviceFilter:
             return "/api/cache/data/service_filter/"
         case .userProfile(let name):

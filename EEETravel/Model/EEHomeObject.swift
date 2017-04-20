@@ -20,7 +20,7 @@ class EEHomeBaseObject: BaseObject {
 }
 
 class EEHomeObject: BaseObject {
-    var data: EEHomeBaseObject?
+    var data = [EEHomeBaseObject]()
     var message = ""
     var error = 0
 }

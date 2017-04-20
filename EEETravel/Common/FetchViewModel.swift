@@ -31,7 +31,6 @@ enum FetchDataResult: Int {
 
 protocol ViewModelProtocol {
     
-    var dataArray: [AnyObject] { get set }
     var api: EEAPI { get set }
     var page: Int { get set }
     var message: String { get set }
@@ -41,14 +40,15 @@ protocol ViewModelProtocol {
      协议中的构造器要求，必须实现init方法
      */
     init()
-    
+    func isDataArrayEmpty() -> Bool
     func fetchRemoteData()
+    func clearData()
     func willRefresh()
     func willLoadMore()
 }
 
-class FetchViewModel: ViewModelProtocol {
-    var dataArray = [AnyObject]()
+class FetchViewModel<T>: ViewModelProtocol {
+    var dataArray = [T]()
     var api = EEAPI.defaultApi
     var page = 0
     var message = ""
@@ -59,34 +59,30 @@ class FetchViewModel: ViewModelProtocol {
         parameters = ["page": page]
     }
     
+    func isDataArrayEmpty() -> Bool {
+        return dataArray.count == 0
+    }
+    
     func buildParameters() {
         parameters["page"] = page
     }
     
     func fetchRemoteData() {
         EEProvider.request(api) { result in
-            var message = "Couldn't access API"
-            
+//            var message = "Couldn't access API"
             switch result {
             case let .success(response):
-//                let data = response.data
-//                let statusCode = moyaResponse.statusCode
+
+                let  jsonResponse = try? response.mapJSON()
+                guard let json = jsonResponse as? NSDictionary else { return }
+                if let message = json["message"] as? String {
+                    self.message = message
+                }
+                if json["data"] == nil {
+                    return
+                }
                 
-                
-//                let statusCode = moyaResponse.statusCode
-//                let  jsonString = try? response.mapJSON()
-//                
-//                let a = NSDictionary(dictionary: (jsonString as? JsonType)!)
-//                if let b = a as? NSDictionary {
-//                    
-//                    print(b)
-//                    
-//                }
-                
-                let jsonString = try? response.mapString()
-                _ = response.statusCode
-                message = jsonString ?? message
-                self.buildData(data: message)
+                self.build(json)
                 self.fetchDataResult.value = FetchDataResult.Success.rawValue
             case let .failure(error):
                 // this means there was a network failure - either the request
@@ -98,13 +94,18 @@ class FetchViewModel: ViewModelProtocol {
             }
         }
     }
-    func buildData(data: String) {}
+    func build(_ data: NSDictionary) {}
 
+    func clearData() {
+        page = 0
+        dataArray.removeAll()
+    }
+    
     func willRefresh() {
-        
+        page = 0
     }
     
     func willLoadMore() {
-        
+        page += 1
     }
 }

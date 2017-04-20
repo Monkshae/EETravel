@@ -8,35 +8,36 @@
 
 import UIKit
 
-class EEHomeViewModel: FetchViewModel {
+class EEHomeViewModel: FetchViewModel<EEHomeBaseObject> {
 
     required init() {
         super.init()
         api = .home
     }
     
-    override func buildData(data: String) {
-        dataArray = [EEHomeObject](json:data)
+    override func build(_ data: NSDictionary) {
+        let response =  EEHomeObject(dictionary: data)
+        dataArray = response.data
     }
     
     func icon(at indexPath: IndexPath) -> String {
-        let object = dataArray[indexPath.row] as! EEHomeObject
-        return object.data?.icon ?? ""
+        let object = dataArray[indexPath.row]
+        return object.icon 
     }
     
     func name(at indexPath: IndexPath) -> String {
-        let object = dataArray[indexPath.row] as! EEHomeObject
-        return object.data?.name ?? ""
+        let object = dataArray[indexPath.row]
+        return object.name
     }
     
     func title(at indexPath: IndexPath) -> String {
-        let object = dataArray[indexPath.row] as! EEHomeObject
-        return object.data?.title ?? ""
+        let object = dataArray[indexPath.row]
+        return object.title
     }
     
     func interval(at indexPath: IndexPath) -> String {
-        let object = dataArray[indexPath.row] as! EEHomeObject
-        let interval = object.data?.interval ?? ""
+        let object = dataArray[indexPath.row]
+        let interval = object.interval
         let string = interval.getTimeString()
         return string
     }

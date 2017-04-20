@@ -154,14 +154,14 @@ extension ListProtocol where Self: EEBaseController {
     }
     
     func fetchData() {
-        if viewModel.dataArray.count == 0 {
+        if viewModel.isDataArrayEmpty() {
 //            showLoading(nil)
         }
         viewModel.fetchRemoteData()
     }
 
     private func addKVO() {
-        viewModel.fetchDataResult.afterChange += { [weak self] in
+        _ = viewModel.fetchDataResult.afterChange += { [weak self] in
             self?.observeHandler(newValue: $1)
         }
     }
@@ -171,7 +171,7 @@ extension ListProtocol where Self: EEBaseController {
         if newValue == FetchDataResult.Success.rawValue {
             listView.reloadList()
             updateOtherUIData()
-            if viewModel.dataArray.count == 0 {
+            if viewModel.isDataArrayEmpty() {
 //                debugLog(viewModel.message)
 //                showEmptyView()
             } else {
@@ -182,8 +182,7 @@ extension ListProtocol where Self: EEBaseController {
         }
 
         listView.addPullToRefresh(PullToRefresh(position: .top)) { [weak self] in
-            self?.viewModel.page = 0
-            self?.viewModel.dataArray.removeAll()
+            self?.viewModel.clearData()
             self?.listView.reloadList()
             self?.fetchData()
         }
@@ -196,7 +195,7 @@ extension ListProtocol where Self: EEBaseController {
 
     func refreshList() {
         self.viewModel.page = 0
-        self.viewModel.dataArray.removeAll()
+        
         self.listView.reloadList()
         self.fetchData()
     }
