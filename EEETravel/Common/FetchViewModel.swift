@@ -63,11 +63,12 @@ class FetchViewModel<T>: ViewModelProtocol {
         return dataArray.count == 0
     }
     
-    func buildParameters() {
-        parameters["page"] = page
-    }
+//    func buildParameters() {
+//        parameters["page"] = page
+//    }
     
     func fetchRemoteData() {
+        api = .home(page)
         EEProvider.request(api) { result in
 //            var message = "Couldn't access API"
             switch result {

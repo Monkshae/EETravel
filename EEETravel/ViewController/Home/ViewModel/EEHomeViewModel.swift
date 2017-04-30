@@ -12,17 +12,21 @@ class EEHomeViewModel: FetchViewModel<EEHomeBaseObject> {
 
     required init() {
         super.init()
-        api = .home
+        api = .home(page)
     }
     
     override func build(_ data: NSDictionary) {
         let response =  EEHomeObject(dictionary: data)
-        dataArray = response.data
+        if page == 0 {
+            dataArray = response.data
+        } else {
+            dataArray.append(contentsOf: response.data)
+        }
     }
     
     func icon(at indexPath: IndexPath) -> String {
         let object = dataArray[indexPath.row]
-        return object.icon 
+        return "https://www.eee.com/" + object.icon
     }
     
     func name(at indexPath: IndexPath) -> String {

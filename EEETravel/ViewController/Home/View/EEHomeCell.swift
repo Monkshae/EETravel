@@ -19,7 +19,7 @@ final class EEHomeCell: EETableViewCell, Reusable {
     override func setup() {
         super.setup()
         contentView.addSubview(icon)
-        icon.backgroundColor = UIColor.red
+        icon.backgroundColor = UIColor.white
         icon.snp.makeConstraints { (make) in
             make.left.equalTo(15)
             make.top.equalTo(8)

@@ -185,17 +185,18 @@ extension ListProtocol where Self: EEBaseController {
             self?.viewModel.clearData()
             self?.listView.reloadList()
             self?.fetchData()
+            self?.tableView.endRefreshing(at: .top)
         }
     
         listView.addPullToRefresh(PullToRefresh(position: .bottom)) { [weak self] in
-            self?.viewModel.page += 1
+            self?.viewModel.willLoadMore()
             self?.fetchData()
+            self?.tableView.endRefreshing(at: .bottom)
         }
     }
 
     func refreshList() {
         self.viewModel.page = 0
-        
         self.listView.reloadList()
         self.fetchData()
     }
