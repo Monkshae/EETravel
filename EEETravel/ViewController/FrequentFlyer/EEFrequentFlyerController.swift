@@ -8,27 +8,47 @@
 
 import UIKit
 
-class EEFrequentFlyerController: UIViewController {
-
+class EEFrequentFlyerController: EEBaseController, ListProtocol {
+    var viewModel = EEHomeViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        addTableView(style: .plain, fetchNow: true)
+        tableView.snp.updateConstraints { (make) in
+            make.bottom.equalTo(-49)
+        }
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(cellType: EEHomeCell.self)
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+extension EEFrequentFlyerController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.dataArray.count
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return tableView.fd_heightForCell(with: "EEHomeCell", cacheBy: indexPath) { (cell) in
+            self.configData(for: cell as! EEHomeCell, at: indexPath)
+        }
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(for: indexPath) as EEHomeCell
+        configData(for: cell, at: indexPath)
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
+    func configData(for cell: EEHomeCell, at indexPath: IndexPath) {
+        cell.titleLabel.text = viewModel.title(at: indexPath)
+        cell.nameLabel.text = viewModel.name(at: indexPath)
+        cell.timeLabel.text = viewModel.interval(at: indexPath)
+        cell.icon.kf.setImage(with: URL(string:viewModel.icon(at: indexPath)), placeholder: nil, options: [.transition(.fade(1))], progressBlock: nil, completionHandler: nil)
+    }
+    
 }
