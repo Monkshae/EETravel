@@ -11,7 +11,11 @@ import UIKit
 class EEFrequentFlyerViewModel: FetchViewModel<EEHomeBaseObject> {
     required init() {
         super.init()
-        api = .home(page)
+        api = .home(page, EEKey.frequentFlyerTagId)
+    }
+    
+    override func buildParameters() {
+        api = .home(page, EEKey.frequentFlyerTagId)
     }
     
     override func build(_ data: NSDictionary) {

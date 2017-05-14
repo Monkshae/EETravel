@@ -12,7 +12,7 @@ import MonkeyKing
 class EETravelController: EEBaseController, ListProtocol {
 
     
-    var viewModel = EEHomeViewModel()
+    var viewModel = EETravelViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
         addTableView(style: .plain, fetchNow: true)

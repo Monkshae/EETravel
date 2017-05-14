@@ -9,7 +9,7 @@
 import UIKit
 
 class EEDiscountController: EEBaseController, ListProtocol {
-    var viewModel = EEHomeViewModel()
+    var viewModel = EEDiscountViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
         addTableView(style: .plain, fetchNow: true)

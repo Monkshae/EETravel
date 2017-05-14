@@ -75,7 +75,7 @@ private extension String {
 public enum EEAPI {
      //默认api,值为空
     case defaultApi
-    case home(Int)
+    case home(Int, Int) //page 和tagId
     case serviceFilter
     case userProfile(String)
     case userRepositories(String)
@@ -93,7 +93,7 @@ extension EEAPI: TargetType {
         switch self {
         case .defaultApi:
             return ""
-        case .home(let _):
+        case .home(_, _):
             return "api/app/app.php"
         case .serviceFilter:
             return "/api/cache/data/service_filter/"
@@ -110,8 +110,8 @@ extension EEAPI: TargetType {
     
     public var parameters: [String: Any]? {
         switch self {
-        case .home(let page):
-            return ["page": page]
+        case .home(let page, let tag):
+            return ["page": page, "tag": tag]
         default:
             return nil
         }

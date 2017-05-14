@@ -56,21 +56,21 @@ class FetchViewModel<T>: ViewModelProtocol {
     var parameters = JsonType()
 
     required init() {
-        parameters = ["page": page]
+//        parameters = ["page": page]
+//        api = .home(page, EEKey.homeTagId)
     }
     
     func isDataArrayEmpty() -> Bool {
         return dataArray.count == 0
     }
-    
-//    func buildParameters() {
-//        parameters["page"] = page
-//    }
+
+    func buildParameters() {
+//        api = .home(page, EEKey.homeTagId)
+    }
     
     func fetchRemoteData() {
-        api = .home(page)
+        buildParameters()
         EEProvider.request(api) { result in
-//            var message = "Couldn't access API"
             switch result {
             case let .success(response):
 
@@ -86,10 +86,6 @@ class FetchViewModel<T>: ViewModelProtocol {
                 self.build(json)
                 self.fetchDataResult.value = FetchDataResult.Success.rawValue
             case let .failure(error):
-                // this means there was a network failure - either the request
-                // wasn't sent (connectivity), or no response was received (server
-                // timed out).  If the server responds with a 4xx or 5xx error, that
-                // will be sent as a ".success"-ful response.
                 self.message = error.errorDescription ?? "网络请求失败，请检查您的网络设置"
                 self.fetchDataResult.value = FetchDataResult.Failed.rawValue
             }

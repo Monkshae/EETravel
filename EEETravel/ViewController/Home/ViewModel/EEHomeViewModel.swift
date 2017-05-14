@@ -12,7 +12,11 @@ class EEHomeViewModel: FetchViewModel<EEHomeBaseObject> {
 
     required init() {
         super.init()
-        api = .home(page)
+        api = .home(page, EEKey.homeTagId)
+    }
+    
+    override func buildParameters() {
+        api = .home(page, EEKey.homeTagId)
     }
     
     override func build(_ data: NSDictionary) {

@@ -9,7 +9,7 @@
 import UIKit
 
 class EEFrequentFlyerController: EEBaseController, ListProtocol {
-    var viewModel = EEHomeViewModel()
+    var viewModel = EEFrequentFlyerViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
         addTableView(style: .plain, fetchNow: true)
