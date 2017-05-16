@@ -24,10 +24,12 @@ final class EEHomeCell: EETableViewCell, Reusable {
             make.left.equalTo(15)
             make.top.equalTo(8)
             make.bottom.equalTo(-8)
-            make.size.equalTo(CGSize(width: 50, height: 50))
+            make.size.equalTo(CGSize(width: 80, height: 80))
         }
         contentView.addSubview(titleLabel)
         titleLabel.text = "招商银行 暖春四月 花样好礼（账单分期达标享乐上包/净水壶/骑行箱）"
+        titleLabel.numberOfLines = 2
+        titleLabel.lineBreakMode = .byCharWrapping
         titleLabel.snp.makeConstraints { (make) in
             make.left.equalTo(icon.snp.right).offset(8)
             make.top.equalTo(icon.snp.top).offset(5)

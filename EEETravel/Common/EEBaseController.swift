@@ -84,6 +84,12 @@ class EEBaseController: UIViewController {
         return .default
     }
 
+    func addComponent(_ component: UIViewController) {
+        self.addChildViewController(component)
+        self.view.addSubview(component.view)
+        component.didMove(toParentViewController: self)
+    }
+    
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
@@ -93,10 +99,6 @@ private var navigationBarAssociationKey: UInt8 = 0
 
 // MARK: - 导航相关
 extension UIViewController: EENavigationBarProtocol {
-    
-    func backButtonClicked(button: EENavigationButton) {}
-    func rightButtonClicked(button: EENavigationButton) {}
-    func nearRightButtonClicked(button: EENavigationButton) {}
     
     var navigationBar: EENavigationBar {
         get {
@@ -122,33 +124,42 @@ extension UIViewController: EENavigationBarProtocol {
         }
     }
     
-    /// 对于没有导航栏，但是有backButton的controller，可以使用这个方法创建backButton。坐标需要指定
-    func createBackButton(type: GMBarButtonImageType) -> EEButton {
-        let button = EEButton(type: .custom)
-        button.setImage(type.image, for: .normal)
-        button.sizeToFit()
-        button.enableAdaptive = true
-        button.adaptiveHotAreaWidth = 70
-        button.addTarget(self, action: #selector(EEBaseController.backAction(button:)), for: .touchUpInside)
-        return button
+    func leftButtonTap(_ button: EENavigationButton?) {
+        let newSelf = self as? EEBaseController
+        newSelf?.backAction(nil)
     }
     
-    func pushViewController(controller: UIViewController) {
-        navigationController?.pushViewController(controller, animated: true)
+    func rightButtonTap(_ button: EENavigationButton?) {
+        let newSelf = self as? EEBaseController
+        newSelf?.rightButtonClicked(nil)
     }
     
-    func backAction(button: EENavigationButton) {
+    func nearRightButtonTap(_ button: EENavigationButton?) {
+        let newSelf = self as? EEBaseController
+        newSelf?.nearRightButtonClicked(nil)
+    }
+}
+
+extension EEBaseController {
+
+    func backAction(_ backButton: EENavigationButton?) {
         // parentViewController 是 UINavigationController 说明是极有可能是 push 进来的，需要进一步判断
-        if let navigation = parent as? UINavigationController {
+        if (parent?.isKind(of: UINavigationController.classForCoder())) != nil {
+            let navigation = (parent as! UINavigationController)
             // 如果 presentingViewController 存在，表示有人 present 自己，再并上条件已经在导航器上rootViewController时，直接 dismiss 就好了
             if presentingViewController != nil && navigation.viewControllers.count == 1 {
                 dismiss(animated: true, completion: nil)
             } else {
-                navigationController?.popViewController(animated: true)
+                _ = navigationController?.popViewController(animated: true)
             }
         } else {
             dismiss(animated: true, completion: nil)
         }
     }
+    
+    func rightButtonClicked(_ button: UIButton?) {
+        
+    }
+    
+    func nearRightButtonClicked(_ button: UIButton?) {}
 }
-

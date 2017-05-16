@@ -148,21 +148,22 @@ class EENavigationBar: EEView {
         itemView.addSubview(rightButton)
         itemView.addSubview(nearRightButton)
         titleLabel.snp.makeConstraints { (make) in
-            make.width.equalTo(Constant.screenWidth - 80)
-            make.height.equalTo(44)
-            make.center.equalTo(0)
+            make.edges.equalTo(UIEdgeInsets.zero)
         }
+        
         leftButton.snp.makeConstraints { (make) in
+            make.centerY.equalToSuperview()
             make.left.equalTo(15)
-            make.centerY.equalTo(0)
+            
         }
         rightButton.snp.makeConstraints { (make) in
             make.right.equalTo(-15)
-            make.centerY.equalTo(0)
+            make.centerY.equalTo(leftButton.snp.centerY)
         }
         nearRightButton.snp.makeConstraints { (make) in
+            make.centerY.equalTo(leftButton.snp.centerY)
             make.right.equalTo(rightButton.snp.left).offset(-20)
-            make.centerY.equalTo(0)
+            
         }
 
         showShadow(shadow: true)
@@ -191,22 +192,22 @@ class EENavigationBar: EEView {
     }
 
     @objc fileprivate func leftAction(button: EENavigationButton) {
-        delegate?.backButtonClicked(button: button)
+        delegate?.leftButtonTap(button)
     }
 
     @objc fileprivate func rightAction(button: EENavigationButton) {
-        delegate?.rightButtonClicked(button: button)
+        delegate?.rightButtonTap(button)
     }
 
     @objc fileprivate func nearRightAction(button: EENavigationButton) {
-        delegate?.nearRightButtonClicked(button: button)
+        delegate?.nearRightButtonTap(button)
     }
 }
 
 class EENavigationButton: EEButton { }
 
 protocol EENavigationBarProtocol: class {
-    func backButtonClicked(button: EENavigationButton)
-    func rightButtonClicked(button: EENavigationButton)
-    func nearRightButtonClicked(button: EENavigationButton)
+    func leftButtonTap(_ button: EENavigationButton?)
+    func rightButtonTap(_ button: EENavigationButton?)
+    func nearRightButtonTap(_ button: EENavigationButton?)
 }

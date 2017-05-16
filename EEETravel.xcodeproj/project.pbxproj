@@ -53,7 +53,6 @@
 		D9BD28C61E96274300B9189C /* EEClientH5Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD28C51E96274300B9189C /* EEClientH5Object.swift */; };
 		D9BD28CB1E962B5B00B9189C /* EEServerDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD28CA1E962B5B00B9189C /* EEServerDomain.swift */; };
 		D9BD28CE1E962B8B00B9189C /* EEWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD28CC1E962B8B00B9189C /* EEWebViewController.swift */; };
-		D9BD28CF1E962B8B00B9189C /* EEWebEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD28CD1E962B8B00B9189C /* EEWebEngine.swift */; };
 		D9BD28D11E962C1C00B9189C /* GMShareComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD28D01E962C1C00B9189C /* GMShareComponent.swift */; };
 		D9DD51F21DE6F29300565FAC /* EETheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD51F11DE6F29300565FAC /* EETheme.swift */; };
 		D9DD51F41DE6F2BD00565FAC /* EEConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD51F31DE6F2BD00565FAC /* EEConstant.swift */; };
@@ -113,7 +112,6 @@
 		D9BD28C51E96274300B9189C /* EEClientH5Object.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEClientH5Object.swift; sourceTree = "<group>"; };
 		D9BD28CA1E962B5B00B9189C /* EEServerDomain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEServerDomain.swift; sourceTree = "<group>"; };
 		D9BD28CC1E962B8B00B9189C /* EEWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEWebViewController.swift; sourceTree = "<group>"; };
-		D9BD28CD1E962B8B00B9189C /* EEWebEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEWebEngine.swift; sourceTree = "<group>"; };
 		D9BD28D01E962C1C00B9189C /* GMShareComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMShareComponent.swift; sourceTree = "<group>"; };
 		D9DD51F11DE6F29300565FAC /* EETheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EETheme.swift; sourceTree = "<group>"; };
 		D9DD51F31DE6F2BD00565FAC /* EEConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEConstant.swift; sourceTree = "<group>"; };
@@ -148,13 +146,6 @@
 				A474411F76B3AFCE35B5C90A /* Pods-EEETravel.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		D92AC76C1E014A4B0085EF62 /* EENetworking */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = EENetworking;
 			sourceTree = "<group>";
 		};
 		D92AF8181E94CECA0026B926 /* Model */ = {
@@ -303,7 +294,6 @@
 				D99AD7831E0B7EC000F7DF2E /* EEKit */,
 				D9BD28C71E962AD200B9189C /* Utils */,
 				D953168C1DE2FBF8000DFDDC /* Common */,
-				D92AC76C1E014A4B0085EF62 /* EENetworking */,
 				D9711B461E8E7610002AEC0A /* SafeBox */,
 				D953167D1DE2F671000DFDDC /* Assets.xcassets */,
 				D953167A1DE2F671000DFDDC /* Main.storyboard */,
@@ -368,7 +358,6 @@
 			children = (
 				D9BD28D01E962C1C00B9189C /* GMShareComponent.swift */,
 				D9BD28CC1E962B8B00B9189C /* EEWebViewController.swift */,
-				D9BD28CD1E962B8B00B9189C /* EEWebEngine.swift */,
 				D9BD28C51E96274300B9189C /* EEClientH5Object.swift */,
 			);
 			path = WebView;
@@ -592,7 +581,6 @@
 				D92E2B4A1E890F820099E8F6 /* EEHomeController.swift in Sources */,
 				D92AF8251E94EADB0026B926 /* EETableViewCell.swift in Sources */,
 				D9B389111E8BCF6200C5FC1D /* EEMainTabBarViewModel.swift in Sources */,
-				D9BD28CF1E962B8B00B9189C /* EEWebEngine.swift in Sources */,
 				D95316771DE2F671000DFDDC /* AppDelegate.swift in Sources */,
 				D932F0791EB722DD006CAD2C /* EEDiscountViewModel.swift in Sources */,
 				D92E2B4B1E890F820099E8F6 /* EETravelController.swift in Sources */,

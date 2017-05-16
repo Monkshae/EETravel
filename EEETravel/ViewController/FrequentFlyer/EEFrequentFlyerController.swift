@@ -12,6 +12,7 @@ class EEFrequentFlyerController: EEBaseController, ListProtocol {
     var viewModel = EEFrequentFlyerViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationBar.title = "常旅客"
         addTableView(style: .plain, fetchNow: true)
         tableView.snp.updateConstraints { (make) in
             make.bottom.equalTo(-49)
@@ -41,7 +42,9 @@ extension EEFrequentFlyerController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let webComp = EEWebViewController()
+        webComp.fullUrl = viewModel.url(at: indexPath)
+        navigationController?.pushViewController(webComp, animated: true)
     }
     
     func configData(for cell: EEHomeCell, at indexPath: IndexPath) {

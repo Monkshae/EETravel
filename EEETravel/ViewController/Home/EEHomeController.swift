@@ -16,6 +16,7 @@ class EEHomeController: EEBaseController, ListProtocol {
     var viewModel = EEHomeViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationBar.title = "首页"
         addTableView(style: .plain, fetchNow: true)
         tableView.snp.updateConstraints { (make) in
             make.bottom.equalTo(-49)
@@ -45,7 +46,9 @@ extension EEHomeController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let webComp = EEWebViewController()
+        webComp.fullUrl = viewModel.url(at: indexPath)
+        navigationController?.pushViewController(webComp, animated: true)
     }
     
     func configData(for cell: EEHomeCell, at indexPath: IndexPath) {
@@ -55,5 +58,20 @@ extension EEHomeController: UITableViewDelegate, UITableViewDataSource {
         cell.icon.kf.setImage(with: URL(string:viewModel.icon(at: indexPath)), placeholder: nil, options: [.transition(.fade(1))], progressBlock: nil, completionHandler: nil)
     }
     
+}
+
+extension EEHomeController: WebViewDelegate {
+    func handleLinkTap(_ url: String, host: String?, params: [String: AnyObject]?) {
+//        if host == Host.DiaryComment {
+//            parseLinkForReply(params)
+//        }
+    }
+    
+    func handleGlobalPageData(_ data: [String : AnyObject]) {
+//        handleGlobalDataForReply(data)
+//        navigationBar.title = data["topic_title"] as? String ?? "案例详情"
+//        navigationBar.rightButton.isHidden = webComp.hideShare
+    }
+
 }
 

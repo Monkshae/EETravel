@@ -43,6 +43,11 @@ class EEHomeViewModel: FetchViewModel<EEHomeBaseObject> {
         return object.title
     }
     
+    func url(at indexPath: IndexPath) -> String {
+        let object = dataArray[indexPath.row]
+        return object.url
+    }
+    
     func interval(at indexPath: IndexPath) -> String {
         let object = dataArray[indexPath.row]
         let interval = object.interval
