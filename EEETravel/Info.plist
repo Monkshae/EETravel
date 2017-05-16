@@ -60,7 +60,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>5</string>
+	<string>201705161720</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>mqzoneopensdk</string>
