@@ -29,7 +29,7 @@ class EEFrequentFlyerViewModel: FetchViewModel<EEHomeBaseObject> {
     
     func icon(at indexPath: IndexPath) -> String {
         let object = dataArray[indexPath.row]
-        return "https://www.eee.com/" + object.icon
+        return EEServerDomain.sharedInstance.APIHost + object.icon
     }
     
     func name(at indexPath: IndexPath) -> String {

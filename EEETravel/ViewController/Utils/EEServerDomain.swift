@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 struct EEServerDomain {
     
     static var sharedInstance = EEServerDomain()
@@ -19,6 +18,3 @@ struct EEServerDomain {
         
     }
 }
-
-
-
