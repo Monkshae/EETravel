@@ -41,6 +41,7 @@ target 'EEETravel' do
     pod 'SwiftLint'                                             , '0.17.0'
     pod 'MonkeyKing'                                            , '1.2.3'
     pod 'FDTemplateLayoutCell'                                  , '0.9.2'
+    pod 'SwiftIcons'                                            , '1.4.1'
 #    pod 'ShareSDK3'                                             , '3.5.0'
 #    pod 'MOBFoundation'                                         , '2.2.1'
 #    pod 'ShareSDK3/ShareSDKExtension'

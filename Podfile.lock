@@ -35,6 +35,7 @@ PODS:
   - Reusable/Storyboard (4.0.0)
   - Reusable/View (4.0.0)
   - SnapKit (3.0.2)
+  - SwiftIcons (1.4.1)
   - SwiftLint (0.17.0)
   - Then (2.1.0)
 
@@ -53,6 +54,7 @@ DEPENDENCIES:
   - PullToRefresher (= 2.0.2)
   - Reusable (= 4.0.0)
   - SnapKit (= 3.0.2)
+  - SwiftIcons (= 1.4.1)
   - SwiftLint (= 0.17.0)
   - Then (= 2.1.0)
 
@@ -82,9 +84,10 @@ SPEC CHECKSUMS:
   Result: 2453a22e5c5b11c0c3a478736e82cd02f763b781
   Reusable: 98e5fff1e0e2e00872199699b276dde08ee56c07
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
+  SwiftIcons: 7a3fb54d2876b5b207a68c5e34dfbde2c4e00296
   SwiftLint: 9fb1dd71d5952d130f8c2fb60ae2e1475cf5d575
   Then: 8496793c8fcac95482b943909b440724c7d8d82c
 
-PODFILE CHECKSUM: 7a1deeea229df640e90e3f40b7467e9fea5bdcca
+PODFILE CHECKSUM: 44c84af41f0490b9e12ca7c246874044cbfbb861
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1

@@ -89,6 +89,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftIcons-SwiftIcons.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftIcons.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Then.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -97,17 +107,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>01D2AB223A9436A5149FB47F60DFF273</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>1215771836B84E9F9899950098D2FF80</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>18C84AC192034ACC30A6C0B1EB4CE584</key>
+		<key>1484A345A8A6470AD96401154B678108</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>156E6A8D6B16486227307B7448036F97</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -132,7 +142,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>5FD42B8A0A6E67FEFF5F27248A812EE8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6BB1C1403B2419F911818DA8413FDA07</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>776DA58768826BDDE6513D23362E5B35</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -142,7 +162,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>810D4E51C1023EC588608BD8BE5CE358</key>
+		<key>81D070151E8D5BBBC5216BDBA8BD26E0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>874A163982F44910E08BA481DFD7EF2B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -152,17 +177,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>94600808A47FA960FCBADDE02B723DEC</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>C4944FEC314D1A66588651D006273ADE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C5FB3A072731F59F368CC808CEF1E6AA</key>
+		<key>CAB0F3FFAB781DECD07D7A07F77DD3A6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD676DD1D900B23FEC80FE81B3781074</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -173,11 +198,6 @@
 			<true/>
 		</dict>
 		<key>DD6DFB3F34C9DA96FCFB7B828D553157</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E3CEE1AE7AA7EB66E0533DD0F454E6E0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
