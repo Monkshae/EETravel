@@ -15,33 +15,21 @@ class EEMainTabBarViewModel: NSObject {
     var tabClassArray: [UIViewController.Type] = [EEHomeController.self,
                                              EETravelController.self,
                                              EEFrequentFlyerController.self,
-                                             EEDiscountController.self]
-    private var tabNameArray = ["首页", "旅游", "常旅客", "折扣"]
-    private var tabNomalIconArray = [FontType.icofont(.home), FontType.icofont(.uiTravel), FontType.icofont(.travelling), FontType.icofont(.saleDiscount)]
-//    private var tabPressIconArray: [String] = []
+                                             EEDiscountController.self,
+                                             EECreditCardController.self]
+    private var tabNameArray = ["最新", "旅游", "常旅客", "折扣", "信用卡"]
+    private var tabNomalIconArray = [FontType.icofont(.home), FontType.icofont(.uiTravel), FontType.icofont(.travelling), FontType.icofont(.saleDiscount), FontType.icofont(.creditCard)]
     
     override init() {
        super.init()
-//        generatePressIcon()
     }
     
     func tabName(at index: Int) -> String {
         return tabNameArray[index]
     }
     
-//    func tabNormalIcon(at index: Int) -> UIImage {
-//        let image = UIImage(named: tabNomalIconArray[index])!
-//        return image.withRenderingMode(.alwaysOriginal)
-//    }
-    
     func tabNormalIcon(at index: Int) -> FontType {
         return tabNomalIconArray[index]
     }
-    
-//    func tabPressIcon(at index: Int) -> UIImage {
-//        let image = UIImage(named: tabPressIconArray[index])!
-//        return image.withRenderingMode(.alwaysOriginal)
-//    }
-    
 }
 

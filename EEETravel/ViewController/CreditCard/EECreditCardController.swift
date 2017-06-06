@@ -1,22 +1,18 @@
 //
-//  HomeController.swift
+//  EECreditCardController.swift
 //  EEETravel
 //
-//  Created by licong on 2016/11/21.
-//  Copyright © 2016年 Richard. All rights reserved.
+//  Created by licong on 2017/6/6.
+//  Copyright © 2017年 Richard. All rights reserved.
 //
 
 import UIKit
-import Alamofire
-import EVReflection
-import FDTemplateLayoutCell
 
-class EEHomeController: EEBaseController, ListProtocol {
-    
-    var viewModel = EEHomeViewModel()
+class EECreditCardController: EEBaseController, ListProtocol {
+    var viewModel = EECreditCardViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationBar.title = "最新"
+        navigationBar.title = "信用卡"
         addTableView(style: .plain, fetchNow: true)
         tableView.snp.updateConstraints { (make) in
             make.bottom.equalTo(-49)
@@ -27,8 +23,8 @@ class EEHomeController: EEBaseController, ListProtocol {
     }
 }
 
-extension EEHomeController: UITableViewDelegate, UITableViewDataSource {
-        
+extension EECreditCardController: UITableViewDelegate, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.dataArray.count
     }
@@ -59,19 +55,3 @@ extension EEHomeController: UITableViewDelegate, UITableViewDataSource {
     }
     
 }
-
-extension EEHomeController: WebViewDelegate {
-    func handleLinkTap(_ url: String, host: String?, params: [String: AnyObject]?) {
-//        if host == Host.DiaryComment {
-//            parseLinkForReply(params)
-//        }
-    }
-    
-    func handleGlobalPageData(_ data: [String : AnyObject]) {
-//        handleGlobalDataForReply(data)
-//        navigationBar.title = data["topic_title"] as? String ?? "案例详情"
-//        navigationBar.rightButton.isHidden = webComp.hideShare
-    }
-
-}
-

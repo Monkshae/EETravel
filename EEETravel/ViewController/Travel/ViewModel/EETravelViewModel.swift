@@ -12,7 +12,7 @@ class EETravelViewModel: FetchViewModel<EEHomeBaseObject> {
 
     required init() {
         super.init()
-        api = .home(page, EEKey.travelTagId)
+//        api = .home(page, EEKey.travelTagId)
     }
     
     override func buildParameters() {

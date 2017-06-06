@@ -11,7 +11,7 @@ import UIKit
 class EEDiscountViewModel: FetchViewModel<EEHomeBaseObject> {
     required init() {
         super.init()
-        api = .home(page, EEKey.discountTagId)
+//        api = .home(page, EEKey.discountTagId)
     }
     
     override func buildParameters() {

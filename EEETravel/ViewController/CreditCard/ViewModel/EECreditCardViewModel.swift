@@ -1,21 +1,21 @@
 //
-//  EEFrequentFlyerViewModel.swift
+//  EECreditCardViewModel.swift
 //  EEETravel
 //
-//  Created by licong on 2017/5/1.
+//  Created by licong on 2017/6/6.
 //  Copyright © 2017年 Richard. All rights reserved.
 //
 
 import UIKit
 
-class EEFrequentFlyerViewModel: FetchViewModel<EEHomeBaseObject> {
+class EECreditCardViewModel: FetchViewModel<EEHomeBaseObject> {
     required init() {
         super.init()
-//        api = .home(page, EEKey.frequentFlyerTagId)
+//        api = .home(page, EEKey.creditCardTagId)
     }
     
     override func buildParameters() {
-        api = .home(page, EEKey.frequentFlyerTagId)
+        api = .home(page, EEKey.creditCardTagId)
     }
     
     override func build(_ data: NSDictionary) {
