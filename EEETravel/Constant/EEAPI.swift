@@ -86,7 +86,7 @@ extension EEAPI: TargetType {
     public var parameterEncoding: ParameterEncoding {
         return URLEncoding.default
     }
-    public var baseURL: URL { return URL(string: EEServerDomain.sharedInstance.APIHost)! }
+    public var baseURL: URL { return URL(string: EEServerDomain.APIHost)! }
 
 //    public var baseURL: URL { return URL(string: "https://backend.gmei.com")! }
     public var path: String {

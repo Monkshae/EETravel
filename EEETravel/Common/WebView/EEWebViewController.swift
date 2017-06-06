@@ -66,7 +66,7 @@ class EEWebViewController: EEBaseController, GMShareComponent {
         if !fullUrl.isEmpty {
             return fullUrl
         } else {
-            let url = "\(EEServerDomain.sharedInstance.APIHost)\(path)\(self.moreQueryParams)"
+            let url = "\(EEServerDomain.APIHost)\(path)\(self.moreQueryParams)"
             return url
         }
     }

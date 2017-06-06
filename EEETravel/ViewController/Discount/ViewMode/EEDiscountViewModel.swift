@@ -29,7 +29,7 @@ class EEDiscountViewModel: FetchViewModel<EEHomeBaseObject> {
     
     func icon(at indexPath: IndexPath) -> String {
         let object = dataArray[indexPath.row]
-        return "https://www.eee.com/" + object.icon
+        return EEServerDomain.APIHost + object.icon
     }
     
     func name(at indexPath: IndexPath) -> String {

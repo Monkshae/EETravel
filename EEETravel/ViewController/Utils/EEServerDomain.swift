@@ -12,7 +12,7 @@ struct EEServerDomain {
     
     static var sharedInstance = EEServerDomain()
     fileprivate let userDefaults = UserDefaults.standard
-    var APIHost = "https://www.eee.com/"
+    static let APIHost = "https://www.eee.com/"
     
     fileprivate init() {
         
