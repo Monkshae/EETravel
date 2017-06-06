@@ -12,6 +12,9 @@ import SnapKit
 import PullToRefresh
 //import GMRefresh
 
+let headerIdentifer = "headerIdentifer"
+let footerIdentifer = "footerIdentifer"
+
 /// 任何业务controller都可以挂上这个协议以实现list controller的功能
 protocol ListProtocol: class /*EmptyViewDelegate*/ {
     associatedtype ViewModelType : ViewModelProtocol // 这里需要一个实现 ViewModelType 的viewModel实例，通过这样一个泛型，可以适应不同的业务需求
@@ -41,6 +44,8 @@ protocol ListProtocol: class /*EmptyViewDelegate*/ {
      */
     func updateOtherUIData()
     
+    func removePullToRefresh()
+    
     /**
      请求完网络失败或者数据为空，显示一个空白提示View
      */
@@ -52,8 +57,8 @@ protocol ListProtocol: class /*EmptyViewDelegate*/ {
      
      - parameter need: 是否需要
      */
-//    func setNeedHeaderRefresh(need: Bool)
-//    func setNeedFooterRefresh(need: Bool)
+    func setNeedHeaderRefresh(need: Bool)
+    func setNeedFooterRefresh(need: Bool)
 
     /**
      返回空白页面中的文本内容，业务类可以复写此方法以便修改默认文字
@@ -76,15 +81,6 @@ private extension UIScrollView {
 }
 
 extension ListProtocol where Self: EEBaseController {
-
-//     var emptyView: EmptyView {
-//         get {
-//            return objc_getAssociatedObject(self, &emptyViewAssociationKey) as! EmptyView
-//         }
-//         set(newValue) {
-//            objc_setAssociatedObject(self, &emptyViewAssociationKey, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
-//         }
-//     }
 
     var tableView: UITableView {
         get {
@@ -135,18 +131,8 @@ extension ListProtocol where Self: EEBaseController {
             make.bottom.equalTo(0)
         }
         listView = list
-
-//        emptyView = EmptyView(frame:CGRectMake(0, 0, Constant.screenWidth, Constant.screenHeight))
-//        emptyView.hidden = true
-//        emptyView.delegate = self
-//        (list as? UITableView)?.backgroundView = emptyView
-//        (list as? UICollectionView)?.backgroundView = emptyView
-//        if !getEmptyText().isEmpty {
-//            emptyView.emptyText = self.getEmptyText()
-//        }
-
-//        setNeedHeaderRefresh(need: true)
-//        setNeedFooterRefresh(need: true)
+        setNeedHeaderRefresh(need: true)
+        setNeedFooterRefresh(need: true)
         addKVO()
         if now {
             fetchData()
@@ -155,7 +141,6 @@ extension ListProtocol where Self: EEBaseController {
     
     func fetchData() {
         if viewModel.isDataArrayEmpty() {
-//            showLoading(nil)
         }
         viewModel.fetchRemoteData()
     }
@@ -167,32 +152,25 @@ extension ListProtocol where Self: EEBaseController {
     }
     
     private func observeHandler(newValue: Int) {
-//        hideLoading()
+        let topState = listView.topPullToRefresh?.state
+        if topState == .loading {
+            listView.endRefreshing(at: .top)
+        }
+        
+        let bottomState = listView.bottomPullToRefresh?.state
+        if bottomState == .loading {
+            listView.endRefreshing(at: .bottom)
+        }
+        
         if newValue == FetchDataResult.Success.rawValue {
             listView.reloadList()
             updateOtherUIData()
             if viewModel.isDataArrayEmpty() {
-//                debugLog(viewModel.message)
-//                showEmptyView()
+                
             } else {
-               hideEmptyView()
+                
             }
-        } else {
-//            showEmptyView(EmptyViewType.Exception)
-        }
-
-        listView.addPullToRefresh(PullToRefresh(position: .top)) { [weak self] in
-            self?.viewModel.clearData()
-            self?.listView.reloadList()
-            self?.fetchData()
-            self?.tableView.endRefreshing(at: .top)
-        }
-    
-        listView.addPullToRefresh(PullToRefresh(position: .bottom)) { [weak self] in
-            self?.viewModel.willLoadMore()
-            self?.fetchData()
-            self?.tableView.endRefreshing(at: .bottom)
-        }
+        } else { }
     }
 
     func refreshList() {
@@ -205,29 +183,32 @@ extension ListProtocol where Self: EEBaseController {
         print("Default updateOtherUIData function")
     }
     
-//    func showEmptyView(type: EmptyViewType = .Empty) {
-//        emptyView.hidden = false
-//        if !viewModel.message.isEmpty {
-//            emptyView.type = type
-//            if type == .Empty {
-//                emptyView.emptyText = viewModel.message
-//            } else {
-//                emptyView.exceptionText = viewModel.message
-//            }
-//        }
-//        emptyView.setNeedsLayout()
-//    }
-    
-    func hideEmptyView() {
-//        emptyView.hidden = true
+    func removePullToRefresh() {
+        
     }
     
-    // MARK: - EmptyViewDelegate
-    func emptyViewDidClickReload() {
-//        refreshList()
+    func setNeedHeaderRefresh(need: Bool) {
+        if need {
+            let header = PullToRefresh(position: .top)
+            listView.addPullToRefresh(header) { [weak self] in
+                self?.viewModel.willRefresh()
+                self?.fetchData()
+            }
+        } else {
+            
+        }
     }
     
-    func getEmptyText() -> String {
-        return ""
+    func setNeedFooterRefresh(need: Bool) {
+        if need {
+            let footer = PullToRefresh(position: .bottom)
+            listView.addPullToRefresh(footer) { [weak self] in
+                self?.viewModel.willLoadMore()
+                self?.fetchData()
+            }
+        } else {
+    
+        }
     }
+
 }

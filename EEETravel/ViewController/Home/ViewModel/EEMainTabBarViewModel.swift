@@ -25,12 +25,6 @@ class EEMainTabBarViewModel: NSObject {
 //        generatePressIcon()
     }
     
-//    func generatePressIcon() {
-//        for i in 0 ..< tabNomalIconArray.count  {
-//            tabPressIconArray[i] = tabNomalIconArray[i] + "_" + String(i) + "_pr"
-//        }
-//    }
-    
     func tabName(at index: Int) -> String {
         return tabNameArray[index]
     }
