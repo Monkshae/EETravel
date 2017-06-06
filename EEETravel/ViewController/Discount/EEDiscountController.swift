@@ -12,7 +12,7 @@ class EEDiscountController: EEBaseController, ListProtocol {
     var viewModel = EEDiscountViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationBar.title = "折扣"
+        navigationBar.title = "购物"
         addTableView(style: .plain, fetchNow: true)
         tableView.snp.updateConstraints { (make) in
             make.bottom.equalTo(-49)

@@ -17,8 +17,8 @@ class EEMainTabBarViewModel: NSObject {
                                              EEFrequentFlyerController.self,
                                              EEDiscountController.self,
                                              EECreditCardController.self]
-    private var tabNameArray = ["最新", "旅游", "常旅客", "折扣", "信用卡"]
-    private var tabNomalIconArray = [FontType.icofont(.home), FontType.icofont(.uiTravel), FontType.icofont(.travelling), FontType.icofont(.saleDiscount), FontType.icofont(.creditCard)]
+    private var tabNameArray = ["最新", "旅游", "常旅客", "购物", "信用卡"]
+    private var tabNomalIconArray = [FontType.icofont(.home), FontType.icofont(.uiTravel), FontType.icofont(.travelling), FontType.icofont(.socialPrestashop), FontType.icofont(.creditCard)]
     
     override init() {
        super.init()
