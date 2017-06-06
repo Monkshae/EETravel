@@ -12,13 +12,15 @@ import Reusable
 final class EEHomeCell: EETableViewCell, Reusable {
 
     var icon = EEImageView()
-    var titleLabel = EELabel(.left, UIColor.black, 16)
+    var titleLabel = EELabel(.left, UIColor.bodyText, 16)
     var timeLabel = EELabel(.right, UIColor.black, 12)
     var nameLabel = EELabel(.left, UIColor.black, 12)
     
     override func setup() {
         super.setup()
         contentView.addSubview(icon)
+        icon.clipsToBounds = true
+        icon.layer.cornerRadius = 3
         icon.backgroundColor = UIColor.white
         icon.snp.makeConstraints { (make) in
             make.left.equalTo(15)
@@ -45,6 +47,7 @@ final class EEHomeCell: EETableViewCell, Reusable {
     
         contentView.addSubview(nameLabel)
         nameLabel.text = "selina"
+        nameLabel.isHidden = true
         nameLabel.snp.makeConstraints { (make) in
             make.left.equalTo(icon.snp.right).offset(8)
             make.bottom.equalTo(contentView.snp.bottom).offset(-5)

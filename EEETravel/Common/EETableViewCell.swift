@@ -57,7 +57,7 @@ class EETableViewCell: UITableViewCell {
         accessoryType = .none
         
         bottomLine = addHorizontalLineWith(bottom: 0)
-        bottomLine.backgroundColor = UIColor.backgroundColor()
+        bottomLine.backgroundColor = UIColor.background
         
         detailDisclosure = UIImageView(image: UIImage(named: "arrow"))
         detailDisclosure.isHidden = true

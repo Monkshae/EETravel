@@ -137,7 +137,7 @@ public extension UIView {
     
     public func createLine() -> UIView {
         let line = UIView()
-        line.backgroundColor = UIColor.separatorLineColor()
+        line.backgroundColor = UIColor.separatorLine
         addSubview(line)
         return line
     }

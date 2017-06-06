@@ -18,7 +18,7 @@ class ShareViewCell: EEView {
     override func setup() {
         super.setup()
         addSubview(icon)
-        label = EELabel.label(.center, UIColor.bodyTextColor(), 12)
+        label = EELabel.label(.center, UIColor.bodyText, 12)
         addSubview(label)
         let tap = UITapGestureRecognizer(target: self, action: #selector(tapAction(gesture:)))
         addGestureRecognizer(tap)
@@ -170,7 +170,7 @@ class ShareView: EEView {
         let cancelButton = EEButton(type: .custom)
         cancelButton.titleLabel?.font = EEFont(size: 14)
         cancelButton.setTitle("取消", for: .normal)
-        cancelButton.setTitleColor(UIColor.headlineTextColor(), for: .normal)
+        cancelButton.setTitleColor(UIColor.headlineText, for: .normal)
         cancelButton.addTarget(self, action: #selector(cancelButtonAction(button:)), for: .touchUpInside)
         contentView.addSubview(cancelButton)
         cancelButton.snp.makeConstraints { (make) in

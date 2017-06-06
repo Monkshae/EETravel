@@ -124,20 +124,20 @@ class EENavigationBar: EEView {
         leftIcon = GMBarButtonImageType.BackNormal.rawValue
         leftButton.enableAdaptive = true
         leftButton.adaptiveHotAreaWidth = 70
-        leftButton.setTitleColor(UIColor.headlineTextColor(), for: .normal)
+        leftButton.setTitleColor(UIColor.headlineText, for: .normal)
         leftButton.titleLabel?.font = EEFont(size: 14)
         leftButton.addTarget(self, action: #selector(leftAction(button:)), for: .touchUpInside)
 
         rightButton.addTarget(self, action: #selector(rightAction(button:)), for: .touchUpInside)
         rightButton.isHidden = true
-        rightButton.setTitleColor(UIColor.headlineTextColor(), for: .normal)
+        rightButton.setTitleColor(UIColor.headlineText, for: .normal)
         rightButton.titleLabel?.font = EEFont(size: 14)
         rightButton.enableAdaptive = true
         rightButton.adaptiveHotAreaWidth = 40
 
         nearRightButton.isHidden = true
         nearRightButton.addTarget(self, action: #selector(nearRightAction(button:)), for: .touchUpInside)
-        nearRightButton.setTitleColor(UIColor.headlineTextColor(), for: .normal)
+        nearRightButton.setTitleColor(UIColor.headlineText, for: .normal)
         nearRightButton.titleLabel?.font = EEFont(size: 14)
         nearRightButton.enableAdaptive = true
         nearRightButton.adaptiveHotAreaWidth = 40

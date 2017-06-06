@@ -165,13 +165,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		D92AF8201E94DA870026B926 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		D92AF8211E94DB6A0026B926 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,7 +206,6 @@
 		D92E2B441E890F820099E8F6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				D92AF8201E94DA870026B926 /* View */,
 				D92E2B4C1E890FDB0099E8F6 /* EEMainTabBarController.swift */,
 				D92E2B451E890F820099E8F6 /* EEHomeController.swift */,
 				D92AF8211E94DB6A0026B926 /* View */,

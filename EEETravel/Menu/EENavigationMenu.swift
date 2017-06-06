@@ -11,8 +11,8 @@ import UIKit
 class EENavigationMenuPageControl: UIPageControl {
     override init(frame: CGRect) {
         super.init(frame: frame)
-        pageIndicatorTintColor =  UIColor.separatorLineColor()
-        currentPageIndicatorTintColor = UIColor.secondaryTextColor()
+        pageIndicatorTintColor =  UIColor.separatorLine
+        currentPageIndicatorTintColor = UIColor.secondaryText
         hidesForSinglePage = true
     }
     
@@ -36,7 +36,7 @@ class EENavigationMenu: UIView {
     }
     
     func setup() {
-        backgroundColor = UIColor.backgroundColor()
+        backgroundColor = UIColor.background
         
         let layout = EENavigationMenuLayout()
         collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)

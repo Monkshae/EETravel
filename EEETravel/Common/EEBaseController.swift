@@ -31,7 +31,7 @@ class EEBaseController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.backgroundColor()
+        view.backgroundColor = UIColor.background
         if responds(to: #selector(setter: UIViewController.edgesForExtendedLayout)) {
             edgesForExtendedLayout = .all
         }

@@ -21,6 +21,7 @@ fileprivate struct Theme {
     static let backgroundTipColor               = 0xF8F4DD //提示背景颜色(黄)
     static let blackColor                       = 0x000000 //纯黑颜色
     static let whiteColor                       = 0xFFFFFF //纯白颜色
+    static let tagBackgroundColor               = 0xF0F0F0 //灰色的tag背景
 
     //文字颜色
     static let headlineTextColor                = 0x333333 //一级标题字、主要内容
@@ -73,84 +74,90 @@ public extension UIColor {
             return nil
         }
     }
-
+    
     /// 0x3ADBD2 主视觉颜色
-    static func mainVisualColor() -> UIColor {
+    static var mainVisual: UIColor {
         return UIColor(hex: Theme.mainVisualColor)
     }
-
+    
     /// 0xFF7690 辅助颜色
-    static func secondaryVisualColor() -> UIColor {
+    static var secondaryVisual: UIColor {
         return UIColor(hex: Theme.secondaryVisualColor)
     }
-
+    
     /// 0x9D704F 提示文字主色（黄背景）
-    static func mainTipColor() -> UIColor {
+    static var mainTip: UIColor {
         return UIColor(hex: Theme.mainTipColor)
     }
-
+    
     /// 0xC19474 提示文字辅助色（黄背景）
-    static func secondaryTipColor() -> UIColor {
+    static var secondaryTip: UIColor {
         return UIColor(hex: Theme.secondaryTipColor)
     }
-
+    
     /// 0xD5D5D5 失效颜色
-    static func disableColor() -> UIColor {
+    static var disable: UIColor {
         return UIColor(hex: Theme.disableColor)
     }
-
+    
     /// 0xE5E5E5 分割线颜色、边框颜色
-    static func separatorLineColor() -> UIColor {
+    static var separatorLine: UIColor {
         return UIColor(hex: Theme.separatorLineColor)
     }
-
+    
     /// 0xF5F5F5 背景颜色
-    static func backgroundColor() -> UIColor {
+    static var background: UIColor {
         return UIColor(hex: Theme.backgroundColor)
     }
-
+    
     /// 0xF8F4DD 提示背景颜色(黄)
-    static func backgroundTipColor() -> UIColor {
+    static var backgroundTip: UIColor {
         return UIColor(hex: Theme.backgroundTipColor)
     }
-
+    
+    /// 0xF0F0F0 tag背景色
+    static var tagBackground: UIColor {
+        return UIColor(hex: Theme.tagBackgroundColor)
+    }
+    
     /// 0x333333 一级标题字、主要内容
-    static func headlineTextColor() -> UIColor {
+    static var headlineText: UIColor {
         return UIColor(hex: Theme.headlineTextColor)
     }
-
+    
     /// 0x666666 正文、普通文字内容
-    static func bodyTextColor() -> UIColor {
+    static var bodyText: UIColor {
         return UIColor(hex: Theme.bodyTextColor)
     }
-
+    
     /// 0x999999 辅助文字色
-    static func secondaryTextColor() -> UIColor {
+    static var secondaryText: UIColor {
         return UIColor(hex: Theme.secondaryTextColor)
     }
-
+    
     /// 0x3ADBD2
-    static func buttonNomarlGreenColor() -> UIColor {
+    static var buttonNomarlGreen: UIColor {
         return UIColor(hex: Theme.buttonNomarlGreenColor)
     }
-
+    
     /// 0x1FB2A7
-    static func buttonHighlightGreenColor() -> UIColor {
+    static var buttonHighlightGreen: UIColor {
         return UIColor(hex: Theme.buttonHighlightGreenColor)
     }
-
+    
     /// 0xFF7690
-    static func buttonNomarlRedColor() -> UIColor {
+    static var buttonNomarlRed: UIColor {
         return UIColor(hex: Theme.buttonNomarlRedColor)
     }
-
+    
     /// 0xE75873
-    static func buttonHighlightRedColor() -> UIColor {
+    static var buttonHighlightRed: UIColor {
         return UIColor(hex: Theme.buttonHighlightRedColor)
     }
-
+    
     /// 0xD5D5D5
-    static func buttonDisableColor() -> UIColor {
+    static var buttonDisable: UIColor {
         return UIColor(hex: Theme.buttonDisableColor)
     }
+
 }

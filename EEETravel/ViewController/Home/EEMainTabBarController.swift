@@ -38,9 +38,9 @@ class EEMainTabBarController: UITabBarController {
         
         for i in 0 ..< viewModel.tabClassArray.count {
             let item = UITabBarItem(title: viewModel.tabName(at: i), image: nil, selectedImage: nil)
-            item.setIcon(icon: viewModel.tabNormalIcon(at: i), size: CGSize(width: 36, height: 36), textColor: .black, backgroundColor: .clear, selectedTextColor: .mainVisualColor(), selectedBackgroundColor: .clear)
+            item.setIcon(icon: viewModel.tabNormalIcon(at: i), size: CGSize(width: 36, height: 36), textColor: .black, backgroundColor: .clear, selectedTextColor: .mainVisual, selectedBackgroundColor: .clear)
             item.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.gray, NSFontAttributeName: EEFont(size: 11)], for: .normal)
-            item.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.mainVisualColor(), NSFontAttributeName: EEFont(size: 11)], for: .selected)
+            item.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.mainVisual, NSFontAttributeName: EEFont(size: 11)], for: .selected)
             let controllerClass = viewModel.tabClassArray[i]
             let controller  = controllerClass.init()
             controller.title = viewModel.tabName(at: i)

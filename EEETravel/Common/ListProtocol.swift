@@ -111,14 +111,14 @@ extension ListProtocol where Self: EEBaseController {
 
     func addTableView(style tableStyle: UITableViewStyle, fetchNow now: Bool) {
         tableView = UITableView(frame: self.view.bounds, style: tableStyle)
-        tableView.backgroundColor = UIColor.backgroundColor()
+        tableView.backgroundColor = UIColor.background
         tableView.separatorStyle = .none
         manager(list: tableView, fetchNow: now)
     }
 
     func addCollectionView(layout: UICollectionViewLayout, fetchNow now: Bool) {
         collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout)
-        collectionView.backgroundColor = UIColor.separatorLineColor()
+        collectionView.backgroundColor = UIColor.separatorLine
         manager(list: collectionView, fetchNow: now)
     }
 
