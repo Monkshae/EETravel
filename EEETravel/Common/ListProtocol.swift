@@ -10,7 +10,6 @@ import UIKit
 import Observable
 import SnapKit
 import PullToRefresh
-//import GMRefresh
 
 let headerIdentifer = "headerIdentifer"
 let footerIdentifer = "footerIdentifer"
@@ -141,6 +140,7 @@ extension ListProtocol where Self: EEBaseController {
     
     func fetchData() {
         if viewModel.isDataArrayEmpty() {
+            SwiftNotice.wait()
         }
         viewModel.fetchRemoteData()
     }
@@ -152,6 +152,7 @@ extension ListProtocol where Self: EEBaseController {
     }
     
     private func observeHandler(newValue: Int) {
+        SwiftNotice.clear()
         let topState = listView.topPullToRefresh?.state
         if topState == .loading {
             listView.endRefreshing(at: .top)
