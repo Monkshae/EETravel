@@ -9,6 +9,8 @@
 import UIKit
 import Reusable
 
+private let radio: CGFloat = 220.0/146
+
 final class EEHomeCell: EETableViewCell, Reusable {
 
     var icon = EEImageView()
@@ -22,11 +24,12 @@ final class EEHomeCell: EETableViewCell, Reusable {
         icon.clipsToBounds = true
         icon.layer.cornerRadius = 3
         icon.backgroundColor = UIColor.white
+        icon.contentMode = .scaleAspectFill
         icon.snp.makeConstraints { (make) in
             make.left.equalTo(15)
             make.top.equalTo(8)
             make.bottom.equalTo(-8)
-            make.size.equalTo(CGSize(width: 80, height: 80))
+            make.size.equalTo(CGSize(width: 80 * radio, height: 80))
         }
         contentView.addSubview(titleLabel)
         titleLabel.text = "招商银行 暖春四月 花样好礼（账单分期达标享乐上包/净水壶/骑行箱）"
