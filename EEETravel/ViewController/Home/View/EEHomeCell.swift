@@ -13,8 +13,8 @@ final class EEHomeCell: EETableViewCell, Reusable {
 
     var icon = EEImageView()
     var titleLabel = EELabel(.left, UIColor.bodyText, 16)
-    var timeLabel = EELabel(.right, UIColor.black, 12)
-    var nameLabel = EELabel(.left, UIColor.black, 12)
+    var timeLabel = EELabel(.right, UIColor.secondaryText, 12)
+    var nameLabel = EELabel(.left, UIColor.secondaryText, 12)
     
     override func setup() {
         super.setup()
