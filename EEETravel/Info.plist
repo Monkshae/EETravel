@@ -60,7 +60,9 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>201706061600</string>
+	<string>201706061655</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>mqzoneopensdk</string>
