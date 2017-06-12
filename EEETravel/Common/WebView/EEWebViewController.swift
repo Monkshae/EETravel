@@ -84,6 +84,7 @@ extension EEWebViewController: WKNavigationDelegate {
      in 2.3.0
      */
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        SwiftNotice.wait()
         print("didStartProvisionalNavigation")
     }
     
@@ -100,8 +101,7 @@ extension EEWebViewController: WKNavigationDelegate {
      in 2.3.0
      */
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-      
-
+        SwiftNotice.clear()
     }
     
     /**
@@ -125,9 +125,11 @@ extension EEWebViewController: WKNavigationDelegate {
     }
     
     func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+        SwiftNotice.clear()
     }
     
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        SwiftNotice.clear()
     }
     
 }
