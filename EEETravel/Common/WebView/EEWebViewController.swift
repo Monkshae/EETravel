@@ -87,7 +87,6 @@ extension EEWebViewController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
         SwiftNotice.wait()
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
-        print("didStartProvisionalNavigation")
     }
     
     func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation!) {
@@ -124,14 +123,8 @@ extension EEWebViewController: WKNavigationDelegate {
             decisionHandler(.allow)
             return
         }
-        //这句话很重要，没有的话，html里的超链接都无法跳转
-        if navigationAction.targetFrame == nil {
-            UIApplication.shared.isNetworkActivityIndicatorVisible = true
-            self.webView.load(navigationAction.request)
-        }
         decisionHandler(.allow)
     }
-    
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
         SwiftNotice.clear()
     }
@@ -142,9 +135,14 @@ extension EEWebViewController: WKNavigationDelegate {
 extension EEWebViewController: WKUIDelegate {
     
     func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
-        if navigationAction.targetFrame == nil {
-            UIApplication.shared.isNetworkActivityIndicatorVisible = true
-            self.webView.load(navigationAction.request)
+        if let url = navigationAction.request.url {
+            //这句话很重要，没有的话，html里的超链接都无法跳转,如果识别超链接是我们的短链接，直接打开一个新页面
+            if navigationAction.targetFrame == nil, let host = url.host, host.hasPrefix("go.eee.com") {
+                UIApplication.shared.isNetworkActivityIndicatorVisible = true
+                let webComp = EEWebViewController()
+                webComp.fullUrl = url.absoluteString
+                navigationController?.pushViewController(webComp, animated: true)
+            }
         }
         return nil
     }
