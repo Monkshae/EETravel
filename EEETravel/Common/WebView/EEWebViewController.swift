@@ -48,6 +48,7 @@ class EEWebViewController: EEBaseController, GMShareComponent {
     fileprivate func initWebView() {
         webView = WKWebView(frame: CGRect.zero, configuration: configuration)
         webView.navigationDelegate = self
+        webView.uiDelegate = self
         view.addSubview(webView)
         webView.snp.makeConstraints { (make) in
             make.edges.equalTo(view.snp.edges)
@@ -85,7 +86,16 @@ extension EEWebViewController: WKNavigationDelegate {
      */
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
         SwiftNotice.wait()
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
         print("didStartProvisionalNavigation")
+    }
+    
+    func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation!) {
+        
+    }
+    
+    func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+        SwiftNotice.clear()
     }
     
     /**
@@ -101,6 +111,7 @@ extension EEWebViewController: WKNavigationDelegate {
      in 2.3.0
      */
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
         SwiftNotice.clear()
     }
     
@@ -109,23 +120,32 @@ extension EEWebViewController: WKNavigationDelegate {
      in 2.3.0
      */
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-        guard let url = navigationAction.request.url else {
+        guard navigationAction.request.url != nil else {
             decisionHandler(.allow)
             return
         }
-        if url.scheme == EEURLScheme {
-            
-            guard let host = url.host, !host.isEmpty else {
-                decisionHandler(.allow)
-                return
-            }
-        } else {
-            decisionHandler(.allow)
+        //这句话很重要，没有的话，html里的超链接都无法跳转
+        if navigationAction.targetFrame == nil {
+            UIApplication.shared.isNetworkActivityIndicatorVisible = true
+            self.webView.load(navigationAction.request)
         }
-    }
-    
-    func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
-        SwiftNotice.clear()
+        decisionHandler(.allow)
+//        if navigationAction.navigationType == .linkActivated  {
+//            if let url = navigationAction.request.url,
+//                let host = url.host,
+//                UIApplication.shared.canOpenURL(url) {
+//                UIApplication.shared.open(url)
+//                print(url)
+//                print("Redirected to browser. No need to open it locally")
+//                decisionHandler(.cancel)
+//            } else {
+//                print("Open it locally")
+//                decisionHandler(.allow)
+//            }
+//        } else {
+//            print("not a user click")
+//            decisionxHandler(.allow)
+//        }
     }
     
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
@@ -137,27 +157,13 @@ extension EEWebViewController: WKNavigationDelegate {
 // MARK: - WKUIDelegate，WKWebView不支持直接JS Alert，需要通过下面的Delegate方法处理
 extension EEWebViewController: WKUIDelegate {
     
-    // WebView Alert Handler
-    func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
-        let ac = UIAlertController(title: webView.title, message: message, preferredStyle: UIAlertControllerStyle.alert)
-        ac.addAction(UIAlertAction(title: "确定", style: .cancel, handler: { (_) -> Void in
-            completionHandler()
-        }))
-        self.present(ac, animated: true, completion: nil)
+    func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
+        if navigationAction.targetFrame == nil {
+            UIApplication.shared.isNetworkActivityIndicatorVisible = true
+            self.webView.load(navigationAction.request)
+        }
+        return nil
     }
-    
-    // WebView Confirm Handler
-    func webView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (Bool) -> Void) {
-        let ac = UIAlertController(title: webView.title, message: message, preferredStyle: UIAlertControllerStyle.alert)
-        ac.addAction(UIAlertAction(title: "确定", style: .default, handler: { (_) -> Void in
-            completionHandler(true)
-        }))
-        ac.addAction(UIAlertAction(title: "取消", style: .cancel, handler: { (_) -> Void in
-            completionHandler(false)
-        }))
-        self.present(ac, animated: true, completion: nil)
-    }
-    
 }
 
 // MARK: - WKScriptMessageHandler
@@ -181,33 +187,4 @@ extension EEWebViewController: WKScriptMessageHandler {
             }
         }
     }
-    
 }
-
-// MARK: - JS Call Native Method
-extension EEWebViewController: GMClientH5BridgeDelegate {
-    func jsHideLoading() {
-
-    }
-    
-    func jsShowLoading() {
-        
-    }
-
-    func jsShowAlertViewWithJSONString(JSONString: String) {
-        
-    }
-    
-    func jsShowToastWithJSONString(JSONString: String) {
-        
-    }
-    
-    func jsShowConfirmViewWithJSONString(JSONString: String) {
-        
-    }
-    
-    func jsOpenBrowser(_ url: String) {
-        
-    }
-}
-
