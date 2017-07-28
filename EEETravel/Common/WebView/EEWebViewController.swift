@@ -130,22 +130,6 @@ extension EEWebViewController: WKNavigationDelegate {
             self.webView.load(navigationAction.request)
         }
         decisionHandler(.allow)
-//        if navigationAction.navigationType == .linkActivated  {
-//            if let url = navigationAction.request.url,
-//                let host = url.host,
-//                UIApplication.shared.canOpenURL(url) {
-//                UIApplication.shared.open(url)
-//                print(url)
-//                print("Redirected to browser. No need to open it locally")
-//                decisionHandler(.cancel)
-//            } else {
-//                print("Open it locally")
-//                decisionHandler(.allow)
-//            }
-//        } else {
-//            print("not a user click")
-//            decisionxHandler(.allow)
-//        }
     }
     
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
