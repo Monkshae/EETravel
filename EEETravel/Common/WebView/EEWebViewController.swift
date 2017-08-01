@@ -49,6 +49,7 @@ class EEWebViewController: EEBaseController, GMShareComponent {
         webView = WKWebView(frame: CGRect.zero, configuration: configuration)
         webView.navigationDelegate = self
         webView.uiDelegate = self
+        webView.scrollView.bounces = false
         view.addSubview(webView)
         webView.snp.makeConstraints { (make) in
             make.edges.equalTo(view.snp.edges)
