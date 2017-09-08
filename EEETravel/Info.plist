@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>EEE</string>
+	<string>EEE省钱快报</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -262,23 +262,23 @@
 	<key>NSBluetoothPeripheralUsageDescription</key>
 	<string>App需要您的同意,才能访问蓝牙</string>
 	<key>NSCalendarsUsageDescription</key>
-	<string>以便美人儿不错过任何美丽瞬间</string>
+	<string></string>
 	<key>NSCameraUsageDescription</key>
-	<string>美人儿可以拍摄照片</string>
+	<string></string>
 	<key>NSContactsUsageDescription</key>
-	<string>亲爱的用户，我们需要使用您的通讯录信息用于分期审核使用，如您禁止使用，将影响您申请分期</string>
+	<string></string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>给美人儿提供更近距离更加贴心的变美体验</string>
+	<string></string>
 	<key>NSLocationUsageDescription</key>
-	<string>给美人儿提供更近距离更加贴心的变美体验</string>
+	<string></string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>给美人儿提供更近距离更加贴心的变美体验</string>
+	<string></string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>是否允许访问麦克风</string>
 	<key>NSMotionUsageDescription</key>
 	<string>App需要您的同意,才能访问运动与健身</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>美人儿可以分享更多美照</string>
+	<string></string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
